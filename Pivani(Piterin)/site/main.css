@@ -1,0 +1,78 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: arial;
+}
+
+section{
+	background: url(img/slide_03.jpg)  no-repeat top;
+ 	-webkit-background-size: cover;
+ 	background-size: cover;
+    padding-bottom: 15rem;
+}
+
+.container{
+	width: 930px;
+	margin: 0 auto;
+}
+
+
+
+nav{
+	display: inline-block;
+	padding-left: 35%;
+	padding-top: 40px;
+	text-transform: uppercase;
+}
+
+ul{
+	margin: 0;	
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+li{
+	display: inline-block;
+	font-size: 12px;
+	padding-left: 25px;
+}
+
+.maininfo{
+	text-align: center;
+	color: white;
+	margin-top: 15rem;
+}
+
+.maininfo h2{
+	font-size: 13px;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.maininfo h1{
+	font-size: 45px;
+	font-weight: 800;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+.maininfo p{
+	line-height: 30px;
+}
+
+button{
+	border: none;
+	color: white;
+	background: #a5ce8c;
+	height: 2.5rem;
+	width: 8rem;
+	text-transform: uppercase;
+	border-radius: 30px;
+	cursor: pointer;
+	font-size: 13px;
+}
