@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Регистрация на сайте</title>
+	</head>
+	<body>
+		<h1>Регистрация на сайте</h1>
+
+		<form action="" method="GET">
+			<section>
+				<label for="username">Имя пользователя</label>
+				<input type="text" id="username" name="username" />
+			</section>
+			<section>		
+				<p>Выберете пол</p>
+				<input type="radio" name="gender" id="genderM" value="m" /><span>М</span>
+				<input type="radio" name="gender" id="genderF" value="f" /><span>Ж</span>
+			</section>
+			<section>
+				<p>Возраст</p>
+				<input type="number" min="18" max="100" name="age" />
+			</section>
+			<section>
+				<p>Уже были здесь раньше?</p>
+				<div>
+					<input type="checkbox" name="question-1" /><span>Бываю часто</span>
+				</div>
+				<div>
+					<input type="checkbox" name="question-2" /><span>Бываю редко</span>
+				</div>
+				<div>
+					<input type="checkbox" name="question-3" /><span>Никогда</span>
+				</div>
+			</section>
+			<section>
+				<label for="phone">Номер телефона</label>
+				<input type="tel" id="phone" name="phone" />
+			</section>
+			<section>
+				<label for="">Выберите город</label>
+				<select name="city" id="">
+					<option value="">Выберите город</option>
+					<option value="msk">Москва</option>
+					<option value="spb">Санкт-Петербург</option>
+				</select>
+			</section>
+			<section>
+				<h1>Данные для фхода</h1>
+				<label for="email">email</label>
+				<input type="email" id="email" name="email" />
+			</section>
+			<section>
+				<label for="password">Пароль</label>
+				<input type="password" id="password" name="password" />
+			</section>
+			<section>
+				<button type="submit">Отправить</button>
+				<!-- <input type="submit" /> -->
+				<button type="reset">Очистить форму</button>
+			</section>
+
+			<!-- <label>
+				<span>Имя пользователя</span>
+				<input type="text" />
+			</label> -->	
+		</form>
+
+	</body>
+</html>
