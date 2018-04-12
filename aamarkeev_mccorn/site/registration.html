@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration</h1>
+    <form action="" method="get">
+        <div>
+            <div>
+                <label for="username">Users name: </label>
+            </div>
+            <input type="text" id="username" placeholder="login" required>
+        </div>
+        <div>
+            <label>Sex:</label>
+            <input type="radio" name="sex" value="M"><span>M</span>
+            <input type="radio" name="sex" value="W"><span>W</span>
+        </div>
+        <div>
+            <label>Age</label>
+            <input type="number" min="12" max="120">
+        </div>
+        <div>
+            <div> 
+                <label>Stupid quetion?</label>
+            </div>
+            <div>
+                <input type="checkbox" name="checkbox-1">
+                <span>+</span>
+            </div>
+            <div>
+                <input type="checkbox" name="checkbox-1">
+                <span>-</span>
+            </div>
+            <div>
+                <input type="checkbox" name="checkbox-1">
+                <span>?</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="phonenumber">Users tel.num: </label>
+            </div>
+            <input type="tel" id="phonenumber" placeholder="+x (xxx) xxx - xx - xx" required>
+        </div>
+        <div>
+            <div><label>Location</label></div>
+            <select name="city" id="">
+                <option value="msk">Moscow</option>
+                <option value="spb">S-Petersburg</option>
+                <option value="smr">Samara</option>
+            </select>
+        </div>
+        <div>
+            <div>
+                <span>Login data</span>
+            </div>
+            <div>
+                <label>email: </label>
+                <input type="email">
+            </div>
+            <div>
+                <label>pass:  </label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <button value="login">login</button>
+            </div>
+            <div>
+                <button name="reset">reset</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
