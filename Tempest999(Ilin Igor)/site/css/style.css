@@ -1,0 +1,33 @@
+li a {
+	text-decoration: none;
+
+}
+
+li {
+    list-style-type: none; 
+   }
+   
+
+h1 {
+	color: red;
+	text-align: center;
+	font-size: 10rem;
+	margin-top: 0;
+}
+
+img {
+	width: 50rem;
+	margin-left: 14rem;
+	margin-top: -2rem;
+
+}
+
+.prices h2 {
+	text-align: center;
+}
+	
+
+.prices table {
+	margin-left: 20rem;
+	text-align: center;
+}
