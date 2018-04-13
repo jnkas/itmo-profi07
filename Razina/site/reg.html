@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Регистрация на сайт</title>
+</head>
+<body>
+	<h1>Регистрация на сайте</h1>
+	<form action="" method="GET">
+		<section> 
+			<label for="username">Имя пользователя</label>
+			<input type="text" id="username" name="username">
+		</section>
+			
+		<section>
+			<p>Выберите пол</p>
+		<input type="radio" name="gender"><span>M</span>
+		<input type="radio" name="gender"><span>Ж</span>
+		</section>
+
+		<section>
+			<p>Возраст</p>
+			<input type="number" min="18" max="100" name="age">
+		</section>
+
+		<section>
+			<p>Откуда узнали о нашем сайте?</p>
+			<div><input type="checkbox" name="q1"><span>Порекомендовали друзья</span></div>
+			<div><input type="checkbox" name="q2"><span>Реклама в интерете</span></div>
+			<div><input type="checkbox" name="q3"><span>Случайно зашел</span></div>
+		</section>
+		<section> 
+			<label for="phone">Номер телефона</label>
+			<input type="tel" id="phone" name="phone">
+		</section>
+		<section> 
+			<label for="phone">Выберите город</label>
+			<select name="city" id="">
+			<option value="">Выберите город</option>
+			<option value="spb">Санкт-Петербург</option>
+			<option value="mrmsk">Мурманск</option>
+			</select>
+		</section>
+		<section>
+			<h1>Данные для входа</h1>
+			<label for="email">email</label>
+			<input type="email" name="email">
+		</select>
+		<section>
+			<label for="password" id="password" name="password">password</label>
+			<input type="password" name="password">
+		</section>
+		<section>
+			
+			<button>Отправить</button>
+			<button>Очистить форму</button>
+		</section>
+	</form>
+	
+</body>
+</html>
