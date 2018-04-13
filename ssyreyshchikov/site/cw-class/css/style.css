@@ -1,0 +1,10 @@
+p {
+	color: green;
+}
+
+section.first {
+    height: 300px;
+    background: url("../images/slide_03.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
