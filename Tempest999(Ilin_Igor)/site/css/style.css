@@ -1,0 +1,79 @@
+* {
+	margin :0;
+	padding: 0;
+}
+
+body {
+	font-family: "Open Sans";
+	
+}
+
+	
+
+.container {
+ 	width: 1200px;
+ 	margin: 0 auto;
+ 	
+ 	
+}
+ 	
+
+ul li, a {
+
+  list-style: none;
+  text-decoration: none;
+}
+
+/*Sectiom main*/
+
+.main {
+	padding: 5rem 0;
+  background:  url(../img/slide_03.jpg) no-repeat top;
+ 	
+ 	
+    padding-bottom: 60%;
+}
+
+    
+
+.menu {
+	text-align: right;
+	
+}
+
+nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-align: right;
+	margin-right: 5%;
+
+
+}
+
+nav ul li a {
+	color: #d8d8d4;
+	
+}
+
+nav ul li a:hover {
+	color: white;
+}
+
+.logo{
+	width: 600px;
+	text-align: left;
+}
+
+.logo img {
+
+	transform: translateX(25%) translateY(-40%);
+}
+
+ 
+
+	
+	
+ 	
+
+	
