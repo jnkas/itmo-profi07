@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+div {
+	display:block;
+}	
+/*Header*/
+.first {
+	width: 100%;
+	height: 0px;
+	padding-top: 0px;
+}
+.menu ul li {
+	display: inline;
+	color: white;
+	text-transform: uppercase;
+	padding: 10px;
+	text-decoration-line: none; 
+	list-style: none;
+}
+
+a {
+	text-decoration-line: none; 
+	list-style: none;
+	text-transform: uppercase;
+	color: white;
+}
+
+.menu {
+	float: right;
+	margin: 40px 100px;
+}
+.logo {
+	float:left;
+	margin: 40px 100px;
+}
+/*container*/
+
+.container {
+	background-image: url(../images/slide_03.jpg);
+	background-size: cover;
+	text-align: center;
+	padding: 0px;
+	max-width: 1600px;
+	margin-top: 0px;
+	height: 600px;
+}
+
+.main-block {
+	padding: 200px;
+	color: white;
+}
+.container-intro {
+text-transform: uppercase;	
+}
+.container-intro h4 {
+	font-size: 15px;
+}
+.container-intro h1 {
+	font-size: 40px;
+	font-weight: 800;
+}
+.container-text {
+	margin-top: 20px;
+}
+.container-text p {
+	margin: 20px 350px;
+}
+.button-c a {
+	margin-top: 40px;
+	background: #36a7ad;
+	border-radius:25px;
+	padding: 20px;
+	border-width: 0px;
+	text-transform: uppercase;
+	color: white; 
+}
+.button-c {
+	margin-top: 40px; 
+}
+/*what we do*/
+.what {
+	text-align: center;
+	max-width: 1600px;
+	height: 450px;
+	background: #f2f2f7;
+	background-size: cover;
+}
+.elements {
+	padding: 20px 200px;
+}
+.section-headler {
+	padding-top: 100px;
+	text-transform: uppercase;
+}
+.headler-separator {
+	background-color: black;
+	padding: 2px 10px;
+	width: 40px;
+	margin: 10px auto;
+}
+.block {
+	padding: 40px;
+    margin: 10px 19px;
+    box-shadow: 0px 0px 15px #cdcdcd;
+    width: 257px;
+    box-sizing: border-box;
+    background-color: white;
+	display: block;
+	float: left;
+}
