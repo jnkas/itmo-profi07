@@ -3,30 +3,60 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+    color: #47352b;
+    box-sizing: border-box;
+}
+
 a {
     color: white;
     text-decoration: none;
 }
 
-html, body {
-  height: 100%;
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+li {
+    //list-style: none;
+}
+
+button {
+    width: 130px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+}
+
+.button_green {
+    background: #a2cf8e;
+    color: #dbf7c6;
 }
 
 .wrapper {
-    position: absolute;
+    width: 100%;
+    min-width: 1000px;
+    max-width: 2000px;
+    margin: auto;
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
-    width: 100%;
     height: 50px;
-    flex: 1;
-    position: fixed;
+    line-height: 50px;
+    margin-bottom: -50px;
+    z-index: 100;
 }
 
 .header__logo {
+    width: 125px;
+    height: 50px;
+    background: url(../img/white_logo.png) center center no-repeat;
+    background-size: contain;
     float: left;
 }
 
@@ -35,30 +65,19 @@ html, body {
 }
 
 .header__hmenu {
+    display: block;
     float: right;
 }
 
 .section {
-    height: 250px;
+    width: 100%;
+    height: auto;
     display: block;
+    position: relative;
     clear: both;
-    overflow: hidden;
 }
 
 .section_dark {
-    color: white;
-}
-
-.section-start {
-    padding: 50px 0px 0px 0px;
-    background: #ccc url('../img/slide_01.jpg') no-repeat;
-    background-size: cover;
-    color: white;
-}
-
-.section-3 {
-    background: black url('../img/slide_02.jpg') no-repeat;
-    background-size: cover;
     color: white;
 }
 
@@ -66,21 +85,189 @@ html, body {
     background: #a3d28e;
 }
 
-.contact-board {
-    height: 100px;
-    background: black url('../img/slide_03.jpg') no-repeat;
+.section__title_underline {
+    display: block;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.box {
+    width: 80%;
+    margin: auto;
+}
+
+.section__title {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+
+.start-section {
+    min-height: 300px;
+    padding: 50px 0px 0px 0px;
+    background: url('../img/slide_01.jpg') no-repeat;
+    background-size: cover;
+    color: white;
+    flex: 1;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.start-section__main {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.start-section__button {
+    margin: 15px 45px;
+}
+
+.specification-section {
+    min-height: 150px;
+}
+
+.flexblock {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.description-section {
+    background: black url('../img/what-we-do-bg.png') no-repeat;
+    background-size: cover;
+    color: white;
+    flex: 1;
+}
+
+.description-section__content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    margin: 0px 0px 20px 0px;
+}
+
+.description-section__article {
+    width: 59%;
+    float: left;
+}
+
+.description-section__photodesk {
+    width: 39%;
+    overflow: hidden;
+    float: right;
+}
+
+.description-section__photodesk img {
+    width: 100%;
+}
+
+.gallery__hmenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.gallery__hmenu * {
+    display: inline-block;
+    color: #000;
+}
+
+.photodesk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 330px;
+}
+
+.photodesk__item {
+    width: 22%;
+    min-height: 150px;
+    margin: 10px 0px;
+    display: block;
+    background: url(../img/portfolio_01.jpg) no-repeat;
+}
+
+.contact-section {
+    min-height: 300px;
+    background: black url('../img/contact-bg.png') no-repeat;
     background-size: cover;   
+    flex:1;
+    padding-bottom: 80px;
+}
+
+.contact-section__content {
+/*    display: flex;*/
+}
+
+.contact-section__map {
+    display: block;
+    float: left;
+    width: 59%;
+    min-height: 250px;
+    min-width: 440px;
+    background: #888 url(../img/map.jpg) center center no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.contact-form {
+    display: block;
+    position: relative;
+    float: right;
+    width: 39%;
+}
+
+input[type="text"] {
+    float: left;
+    width: 39%;
+    margin: 0px 0px 10px 0px;
+    background: none;
+    border: 1px solid #aaa;
+    padding: 5px 0px 5px 10px;
+}
+
+input[type="email"] {
+    float: right;
+    width: 52%;
+    margin: 0px 0px 10px 0px;
+    background: none;
+    border: 1px solid #aaa;
+    padding: 5px 0px 5px 10px;
+}
+
+.contact-form__button {
+    margin: 10px 0px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    background: none;
+    border: 1px solid #aaa;
+    padding: 5px 10px 5px 10px;
 }
 
 .footer {
-    display: block;
-    height: 80px;
+    background: #202528;
+    min-height: 90px;
+}
+
+.footer__text {
+    margin: 10px 0 10px;
+    display: inline-block;
+    width: 60%;
+    float: left;
+}
+
+.footer__icon-list {
+    margin: 10px 0 10px;
+    float:right;
 }
 
 .footer__icon-list *{
     display: inline-block;
 }
 
-.footer__icon-list {
-    float:right;
-}
+
