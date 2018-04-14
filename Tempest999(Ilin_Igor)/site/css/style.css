@@ -8,53 +8,41 @@ body {
 	
 }
 
+h1, h2, h3 {
+	text-transform: uppercase;
+}
 	
 
 .container {
- 	width: 1200px;
+ 	width: 900px;
+ 	height: 300px;	
  	margin: 0 auto;
- 	
- 	
 }
  	
-
 ul li, a {
-
   list-style: none;
   text-decoration: none;
 }
-
-/*Sectiom main*/
-
-.main {
-	padding: 5rem 0;
-  background:  url(../img/slide_03.jpg) no-repeat top;
  	
- 	
+/*Sectiom one*/
+
+.section-one {
+	padding: 4rem 0;
     padding-bottom: 60%;
+  	background:  url(../img/slide_03.jpg) no-repeat top;
 }
-
-    
+ 	
 
 .menu {
 	text-align: right;
+	margin-top: -50px;
+}
 	
-}
-
-nav ul li {
-	display: inline-block;
-	text-transform: uppercase;
-	font-size: 12px;
-	text-align: right;
-	margin-right: 5%;
-
-
-}
 
 nav ul li a {
 	color: #d8d8d4;
-	
 }
+
 
 nav ul li a:hover {
 	color: white;
@@ -67,8 +55,61 @@ nav ul li a:hover {
 
 .logo img {
 
-	transform: translateX(25%) translateY(-40%);
+	transform: translateX(25%) translateY(90%);
 }
+
+.logo-text {
+	margin-top: 20%;
+}
+
+.logo-text h1, h2, p {
+	color: white;
+	text-align: center;
+}
+
+.logo-text h1 {
+	font-size: 30px;
+}
+	
+.logo-text h2 {
+	font-size: 13px;
+	font-weight: lighter;
+}
+
+.logo-text p {
+	font-size: 12px;
+	margin-top: 5px;
+	line-height: 20px
+}
+
+.button-details {
+	text-align: center;
+}
+
+.button-details button {
+	background-color: #a5ce8c;
+	padding: 18px;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+	margin-top: 20px;
+	outline: none;
+}
+
+.button-details button h3 {
+	color: white;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+
+
+nav ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-align: right;
+	margin-right: 3%;
 
  
 
