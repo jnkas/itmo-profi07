@@ -1,0 +1,53 @@
+﻿nav {
+    float: right;
+    margin-right: 100px;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    display: inline;
+    color: white;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+a:visited {
+    color: white; /* Цвет посещенных ссылок */
+}
+
+a:active {
+    color: white; /* Цвет активных ссылок */
+}
+
+a:hover{
+    color:lightgray;
+}
+
+@media (max-width: 840px){
+    ul {
+        list-style: none;
+        text-decoration: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    li {
+        display: block;
+        color: white;
+        padding: 2px;
+    }
+
+    nav {
+        margin-right: 50px;
+    }
+}
