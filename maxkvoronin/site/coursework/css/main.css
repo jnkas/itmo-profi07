@@ -5,20 +5,121 @@
     --custom_green: #a3d28e;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding-right: 50px;
+    }
+
+.logo {
+    padding-left: 50px;
+    float: left;
+}
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', serif;
     background: #5d6f85;
     color: white;
 }
 
+nav {
+    text-align: right;
+}
+
 .header__menu li {
+    padding-left: 35px;
     list-style-type: none;
     display: inline;
     text-transform: uppercase;
     margin: 0 10px 0 10px;
 }
 
-/*Button Three*/
+/*выравниваем менюшку относительно логотипа*/
+.header__menu {
+    padding-top: 10px;
+}
+
+.top_container {
+    background: url("../img/slide_03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+
+.title_block {
+    text-align: center;
+    padding-top: 10%;
+}
+.title_block p:first-child , h1   {
+    text-transform: uppercase;
+}
+.title_block h1{
+    font-size: 2em;
+}
+
+.whatwedo_block{
+    text-align: center;
+}
+
+hr {
+    height: 5px;
+    width: 4%;
+    min-width: 50px;
+    border: none;
+    background-color: black;
+}
+
+.block_name {
+    text-transform: uppercase;
+    color: black;
+    padding: 50px 0;
+}
+
+.whatwedo_block {
+    background: white;
+    padding-bottom: 50px;
+}
+
+.whatwedo_sevices {
+    float: left;
+    min-width: 100px;
+    max-width: 200px;
+    color: black;
+    background: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 0 15px;
+    box-shadow:0px 2px 5px 5px #f7dde7;
+}
+
+
+
+.whatwedo_sevices_parent{
+    margin: auto;
+    display: inline-block;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+.offers_block {
+    background: url("../img/what-we-do-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding-left: 20%;
+    padding-top: 50px;
+}
+
+.offers_colomn_left {
+    background: black;
+}
+
+
+    /*Button Three*/
 button {
     color: white;
     text-transform: uppercase;
@@ -71,14 +172,12 @@ button:focus {
 ul.social-icons {
     margin-top: 10px;
 }
-
 .social-icons li {
     vertical-align: top;
     display: inline;
     height: 100px;
     margin: 0 2px;
 }
-
 .social-icons a {
     color: #fff;
     text-decoration: none;
