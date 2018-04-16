@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Meteor</title>
     <link href="css/main.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -43,11 +44,11 @@
     <section class="whatwedo_block">
         <!--Block of activities-->
         <div>
-            <div class="block_name">
+            <div class="block_name__black">
                 what we do
                 <hr>
             </div>
-            <div class="whatwedo_sevices_parent">
+            <div class="whatwedo_sevices_inline">
                 <div class="whatwedo_sevices">
                     <img src="img/first-service-main.png" alt="">
                     <h4>Easy Customizations</h4>
@@ -72,9 +73,9 @@
             </div>
         </div>
     </section>
-
-        <!--Block of new offers-->
+            <!--Block of new offers-->
     <section class="offers_block">
+        <div class="offers_block_inline">
             <div class="offers_colomn_left">
                 <h2>New offers just arrived. Get it now and take profit</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, culpa dolores dolorum ducimus eaque, enim et eveniet facilis, magnam nesciunt nisi perferendis placeat quos sed voluptas? Consectetur consequuntur culpa optio.</p>
@@ -85,18 +86,21 @@
                 </div>
             </div>
             <div class="offers_colomn_right">
-                <!-- images-->
-                <h2>hello</h2>
+                <img src="img/what-we-do-right-image.png">
             </div>
+            <div class="clearfix"></div>
+        </div>
     </section>
 
     <!--Block of portfolio-->
-    <section>
-        <div>
+    <section class="portfolio_block">
+        <div class="block_name__black">
             our portfolio
+            <hr>
         </div>
-        <div>
-            <ul>
+
+        <div class="portfolio_nav">
+            <ul class="portfolio_nav_menu">
                 <li>All</li>
                 <li>Nature</li>
                 <li>Workplace</li>
@@ -104,68 +108,112 @@
                 <li>Technology</li>
             </ul>
         </div>
-        <div>
+
+        <div class="portfolio_images">
+            <div class="portfolio_images_inline">
+                <img class="portfolio_images" src="img/portfolio_01.jpg">
+                <img class="portfolio_images" src="img/portfolio_02.jpg">
+                <img class="portfolio_images" src="img/portfolio_03.jpg">
+                <img class="portfolio_images" src="img/portfolio_04.jpg">
+                <img class="portfolio_images" src="img/portfolio_05.jpg">
+                <img class="portfolio_images" src="img/portfolio_06.jpg">
+                <img class="portfolio_images" src="img/portfolio_07.jpg">
+                <img class="portfolio_images" src="img/portfolio_08.jpg">
+                <div class="clearfix"></div>
+            </div>
+
             <!-- images block-->
         </div>
     </section>
 
     <!--Block of blog posts-->
-    <section>
-        <div>
+    <section class="blog_block">
+        <div class="block_name__white">
             our blog posts
-        </div>
-        <!--main post-->
-        <div>
-            <h4>delicious food served</h4>
-            <span></span>
-        </div>
-        <!--other posts-->
-        <div>
-            <h4>creative &amp; clen workplace</h4>
-            <span></span>
-        </div>
-        <div>
-            <h4>crashed plane captured</h4>
-            <span></span>
+            <hr>
         </div>
 
-    <!--Statistics-->
-        <div>
-            <div>
-                <span>926</span>
-                regular visitors
+        <div class="blog-posts">
+            <div class="blog-posts__left-column">
+                <div class="post">
+                    <img src="img/blog_01.jpg" alt="">
+                </div>
             </div>
-            <div>
-                <span>214</span>
-                finished projects
+            <div class="blog-posts__right-column">
+                <div class="post">
+                    <img src="img/blog_02.jpg" alt="">
+                </div>
+                <div class="post">
+                    <img src="img/blog_03.jpg" alt="">
+                </div>
             </div>
-            <div>
-                <span>118</span>
-                happy clients
-            </div>
-            <div>
-                <span>16</span>
-                total awards
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="blog_statistics">
+
+            <div class="blog_statistics_inline">
+                <div class="blog_statistics_col">
+                    <span>926</span>
+                    <div>regular visitors</div>
+                </div>
+                <div class="blog_statistics_col">
+                    <span>214</span>
+                    <div>finished projects</div>
+                </div>
+                <div class="blog_statistics_col" >
+                    <span>118</span>
+                    <div>happy clients</div>
+                </div>
+                <div class="blog_statistics_col">
+                    <span>16</span>
+                    <div>total awards</div>
+                </div>
             </div>
         </div>
     </section>
 
+        <!--&lt;!&ndash;main post&ndash;&gt;-->
+        <!--<div>-->
+            <!--<h4>delicious food served</h4>-->
+            <!--<span></span>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;other posts&ndash;&gt;-->
+        <!--<div>-->
+            <!--<h4>creative &amp; clen workplace</h4>-->
+            <!--<span></span>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<h4>crashed plane captured</h4>-->
+            <!--<span></span>-->
+        <!--</div>-->
+
+    <!--Statistics-->
+        <div>
+
+        </div>
+
     <!--Contacts-->
-    <section>
-        <div>
+    <section class="contact_block">
+        <div class="block_name__white">
             contact us
+            <hr>
         </div>
-        <div>
-            <!--map-->
+
+        <div class="contact_info">
+            <div class="contact_info_colomn_left">
+                <img src="img/map.jpg">
+            </div>
+            <div class="contact_info_colomn_right">
+                <form>
+                    <input class="text" type="text">
+                    <input class="email" type="email">
+                    <textarea rows="15" cols="80"></textarea>
+                    <button type="submit">send message</button>
+                </form>
+            </div>
         </div>
-        <div>
-            <form>
-                <input type="text">
-                <input type="email">
-                <textarea></textarea>
-                <button type="submit">send message</button>
-            </form>
-        </div>
+
     </section>
 
 <footer>
