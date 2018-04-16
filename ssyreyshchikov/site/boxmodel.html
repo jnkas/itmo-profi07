@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box-model</title>
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+		}
+		img {
+			max-width: 100%;
+		}
+
+		.box1 {
+			    margin: 40px 30px 25px 70px;
+			    padding: 221px 35px 250px 10px;
+			    border: 5px solid #926004;
+			    color: white;
+			    background: url("cw-class/images/slide_03.jpg") bisque ;
+		}
+
+		.box2 {
+			margin-top: 90px;
+		    background: gray;
+		    margin-bottom: 500px;
+		    padding: 40px;
+		    color: #fff;
+		    width: 200px;
+		    height: 200px;
+		    border-radius: 50%;
+		}
+
+		.box3 {
+			margin-top: 20px;
+			margin-bottom: 50px;
+			background: black;
+    		height: 100px
+		}
+		.container {
+			max-width: 1040px;
+			margin: auto;
+		}
+		section + section {
+			background-color: green;
+		}
+		.left-column {
+		    float: left;
+		    width: 50%;
+		    padding-right: 10px;
+		}
+		.right-column {
+		    float: left;
+		    width: 50%;
+		    padding-left: 10px;
+		}
+		.post + .post {
+			padding-top: 25px;
+		}
+		.clearfix {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="box box1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quidem, laudantium! Aut amet nesciunt maiores a provident vel deserunt enim eligendi dignissimos consequuntur iusto nemo voluptate, libero quia iste corrupti.
+	</div>
+	<div class="box box2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, quidem, laudantium! Aut amet nesciunt maiores a provident vel deserunt enim eligendi dignissimos consequuntur iusto nemo voluptate, libero quia iste corrupti.
+	</div>
+	<div class="box box3"></div>
+	<div class="box box4"></div>
+	<section>
+		Lorem ipsum dolor <span>sit</span> amet, consectetur adipisicing elit. Magni expedita aperiam ab quia aliquam blanditiis nisi tenetur alias ad sed deleniti quod odio, necessitatibus, hic error quae ut veniam esse.
+	</section>
+	<section>
+		<div class="container">
+			<h1>our blog</h1>
+			<div class="blog-posts">
+				<div class="left-column">
+					<div post>
+						<img src="cw-class/images/blog_01.jpg" alt="">
+					</div>
+					
+				</div>
+				<div class="right-column">
+					<div class="post">
+						<img src="cw-class/images/blog_02.jpg" alt="">
+					</div>
+					<div class="post">
+						<img src="cw-class/images/blog_03.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix">
+			
+		</div>
+		<h2>text</h2>
+
+	</section>
+</body>
+</html>
