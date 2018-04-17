@@ -11,5 +11,9 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "gulp-less": "^4.0.0",
+    "hover.css": "^2.3.0"
   }
 }
