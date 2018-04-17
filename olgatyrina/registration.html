@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Регистрация на сайте</title>
+</head>
+<body>
+	<h1>Регистрация на сайте</h1>
+	<form action="" method="GET">
+		<section>
+		 <label for="username"> Имя пользователя</label>
+		 <input type="text" id="username" name="usename">
+	    </section>
+	    <section>
+         <p> Выберите пол</p>
+         <input type="radio" name="gender"> <span>М</span>
+         <input type="radio" name="gender"> <span>Ж</span>
+        </section>
+        <section>
+         <p> Выберите пол</p>
+         <input type="number" min="18" max="100" name="age">
+        </section>
+        <section>
+        	   <p>Уже были здесь раньше?</p>
+        	<div>
+        	    <input type="checkbox" name="question"> <span>Один раз</span>
+        	</div>
+        	<div>
+        		<input type="checkbox" name="question"> <span>Бываю часто</span>
+        	</div>
+        	<div>
+        		<input type="checkbox" name="question"> <span>Никогда</span>
+        	</div>
+        </section>
+        <section>
+		    <p>Номер телефона</p>
+		    <input type="tel" id="phone" name="number">
+		</section>
+        <section>
+        	<p>Выберите город</p>
+        	<input type="hidden" name="city">
+        	<select>
+            <option valueradio="Москва">Москва</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Новосибирск">Новосибирск</option>
+            </select>
+        </section>
+        <section>
+        	<p>Вход на сайт</p>
+            <div>Email: <input type="email" name="login"></div>
+            <div>Пароль: <input type="password" name="pass"></div>
+        </section>
+	    <section>
+	    	<p>Согласны на обработку персональных данных?</p>
+	    </section>
+	    <section>
+	    	 <input type="checkbox" name="yes"> <span> Да</span>
+	    </section>
+	    <section>
+	    <p>
+	    	<button type="submit">Отправить</button>
+	    	<button type="submit">Отменить</button>
+	    	<button type="submit">Отчистить форму</button>
+	    </p>   
+	    </section>
+</body>
+</html>

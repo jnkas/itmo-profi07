@@ -3,79 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Meteor</title>
-    <link type="text/css" rel="css/main.css">
+    <link href="css/main.css" rel="stylesheet">
+
 </head>
+
 <body>
-    <header class="header">
+    <div class="top_container">
+        <header>
+            <div class="logo">
+                <img src="img/white_logo.png" alt="Meteor logo">
+            </div>
+            <nav>
+                <ul class="header__menu">
+                    <li>home</li>
+                    <li>about us</li>
+                    <li>portfolio</li>
+                    <li>blog</li>
+                    <li>contact us</li>
+                </ul>
+            </nav>
+        </header>
 
-        <img class="header__logo" src="" alt="">
-        <nav>
-            <ul>
-                <li>
-                    home
-                </li>
-                <li>
-                    about us
-                </li>
-                <li>
-                    portfolio
-                </li>
-                <li>
-                    blog
-                </li>
-                <li>
-                    contact us
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!--Title block-->
-    <div>
-        <span>
-            design is a hobby
-        </span>
-        <h1>
-            responsive layout
-        </h1>
-        <span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia natus officiis repellendus saepe? Molestiae, vero!
-        </span>
+        <!--Title block-->
+        <section class="title_block">
+                <p>
+                    design is a hobby
+                <p>
+                <h1>
+                    responsive layout
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia natus <br>officiis repellendus saepe? Molestiae, vero!
+                </p>
+                <button>view details</button>
+        </section>
     </div>
 
-    <!--what we do section -->
-    <section>
 
+    <!--what we do section -->
+    <section class="whatwedo_block">
         <!--Block of activities-->
         <div>
-            <div>
+            <div class="block_name__black">
                 what we do
+                <hr>
             </div>
-            <div>
-                <img src="" alt="">
-                <h4>Easy Customizations</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus temporibus voluptate!</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h4>Creative Ideas</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus temporibus voluptate!</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h4>Good Profit</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, hic neque non repellat sit soluta!</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h4>Open to Public</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, hic neque non repellat sit soluta!</p>
+            <div class="whatwedo_sevices_inline">
+                <div class="whatwedo_sevices">
+                    <img src="img/first-service-main.png" alt="">
+                    <h4>Easy Customizations</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus temporibus voluptate!</p>
+                </div>
+                <div class="whatwedo_sevices">
+                    <img src="img/second-service-main.png" alt="">
+                    <h4>Creative Ideas</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus temporibus voluptate!</p>
+                </div>
+                <div class="whatwedo_sevices">
+                    <img src="img/third-service-main.png" alt="">
+                    <h4>Good Profit</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, hic neque non repellat sit soluta!</p>
+                </div>
+                <div class="whatwedo_sevices">
+                    <img src="img/fourth-service-main.png" alt="">
+                    <h4>Open to Public</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, hic neque non repellat sit soluta!</p>
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
-
-        <!--Block of new offers-->
-        <div>
-            <div>
+    </section>
+            <!--Block of new offers-->
+    <section class="offers_block">
+        <div class="offers_block_inline">
+            <div class="offers_colomn_left">
                 <h2>New offers just arrived. Get it now and take profit</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, culpa dolores dolorum ducimus eaque, enim et eveniet facilis, magnam nesciunt nisi perferendis placeat quos sed voluptas? Consectetur consequuntur culpa optio.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci at dolor dolore eius error explicabo nisi quidem ratione similique. Dicta hic molestias nemo nulla tempore!</p>
@@ -84,19 +85,22 @@
                     <button>purchase now</button>
                 </div>
             </div>
-            <div>
-                <!-- images-->
+            <div class="offers_colomn_right">
+                <img src="img/what-we-do-right-image.png">
             </div>
+            <div class="clearfix"></div>
         </div>
     </section>
 
     <!--Block of portfolio-->
-    <section>
-        <div>
+    <section class="portfolio_block">
+        <div class="block_name__black">
             our portfolio
+            <hr>
         </div>
-        <div>
-            <ul>
+
+        <div class="portfolio_nav">
+            <ul class="portfolio_nav_menu">
                 <li>All</li>
                 <li>Nature</li>
                 <li>Workplace</li>
@@ -104,68 +108,112 @@
                 <li>Technology</li>
             </ul>
         </div>
-        <div>
+
+        <div class="portfolio_images">
+            <div class="portfolio_images_inline">
+                <img class="portfolio_images" src="img/portfolio_01.jpg">
+                <img class="portfolio_images" src="img/portfolio_02.jpg">
+                <img class="portfolio_images" src="img/portfolio_03.jpg">
+                <img class="portfolio_images" src="img/portfolio_04.jpg">
+                <img class="portfolio_images" src="img/portfolio_05.jpg">
+                <img class="portfolio_images" src="img/portfolio_06.jpg">
+                <img class="portfolio_images" src="img/portfolio_07.jpg">
+                <img class="portfolio_images" src="img/portfolio_08.jpg">
+                <div class="clearfix"></div>
+            </div>
+
             <!-- images block-->
         </div>
     </section>
 
     <!--Block of blog posts-->
-    <section>
-        <div>
+    <section class="blog_block">
+        <div class="block_name__white">
             our blog posts
-        </div>
-        <!--main post-->
-        <div>
-            <h4>delicious food served</h4>
-            <span></span>
-        </div>
-        <!--other posts-->
-        <div>
-            <h4>creative &amp; clen workplace</h4>
-            <span></span>
-        </div>
-        <div>
-            <h4>crashed plane captured</h4>
-            <span></span>
+            <hr>
         </div>
 
-    <!--Statistics-->
-        <div>
-            <div>
-                <span>926</span>
-                regular visitors
+        <div class="blog-posts">
+            <div class="blog-posts__left-column">
+                <div class="post">
+                    <img src="img/blog_01.jpg" alt="">
+                </div>
             </div>
-            <div>
-                <span>214</span>
-                finished projects
+            <div class="blog-posts__right-column">
+                <div class="post">
+                    <img src="img/blog_02.jpg" alt="">
+                </div>
+                <div class="post">
+                    <img src="img/blog_03.jpg" alt="">
+                </div>
             </div>
-            <div>
-                <span>118</span>
-                happy clients
-            </div>
-            <div>
-                <span>16</span>
-                total awards
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="blog_statistics">
+
+            <div class="blog_statistics_inline">
+                <div class="blog_statistics_col">
+                    <span>926</span>
+                    <div>regular visitors</div>
+                </div>
+                <div class="blog_statistics_col">
+                    <span>214</span>
+                    <div>finished projects</div>
+                </div>
+                <div class="blog_statistics_col" >
+                    <span>118</span>
+                    <div>happy clients</div>
+                </div>
+                <div class="blog_statistics_col">
+                    <span>16</span>
+                    <div>total awards</div>
+                </div>
             </div>
         </div>
     </section>
 
+        <!--&lt;!&ndash;main post&ndash;&gt;-->
+        <!--<div>-->
+            <!--<h4>delicious food served</h4>-->
+            <!--<span></span>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;other posts&ndash;&gt;-->
+        <!--<div>-->
+            <!--<h4>creative &amp; clen workplace</h4>-->
+            <!--<span></span>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<h4>crashed plane captured</h4>-->
+            <!--<span></span>-->
+        <!--</div>-->
+
+    <!--Statistics-->
+        <div>
+
+        </div>
+
     <!--Contacts-->
-    <section>
-        <div>
+    <section class="contact_block">
+        <div class="block_name__white">
             contact us
+            <hr>
         </div>
-        <div>
-            <!--map-->
+
+        <div class="contact_info">
+            <div class="contact_info_colomn_left">
+                <img src="img/map.jpg">
+            </div>
+            <div class="contact_info_colomn_right">
+                <form>
+                    <input class="text" type="text">
+                    <input class="email" type="email">
+                    <textarea rows="15" cols="80"></textarea>
+                    <button type="submit">send message</button>
+                </form>
+            </div>
         </div>
-        <div>
-            <form>
-                <input type="text">
-                <input type="email">
-                <textarea></textarea>
-                <button type="submit">send message</button>
-            </form>
-        </div>
+
     </section>
 
 <footer>
@@ -174,6 +222,16 @@
     </div>
     <div>
         <!--social-->
+        <div class="footer-social-icons">
+            <ul class="social-icons">
+                <li><a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                <li><a href="#" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                <li><a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </div>
     </div>
 </footer>
 
