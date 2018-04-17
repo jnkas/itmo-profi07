@@ -43,15 +43,19 @@ a {
 	background-size: cover;
 	text-align: center;
 	padding: 0px;
-	max-width: 1600px;
+	max-width: 100%;
 	margin-top: 0px;
 	height: 600px;
+	margin: auto;
 }
 
 .main-block {
 	padding: 200px;
 	color: white;
+	margin: auto;
+	text-align: center;
 }
+
 .container-intro {
 text-transform: uppercase;	
 }
@@ -64,7 +68,12 @@ text-transform: uppercase;
 }
 .container-text {
 	margin-top: 20px;
-}
+    font-size: 13px;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+}   
+
 .container-text p {
 	margin: 20px 350px;
 }
@@ -81,18 +90,23 @@ text-transform: uppercase;
 	margin-top: 40px; 
 }
 /*what we do*/
-.what {
+.second {
 	text-align: center;
-	max-width: 1600px;
-	height: 450px;
+	max-width: 100%;
+	height: 550px;
 	background: #f2f2f7;
 	background-size: cover;
 }
 .elements {
-	padding: 20px 200px;
+	padding: 20px 0px;
+	max-width: 1108px;
+	margin: auto;
 }
 .section-headler {
 	padding-top: 100px;
+	padding-left: auto;
+	padding-right: auto;
+	margin: auto;
 	text-transform: uppercase;
 }
 .headler-separator {
@@ -101,9 +115,10 @@ text-transform: uppercase;
 	width: 40px;
 	margin: 10px auto;
 }
+
 .block {
 	padding: 40px;
-    margin: 10px 19px;
+    margin: 10px 10px;
     box-shadow: 0px 0px 15px #cdcdcd;
     width: 257px;
     box-sizing: border-box;
@@ -111,3 +126,153 @@ text-transform: uppercase;
 	display: block;
 	float: left;
 }
+.pic {
+	text-align: center;
+	padding-bottom: 20px;
+
+}
+.block h3 {
+	font-size: 17px;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+}
+.block p{
+	padding-bottom: 0px;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+
+/*New-offerts section*/
+
+.new-offers {
+	max-width: 100%;
+	background: url(../images/what-we-do-bg.png);
+	background-size: cover;
+	height: 600px;
+}
+
+
+.offers-pic img {
+	 float: right;
+	 text-align: center;
+     padding: 120px 190px 100px 0px;
+}
+.offers-text {
+	text-align: left;
+	float: left;
+    width: 50%;
+    color: white;
+    padding: 0px 10px 0px 350px;
+    box-sizing: border-box;
+    margin-top: 155px;
+}
+.offers-text h4 {
+	font-size: 25px;
+	padding-bottom: 20px;
+
+}
+.offers-text p {
+	line-height: 1.5;
+	padding-bottom: 20px;
+	font-size: 15px;
+}
+.new-offers ul li {
+	display: inline-block;
+
+}
+.discover-button {
+	border-radius: 20px;
+	background: white;
+	padding:10px;
+}
+.discover-button a{
+	color: black;
+}
+.purchase-buttom {
+	border-radius: 20px;
+	background: #73dec1;
+	padding:10px;
+}
+
+
+/*portfolio*/
+.portfolio {
+	text-align: center;
+	max-width: 100%;
+	height: 550px;
+	background: #f2f2f7;
+	background-size: cover;
+}
+
+
+.lblock {
+	padding: 40px;
+    margin: 10px 10px;
+    box-shadow: 0px 0px 15px #cdcdcd;
+    width: 257px;
+    box-sizing: border-box;
+    background-color: white;
+	display: block;
+	float: left;
+	
+}
+.rblock {
+	padding: 40px;
+    margin: 10px 10px;
+    box-shadow: 0px 0px 15px #cdcdcd;
+    width: 257px;
+    box-sizing: border-box;
+    background-color: white;
+	display: block;
+	float: right;
+	
+}	
+.pmenu {
+	margin: auto;
+}
+.pmenu ul li {
+	display: inline;
+	text-transform: uppercase;
+	padding: 10px;
+	text-decoration-line: none; 
+	list-style: none;
+	font-size: 10px;
+	
+}
+.pmenu a {
+	text-decoration-line: none; 
+	list-style: none;
+	text-transform: uppercase;
+	color: black;
+}
+/*our blog post*/
+.blog {
+	max-width: 100%;
+	background: url(../images/blog-bg.png);
+	background-size: cover;
+	height: 600px;
+}
+/*six section*/
+
+.six {
+	text-align: center;
+	max-width: 100%;
+	height: 550px;
+	background: #f2f2f7;
+	background-size: cover;
+}
+/*contact us*/
+.contact-us {
+	text-align: center;
+	max-width: 100%;
+	height: 700px;
+	background: url(../images/contact-bg.png);
+	background-size: cover;
+}
+
+
+
+
+
+
