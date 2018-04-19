@@ -1,0 +1,112 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.home {
+    background: url(../image/slide_03.jpg) no-repeat center top;
+    background-size: 100% 100%;
+    background-blend-mode: color;
+    height: 600px;
+    width:100%;
+}
+
+.button {
+    font-size: 14px;
+    height: 40px;
+    width: 130px;
+    /*position: absolute;
+            top: 55%;
+            left: 44%;*/
+    border-radius: 50px;
+    border: none;
+    border-color: rgba(144, 222, 122, 1);
+    cursor: pointer;
+    background: rgba(144, 222, 122, 1);
+    outline: none;
+    color: white;
+}
+
+button.button:hover {
+    background-color: rgb(100, 167, 96);
+}
+
+button.discover-more {
+    border-color: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+button.discover-more:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+div.what-we-do {
+    background: rgb(234, 234, 234);
+    background-size: 100% 100%;
+    background-blend-mode: color;
+}
+
+div.abou-us {
+    background: url(../image/what-we-do-bg.png);
+    background-size: 100% 100%;
+    background-blend-mode: color;
+    /*min-height: 400px;*/
+}
+
+div.portfolio {
+    background: rgb(234, 234, 234);
+    background-size: 100% 100%;
+    background-blend-mode: color;
+    height: 500px;
+}
+
+div.blog {
+    background: url(../image/blog-bg.png);
+    background-size: 100% 100%;
+    background-blend-mode: color;
+    /*height: 500px;*/
+}
+
+div.result {
+    background: rgb(234, 234, 234);
+    background-size: 100% 100%;
+    background-blend-mode: color;
+    height: 200px;
+}
+
+div.contact {
+    background: url(../image/contact-bg.png);
+    background-size: 100% 100%;
+    background-blend-mode: color;
+    height: 500px;
+}
+
+.what-we-do-block {
+    width: 220px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 7px;
+    display: inline-block;
+    margin: 20px 20px;
+}
+p.what-we-do-text {
+    font-size: 15px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 20px 20px;
+}
+
+p.what-we-do-text::after {
+    content: "";
+    display: block;
+    margin:auto;
+    width:60px;
+    border-bottom: 3px solid #000;
+    margin-top:5px;
+    border-radius:50px;
+}
+.service-main {
+    margin: 15px;
+}

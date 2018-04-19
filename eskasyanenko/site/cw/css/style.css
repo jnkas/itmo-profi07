@@ -1,0 +1,55 @@
+body p {
+	color: green;
+	font-family: serif;
+}
+
+body {
+	font-family: Arial;
+}
+
+p {
+	color: red;
+}
+
+
+section.first {
+    height: 300px;
+    background: url("../images/slide_03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body div {
+	font-size: 10px;
+}
+
+.logo {
+	font-size: 22px;
+}
+
+body {
+    display: block;
+    margin: 0;
+}
+
+body div section ul li {
+	font-size: 10px;
+	color: red;
+}
+
+.list-item {
+	font-size: 20px;
+	width: 100%;
+}
+
+.list-item {
+	margin-bottom: 50px; 
+}
+
+.list-item-1 {
+	margin-bottom: 20px; 
+}
+
+
+
