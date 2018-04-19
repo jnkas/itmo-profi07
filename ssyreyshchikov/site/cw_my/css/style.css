@@ -20,7 +20,7 @@ img {
 }
 
 .container {
-    max-width: 980px;
+    max-width: 1170px;
     margin: auto;
     padding-top: 20px;
     position: relative;
@@ -30,10 +30,14 @@ img {
 .logo {
 	width: 50%;
     float: left;
+    position: relative;
+    z-index: 1;
 }
 
 .menu {
-	float: left;
+	float: right;
+    position: relative;
+    z-index: 1;
 }
 
 .menu ul li {
@@ -74,7 +78,7 @@ img {
 	font-size: 14px;
 }
 
-.main_block button {
+/*.main_block*/ button {
     width: 110px;
     height: 35px;
     border-radius: 50px;
@@ -88,11 +92,12 @@ img {
     margin-top: 20px;
 }
 
-.main_block button:hover {
+/*.main_block*/ button:hover {
     background-color: #b1d2a3;
+    cursor: pointer;
 }
 
-.main_block button a {
+/*.main_block*/ button a {
     color: #fff;
     text-decoration: none;  
 }
@@ -100,12 +105,12 @@ img {
 /*Preference*/
 
 section {
-    max-width: 980px;
+    max-width: 1170px;
     margin: auto;
 }
 
 .preference {
-    min-height: 450px;
+    /*min-height: 450px;*/
     text-align: center;
     background-color: rgb(244, 244, 244);
     padding-top: 100px;
@@ -126,6 +131,15 @@ section {
 
 .preference-wrap {
     margin-top: 30px;
+    margin-left: -15px;
+}
+
+.preference-wrap::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 .preference-item-wrap {
@@ -136,6 +150,7 @@ section {
 
 .preference-item {
     margin: 5px;
+    margin-bottom: 70px;
     background-color: #fff;
     box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
     padding: 20px 12px 30px 12px;
@@ -149,4 +164,61 @@ section {
 .preference-item span {
     font-size: 12px;
     color: #716d6d;
+}
+
+/*.clearfix {
+    clear: both;
+}*/
+
+/*offer*/
+
+.offer {
+    /*min-height: 450px;*/
+    background: url("../images/what-we-do-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.info {
+    width: 50%;
+    color: #fff;
+    float: left; 
+    padding: 70px 20px 20px 0;  
+}
+
+.info h3 {
+    margin-bottom: 30px;
+}
+
+.info p {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.graphic {
+    float: left;
+    width: 50%;
+    padding: 70px 0 50px 20px;
+}
+
+section::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.info button {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.white-button {
+    background-color: #fff;
+}
+
+.white-button a {
+    color: #000;
 }
