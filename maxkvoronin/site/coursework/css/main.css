@@ -1,14 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-:root {
-    --custom_green: #a3d28e;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 header {
     padding-right: 50px;
 }
@@ -25,6 +17,10 @@ body {
 
 nav {
     text-align: right;
+}
+
+img {
+    max-width: 100%;
 }
 
 .header__menu li {
@@ -79,6 +75,7 @@ nav {
     text-transform: uppercase;
     color: black;
     padding: 50px 0;
+    text-align: center;
 }
 
 .block_name__white {
@@ -90,41 +87,41 @@ nav {
 
 .whatwedo_block {
     background: white;
-    padding-bottom: 50px;
+    color: black;
+}
+
+.whatwedo_block .col-3 {
+    padding: 15px 15px;
+}
+
+
+.services {
+    padding: 15px;
+    box-shadow:0px 2px 5px 5px #f7dde7;
     text-align: center;
 }
 
-.whatwedo_sevices {
-    float: left;
-    min-width: 100px;
-    max-width: 200px;
-    color: black;
-    background: white;
-    margin-left: 20px;
-    margin-top: 20px;
-    padding: 0 15px;
-    box-shadow:0px 2px 5px 5px #f7dde7;
+.offers_block {
+    background: url("../img/what-we-do-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
 }
 
-.whatwedo_sevices_inline{
-    margin: auto;
-    display: inline-block;
+.offers_block .col-6 {
+    padding: 15px 15px;
 }
+
+.offers_block img {
+    width: 100%;
+}
+
 
 .clearfix {
     clear: both;
 }
 
-.offers_block {
-    width: 100%;
-    background: url("../img/what-we-do-bg.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 50px;
-    text-align: center;
-
-}
 
 .offers_block_inline {
     display: inline-block;
@@ -146,11 +143,14 @@ nav {
     float: left;
 }
 
+
 .portfolio_block {
     background: white;
-    padding-bottom: 10px;
     text-align: center;
-    overflow: auto;
+}
+
+.portfolio_block .col-3 {
+    padding: 15px 15px;
 }
 
 
@@ -182,17 +182,13 @@ nav {
 
 }
 
-.blog__post {
-    text-align: center;
-}
 .blog-posts {
     display: inline-block;
-    margin: auto;
-    padding-bottom: 50px;
+    padding: 15px 15px;
 }
+
 .blog-posts__left-column {
     float: left;
-    padding-right: 30px;
 }
 .blog-posts__right-column {
     float: left;
@@ -200,6 +196,7 @@ nav {
 .post + .post {
     padding-top: 25px;
 }
+
 .blog_statistics {
     background: white;
     color: black;
@@ -207,31 +204,40 @@ nav {
     text-align: center;
 }
 
-.blog_statistics span {
+.blog_statistics .col-3 {
+    padding: 15px 15px;
+    text-transform: uppercase;
+    text-align: center;}
+
+.stat_description  {
+    background: rgba(244, 244, 244, .2);
+    padding: 0 15px 25px 15px;
+    font-size: 1.1vw;
+}
+
+.stat_value  {
     color: green;
-    font-size: 1.5em;
-}
-
-.blog_statistics_inline {
-    max-width: 1600px;
-    margin: auto;
-    display: inline-block;
-    padding: 100px 0;
-}
-
-.blog_statistics_col {
-    float: left;
-    margin: 0 120px;
+    font-size: 1.6vw;
+    padding: 25px 0;
 }
 
 .contact_block {
-    width: 100%;
     background: url("../img/contact-bg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 50px;
     text-align: center;
+}
+
+.padd {
+    padding: 15px 15px;
+}
+.padd_left {
+    padding-left: 15px;
+}
+
+.padd_right {
+    padding-right: 15px;
 }
 
 
@@ -255,23 +261,19 @@ nav {
     text-align: left;
 }
 
-.text {
-    width: 290px;
-    margin-bottom: 10px;
+.text, .email {
+    line-height: 50px;
     border: 0;
-    color: red;
-}
-.text:focus {
-    width: 290px;
-    margin-bottom: 10px;
-    border: 0;
-    color: red;
-}
-.email {
-    width: 290px;
+    width: 100%;
 }
 
-
+textarea, .text, .email {
+    background-color: rgba(0,0,0,.2);
+    border: 0;
+    color: #dccdcd;
+    font-size: 15px;
+    width: 100%;
+}
 
     /*Button Three*/
 button {
