@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+p {
+	color: green;
+	font-family: serif;
+}
+
+body {
+    font-family: Arial;
+}
+
+.box-1 {
+    background: url(../images/slide_03.jpg);
+    color: #fff;
+    padding-top: 30px;
+    padding-right: 100px;
+}
+.first {
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clear: both;
+}
+
+div {
+	font-size: 10px;
+}
+
+.logo {
+	font-size: 22px;
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+body {
+    display: block;
+    margin: 1px;
+}
+
+body div section ul li {
+	font-size: 10px;
+}
+.menu {
+    list-style: none;
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+
+li {
+    float: right;
+    display: block;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+}
+
+button {
+    border: 0px;
+    padding: 10px;
+    border-radius: 15px;
+    background: #b4f1b6;
+}
+.container-1 {
+    max-width: 1040px;
+    margin: 1px;
+    text-align: center;
+}
+
+.container-2 {
+    max-width: 100%;
+    margin: 1px;
+    text-align: center;
+}
