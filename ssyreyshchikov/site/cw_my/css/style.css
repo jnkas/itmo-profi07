@@ -1,4 +1,17 @@
 
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+img {
+    max-width: 100%;
+}
+
+/*Top_wrapper*/
+
 .top_wrapper {
     min-height: 600px;
     background: url("../images/slide_03.jpg");
@@ -15,18 +28,17 @@
 }
 
 .logo {
-	display: inline-block;
+	width: 50%;
+    float: left;
 }
 
 .menu {
-	display: inline-block;
-	position: absolute;
-	right: 0;
+	float: left;
 }
 
 .menu ul li {
 	display: inline-block;
-	margin-right: 30px;
+	margin-left: 30px;
 	text-transform: uppercase;
 }
 
@@ -54,7 +66,7 @@
 }
 
 .main_block h1 {
-	margin-top: 10px;
+	margin-top: 0;
 	text-transform: uppercase;	
 }
 
@@ -74,4 +86,67 @@
     display: block;
     margin: auto;
     margin-top: 20px;
+}
+
+.main_block button:hover {
+    background-color: #b1d2a3;
+}
+
+.main_block button a {
+    color: #fff;
+    text-decoration: none;  
+}
+
+/*Preference*/
+
+section {
+    max-width: 980px;
+    margin: auto;
+}
+
+.preference {
+    min-height: 450px;
+    text-align: center;
+    background-color: rgb(244, 244, 244);
+    padding-top: 100px;
+}
+
+.preference h3 {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.preference hr {
+    width: 70px;
+    height: 3px;
+    background-color: #000;
+    border: none;
+}
+
+.preference-wrap {
+    margin-top: 30px;
+}
+
+.preference-item-wrap {
+    width: 25%;
+    float: left;
+    padding: 10px; 
+}
+
+.preference-item {
+    margin: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    padding: 20px 12px 30px 12px;
+}
+
+.preference-item p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.preference-item span {
+    font-size: 12px;
+    color: #716d6d;
 }

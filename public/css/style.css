@@ -44,9 +44,14 @@ nav ul li {
 	font-size: 10px;
 	text-align: right;
 	margin-right: 3%;
+<<<<<<< HEAD:Tempest999(Ilin_Igor)/site/css/style.css
 }	
 
 
+=======
+}
+	
+>>>>>>> a89760f694d054e231060a056881dee2347b54da:public/css/style.css
 nav ul li a {
 	color: #d8d8d4;
 }
@@ -110,6 +115,7 @@ nav ul li a:hover {
 	font-size: 12px;
 }
 
+<<<<<<< HEAD:Tempest999(Ilin_Igor)/site/css/style.css
 /*Section one end*/
 
 
@@ -118,6 +124,17 @@ nav ul li a:hover {
 	text-align: center;
 	margin-top: 100px;
 }
+=======
+.button-details button
+
+
+
+
+/*Section one end*/
+
+
+/*Section two*/
+>>>>>>> a89760f694d054e231060a056881dee2347b54da:public/css/style.css
 
 .tasks h1 {
 	font-size: 15px;

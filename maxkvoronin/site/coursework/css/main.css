@@ -5,20 +5,275 @@
     --custom_green: #a3d28e;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding-right: 50px;
+}
+
+.logo {
+    padding-left: 50px;
+    float: left;
+}
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', serif;
     background: #5d6f85;
     color: white;
 }
 
+nav {
+    text-align: right;
+}
+
 .header__menu li {
+    padding-left: 35px;
     list-style-type: none;
     display: inline;
     text-transform: uppercase;
     margin: 0 10px 0 10px;
 }
 
-/*Button Three*/
+/*выравниваем менюшку относительно логотипа*/
+.header__menu {
+    padding-top: 10px;
+}
+
+.top_container {
+    background: url("../img/slide_03.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+
+.title_block {
+    text-align: center;
+    padding-top: 10%;
+}
+.title_block p:first-child , h1   {
+    text-transform: uppercase;
+}
+.title_block h1{
+    font-size: 2em;
+}
+
+.block_name__black hr {
+    height: 5px;
+    width: 4%;
+    min-width: 50px;
+    border: none;
+    background-color: black;
+}
+
+.block_name__white hr {
+    height: 5px;
+    width: 4%;
+    min-width: 50px;
+    border: none;
+    background-color: white;
+}
+
+.block_name__black {
+    text-transform: uppercase;
+    color: black;
+    padding: 50px 0;
+}
+
+.block_name__white {
+    text-transform: uppercase;
+    color: white;
+    padding: 50px 0;
+}
+
+
+.whatwedo_block {
+    background: white;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.whatwedo_sevices {
+    float: left;
+    min-width: 100px;
+    max-width: 200px;
+    color: black;
+    background: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 0 15px;
+    box-shadow:0px 2px 5px 5px #f7dde7;
+}
+
+.whatwedo_sevices_inline{
+    margin: auto;
+    display: inline-block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.offers_block {
+    width: 100%;
+    background: url("../img/what-we-do-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.offers_block_inline {
+    display: inline-block;
+    margin: auto;
+}
+
+.offers_colomn_left {
+    width: 470px;
+    float: left;
+    text-align: left;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+.offers_colomn_left button {
+    margin-right: 20px;
+}
+
+.offers_colomn_right {
+    float: left;
+}
+
+.portfolio_block {
+    background: white;
+    padding-bottom: 10px;
+    text-align: center;
+    overflow: auto;
+}
+
+
+.portfolio_nav_menu li {
+    list-style-type: none;
+    display: inline;
+    text-transform: capitalize;
+    margin: 0 10px 0 10px;
+    color: black;
+}
+
+.portfolio_images {
+    float: left;
+    padding: 10px 10px;
+ }
+
+.portfolio_images_inline {
+    width: 63%;
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+
+.blog_block {
+    background: url("../img/blog-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+}
+
+.blog__post {
+    text-align: center;
+}
+.blog-posts {
+    display: inline-block;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.blog-posts__left-column {
+    float: left;
+    padding-right: 30px;
+}
+.blog-posts__right-column {
+    float: left;
+}
+.post + .post {
+    padding-top: 25px;
+}
+.blog_statistics {
+    background: white;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.blog_statistics span {
+    color: green;
+    font-size: 1.5em;
+}
+
+.blog_statistics_inline {
+    max-width: 1600px;
+    margin: auto;
+    display: inline-block;
+    padding: 100px 0;
+}
+
+.blog_statistics_col {
+    float: left;
+    margin: 0 120px;
+}
+
+.contact_block {
+    width: 100%;
+    background: url("../img/contact-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+.contact_info {
+    max-width: 1240px;
+    display: inline-block;
+    margin: auto;
+
+}
+
+.contact_info_colomn_left {
+    float: left;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+.contact_info_colomn_right {
+    float: left;
+    margin-right: 20px;
+    width: 600px;
+    height: 300px;
+    text-align: left;
+}
+
+.text {
+    width: 290px;
+    margin-bottom: 10px;
+    border: 0;
+    color: red;
+}
+.text:focus {
+    width: 290px;
+    margin-bottom: 10px;
+    border: 0;
+    color: red;
+}
+.email {
+    width: 290px;
+}
+
+
+
+    /*Button Three*/
 button {
     color: white;
     text-transform: uppercase;
@@ -71,14 +326,12 @@ button:focus {
 ul.social-icons {
     margin-top: 10px;
 }
-
 .social-icons li {
     vertical-align: top;
     display: inline;
     height: 100px;
     margin: 0 2px;
 }
-
 .social-icons a {
     color: #fff;
     text-decoration: none;

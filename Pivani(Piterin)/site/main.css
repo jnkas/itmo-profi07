@@ -13,6 +13,17 @@ section{
 	padding-bottom: 80px;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
 /*ПЕРВАЯ СЕКЦИЯ*/
 .one{
 	background: url(img/slide_03.jpg)  no-repeat top;
@@ -21,10 +32,6 @@ section{
     padding-bottom: 15rem;
 }
 
-.container{
-	width: 1120px;
-	margin: 0 auto;
-}
 
 nav{
 	display: inline-block;
@@ -40,6 +47,11 @@ ul{
 a{
 	text-decoration: none;
 	color: white;
+	transition: all 0.5s ease;
+}
+
+a:hover{
+	color: #a5ce8c;
 }
 
 li{
@@ -224,10 +236,26 @@ hr{
 	color: white;
 }
 
+.left{
+	float: left;
+	width: 50%;
+}
+
+.right{
+	float: left;
+	width: 50%;
+}
+
 .five hr{
 	background-color: #FFFFFF;
 }
+
 .blog{
+	margin-top: 3.5rem;
+	text-align: center;
+}
+
+.big_blog{
 	position: relative;
 	display: inline-block;
 	max-height: 470px;
@@ -247,4 +275,123 @@ hr{
 	font-size: 13px;
 	margin: 0;
 	padding-top: 15px;
+}
+
+.min_blog{
+	position: relative;
+	display: inline-block;
+	max-height: 220px;
+	margin: 0 0 30px 10px;
+}
+
+/*СЕКЦИЯ ШЕСТЬ*/
+
+.tablets{
+	margin-top: 80px;
+	text-align: center;
+}
+
+.tab{
+	text-align: center;
+	background: #E3E3E3;
+	height: 6.6rem;
+	padding: 0 50px;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.tab p{
+	color: #7E7E7E;
+	margin-bottom: 0;
+	margin-top: 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.tab h1{
+	margin-top: 20px;
+	color: #a5ce8c;
+	font-size: 23px;
+}
+
+/*СЕКЦИЯ СЕМЬ*/
+
+.seven{
+	background: url(img/contact-bg.png);
+}
+
+.seven h3{
+	color: #FFFFFF;
+}
+
+.seven hr{
+	background-color: #FFFFFF;
+}
+
+.contacts{
+	margin-top: 5rem;
+}
+
+
+
+.contacts input{
+	border: none;
+	background: rgba(255, 255, 255 , 0.1);
+	padding: 20px 15px;
+	width: 237px;
+	font-size: 13px;
+	margin-right: 30px;
+}
+
+.contacts textarea{
+	display: block;
+	border: none;
+	background: rgba(255, 255, 255 , 0.1);
+	padding: 10px 15px;
+	font-size: 13px;
+	margin-top: 30px;
+	width: 540px;
+	font-family: "Open Sans";
+}
+
+.contacts button{
+margin: 30px 0 ;
+}
+
+/*FOOTER*/
+
+footer{
+	padding-top: 50px;
+	padding-bottom: 30px;
+	background: #202528;
+}
+
+.fab{
+	color: #202528;
+	font-size: 20px;
+}
+
+.green_cycle{
+	background: #a5ce8c;
+	display: inline-block;
+	border-radius: 50%;
+	padding: 15px;
+	width: 22px;
+	text-align: center;
+	margin-left: 10px;
+}
+
+.social{
+	text-align: right;
+	margin-right: 20px;
+}
+
+.design{
+	text-align: left;
+	color: #FFFFFF;
+	font-size: 13px;
+}
+
+.design span{
+	color: #bc3c3d
 }
