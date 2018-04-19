@@ -3,13 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>box model</title>
+	<link rel="stylesheet" href="grid.css">
+	<link rel="stylesheet" href="media.css">
+	<meta name="viewport" content="width=device-width">
 	<style>
-		* {
-			box-sizing: border-box;
-		}
-		body {
-			margin: 0;
-		}
 		.box-1 {
 		    margin: 40px 30px 25px 70px;
 		    padding: 215px 35px 220px 10px;
@@ -42,10 +39,7 @@
 		    width: 50%;
 		    padding: 30px;
 		}
-		.container {
-		    max-width: 1040px;
-		    margin: auto;
-		}
+
 		section + section {
 			background: green;
 		}
@@ -68,9 +62,89 @@
 		.clearfix {
 			clear: both;
 		}
+		.service__item {
+		    background: #fff;
+		    padding: 10px;
+		    text-align: center;
+		    margin-bottom: 20px;
+		    box-shadow: 0 0 14px 4px #646464;
+		}
+		.what-we-do {
+		    background: #b9b9b9;
+		}
+
+		/* heder styles */
+		.header {
+		    background: #bfbfbf;
+		}
+		.menu-item {
+		    display: inline-block;
+		    padding: 1rem 2rem;
+		}
+		.level-2 {
+		    display: block;
+		}
+		.header ul {
+    		padding: 0;
+		}
+		.level-1 {
+		    position: relative;
+		}
+		.menu-level-2 {
+		    background: #757575;
+		    position: absolute;
+		    left: 0;
+		    top: 100%;
+		}
+		/* modal */
+		.fade {
+		    background: rgba(0, 0, 0, 0.6);
+		    position: fixed;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    /* hide */
+		    display: none;
+		}
+		.modal-content {
+		    max-width: 400px;
+		    background: #fff;
+		    padding: 2rem;
+		    margin: auto;
+		    margin-top: 200px;
+		}
+		section.flex {
+		    color: #fff;
+		    font-size: 2rem;
+		    	        background: green;	
+		}
 	</style>
 </head>
 <body>
+	<header class="header">
+		<ul class="menu">
+			<li class="menu-item level-1">link</li>
+			<li class="menu-item level-1">link</li>
+			<li class="menu-item level-1">link</li>
+			<li class="menu-item level-1">
+				<span>link</span>
+				<ul class="menu-level-2">
+					<li class="menu-item level-2">link</li>
+					<li class="menu-item level-2">link</li>
+					<li class="menu-item level-2">link</li>
+					<li class="menu-item level-2">link</li>
+				</ul>
+			</li>
+		</ul>
+	</header>
+	<div class="modal fade">
+		<div class="modal-content">
+			<h2>Подпишитесь на рассылку</h2>
+			<input type="email">
+			<button>отправить</button>
+		</div>
+	</div>
 	<div class="box box-1">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid quidem tenetur ipsam sint sunt saepe commodi magnam maxime omnis quod repellat eum rem vitae incidunt quos numquam, doloremque illum?
 	</div>
@@ -101,11 +175,58 @@
 						<img src="cw/images/blog_03.jpg" alt="">
 					</div>
 				</div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
-		<div class="clearfix"></div>
+		
 
 		<h2>lorem</h2>
+	</section>
+	<section class="what-we-do">
+		<div class="container">
+			<h1>What we do</h1>
+			<div class="row service">
+				<div class="col-2">
+					<div class="service__item">
+						<h4>title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, rem.</p>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="service__item">
+						<h4>title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, rem.</p>
+					</div>
+				</div>
+				<div class="col-5">		
+					<div class="service__item">
+						<h4>title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, rem.</p>
+					</div>
+				</div>
+				<div class="col-2">	
+					<div class="service__item">
+						<h4>title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, rem.</p>
+					</div>
+				</div>
+				<!-- <div style="clear: both;"></div> -->
+			</div>
+		</div>
+	</section>
+	<style>
+		.flex-container {
+		    height: 150px;
+		    display: flex;
+		}
+	</style>
+	<section class="flex">
+		<div class="flex-container">
+			text
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quasi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quasi!</p>
+			<div>123</div>
+		</div> 
+		
 	</section>
 	
 </body>
