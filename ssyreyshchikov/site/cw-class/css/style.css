@@ -8,3 +8,8 @@ section.first {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+body {
+    display: block;
+    margin: 0;
+}
