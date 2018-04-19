@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Meteor</title>
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="css/fontAwesome.css" rel="stylesheet">
 
 </head>
 
@@ -42,53 +45,61 @@
 
     <!--what we do section -->
     <section class="whatwedo_block">
-        <!--Block of activities-->
-        <div>
-            <div class="block_name__black">
-                what we do
-                <hr>
-            </div>
-            <div class="whatwedo_sevices_inline">
-                <div class="whatwedo_sevices">
-                    <img src="img/first-service-main.png" alt="">
-                    <h4>Easy Customizations</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus temporibus voluptate!</p>
+        <div class="block_name__black">
+            what we do
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="services">
+                        <img src="img/first-service-main.png" alt="">
+                        <h4>Easy Customizations</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus  voluptate!</p>
+                    </div>
                 </div>
-                <div class="whatwedo_sevices">
-                    <img src="img/second-service-main.png" alt="">
-                    <h4>Creative Ideas</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus temporibus voluptate!</p>
+                <div class="col-3">
+                    <div class="services">
+                        <img src="img/second-service-main.png" alt="">
+                        <h4>Creative Ideas</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus voluptate!</p>
+                    </div>
                 </div>
-                <div class="whatwedo_sevices">
-                    <img src="img/third-service-main.png" alt="">
-                    <h4>Good Profit</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, hic neque non repellat sit soluta!</p>
+                <div class="col-3">
+                    <div class="services">
+                        <img src="img/third-service-main.png" alt="">
+                        <h4>Good Profit</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, hic neque repellat sit!</p>
+                    </div>
                 </div>
-                <div class="whatwedo_sevices">
-                    <img src="img/fourth-service-main.png" alt="">
-                    <h4>Open to Public</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, hic neque non repellat sit soluta!</p>
+                <div class="col-3">
+                    <div class="services">
+                        <img src="img/fourth-service-main.png" alt="">
+                        <h4>Open to Public</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, hic neque repellat sit!</p>
+                    </div>
                 </div>
-                <div class="clearfix"></div>
             </div>
         </div>
     </section>
-            <!--Block of new offers-->
+
+    <!--Block of new offers-->
     <section class="offers_block">
-        <div class="offers_block_inline">
-            <div class="offers_colomn_left">
-                <h2>New offers just arrived. Get it now and take profit</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, culpa dolores dolorum ducimus eaque, enim et eveniet facilis, magnam nesciunt nisi perferendis placeat quos sed voluptas? Consectetur consequuntur culpa optio.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci at dolor dolore eius error explicabo nisi quidem ratione similique. Dicta hic molestias nemo nulla tempore!</p>
-                <div>
-                    <button>discover more</button>
-                    <button>purchase now</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2>New offers just arrived. Get it now and take profit</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, culpa dolores dolorum ducimus eaque, enim et eveniet facilis, magnam nesciunt nisi perferendis placeat quos sed voluptas? Consectetur consequuntur culpa optio.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci at dolor dolore eius error explicabo nisi quidem ratione similique. Dicta hic molestias nemo nulla tempore!</p>
+                    <div>
+                        <button>discover more</button>
+                        <button>purchase now</button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="img/what-we-do-right-image.png">
                 </div>
             </div>
-            <div class="offers_colomn_right">
-                <img src="img/what-we-do-right-image.png">
-            </div>
-            <div class="clearfix"></div>
         </div>
     </section>
 
@@ -109,131 +120,144 @@
             </ul>
         </div>
 
-        <div class="portfolio_images">
-            <div class="portfolio_images_inline">
-                <img class="portfolio_images" src="img/portfolio_01.jpg">
-                <img class="portfolio_images" src="img/portfolio_02.jpg">
-                <img class="portfolio_images" src="img/portfolio_03.jpg">
-                <img class="portfolio_images" src="img/portfolio_04.jpg">
-                <img class="portfolio_images" src="img/portfolio_05.jpg">
-                <img class="portfolio_images" src="img/portfolio_06.jpg">
-                <img class="portfolio_images" src="img/portfolio_07.jpg">
-                <img class="portfolio_images" src="img/portfolio_08.jpg">
-                <div class="clearfix"></div>
-            </div>
-
-            <!-- images block-->
-        </div>
-    </section>
-
-    <!--Block of blog posts-->
-    <section class="blog_block">
-        <div class="block_name__white">
-            our blog posts
-            <hr>
-        </div>
-
-        <div class="blog-posts">
-            <div class="blog-posts__left-column">
-                <div class="post">
-                    <img src="img/blog_01.jpg" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/portfolio_01.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="img/portfolio_02.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="img/portfolio_03.jpg">
+                </div>
+                <div class="col-3">
+                    <img src="img/portfolio_04.jpg">
                 </div>
             </div>
-            <div class="blog-posts__right-column">
-                <div class="post">
-                    <img src="img/blog_02.jpg" alt="">
+            <div class="row">
+                <div class="col-3">
+                    <img src="img/portfolio_05.jpg">
                 </div>
-                <div class="post">
-                    <img src="img/blog_03.jpg" alt="">
+                <div class="col-3">
+                    <img src="img/portfolio_06.jpg">
                 </div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-
-        <div class="blog_statistics">
-
-            <div class="blog_statistics_inline">
-                <div class="blog_statistics_col">
-                    <span>926</span>
-                    <div>regular visitors</div>
+                <div class="col-3">
+                    <img src="img/portfolio_07.jpg">
                 </div>
-                <div class="blog_statistics_col">
-                    <span>214</span>
-                    <div>finished projects</div>
-                </div>
-                <div class="blog_statistics_col" >
-                    <span>118</span>
-                    <div>happy clients</div>
-                </div>
-                <div class="blog_statistics_col">
-                    <span>16</span>
-                    <div>total awards</div>
+                <div class="col-3">
+                    <img src="img/portfolio_08.jpg">
                 </div>
             </div>
         </div>
     </section>
 
-        <!--&lt;!&ndash;main post&ndash;&gt;-->
-        <!--<div>-->
-            <!--<h4>delicious food served</h4>-->
-            <!--<span></span>-->
+    <!--&lt;!&ndash;Block of blog posts&ndash;&gt;-->
+    <!--<section class="blog_block">-->
+        <!--<div class="block_name__white">-->
+            <!--our blog posts-->
+            <!--<hr>-->
         <!--</div>-->
-        <!--&lt;!&ndash;other posts&ndash;&gt;-->
-        <!--<div>-->
-            <!--<h4>creative &amp; clen workplace</h4>-->
-            <!--<span></span>-->
-        <!--</div>-->
-        <!--<div>-->
-            <!--<h4>crashed plane captured</h4>-->
-            <!--<span></span>-->
+        <!--<div class="container">-->
+            <!--<div class="blog-posts">-->
+                <!--<div class="blog-posts__left-column">-->
+                    <!--<div class="post">-->
+                        <!--<img src="img/blog_01.jpg" alt="">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="blog-posts__right-column">-->
+                    <!--<div class="post">-->
+                        <!--<img src="img/blog_02.jpg" alt="">-->
+                    <!--</div>-->
+                    <!--<div class="post">-->
+                        <!--<img src="img/blog_03.jpg" alt="">-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
         <!--</div>-->
 
-    <!--Statistics-->
-        <div>
-
+    <section class="blog_statistics">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="stat_description">
+                        <div class="stat_value">926</div>
+                        regular visitors
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="stat_description">
+                        <div class="stat_value">926</div>
+                        regular visitors
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="stat_description">
+                        <div class="stat_value">214</div>
+                        finished projects
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="stat_description">
+                        <div class="stat_value">16</div>
+                        total awards
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-    <!--Contacts-->
+     <!--Contacts-->
     <section class="contact_block">
         <div class="block_name__white">
             contact us
             <hr>
         </div>
 
-        <div class="contact_info">
-            <div class="contact_info_colomn_left">
-                <img src="img/map.jpg">
-            </div>
-            <div class="contact_info_colomn_right">
-                <form>
-                    <input class="text" type="text">
-                    <input class="email" type="email">
-                    <textarea rows="15" cols="80"></textarea>
-                    <button type="submit">send message</button>
-                </form>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 padd">
+                    <img class="image_map" src="img/map.jpg">
+                </div>
+                <div class="col-6 padd">
+                            <div class="col-6 padd_right">
+                                <input class="text" type="text" placeholder="Your name...">
+                            </div>
+                            <div class="col-6 padd_left">
+                                <input class="email" type="email" placeholder="Your e-mail...">
+                            </div>
+                </div>
+                <div class="col-6 padd">
+                    <textarea placeholder="Your text..."></textarea>
+                </div>
+                <div class="col-6 padd">
+                   <button>send message</button>
+                </div>
             </div>
         </div>
-
     </section>
 
-<footer>
-    <div>
-        <!--copyright-->
-    </div>
-    <div>
-        <!--social-->
-        <div class="footer-social-icons">
-            <ul class="social-icons">
-                <li><a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                <li><a href="#" class="social-icon"> <i class="fa fa-rss"></i></a></li>
-                <li><a href="#" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
-                <li><a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
-            </ul>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 padd">
+                    <p>Copyright © 2018 Company Name - Design: <span>Voronin Maxim</span></p>
+                </div>
+                <div class="col-6 padd">
+                    <div class="footer-social-icons">
+                        <ul class="social-icons">
+                            <li><a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+                            <li><a href="#" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>
