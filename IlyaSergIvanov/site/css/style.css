@@ -161,6 +161,8 @@ a {
 	text-align: center;
 }
 
+
+
 .blocks .b {
 	background-size: cover;
 	overflow: hidden;
@@ -171,10 +173,10 @@ a {
 
 }
 .one {
-	margin-bottom:25px;
+	
 }
 .two {
-	margin-top: 15px;
+	
 } 
 .blocks img {
 	height: 100%;
@@ -188,12 +190,65 @@ a {
 	max-width: 100%;
 	height: 700px;
 }
+.blog h4 {
+	color: white;
+}
+.blog .headler-separator {
+	background: white;
+}
 .left-column {
 	width: 50%;
 	float: left;
-	height: 100%;
+}
+.pic-1 {
+	position: relative;
+}
+.pic-2 {
+	position: relative;
 	
 }
+.pic-3 {
+	position: relative;
+	padding-top: 22px;
+	
+}	
+.commit-1 span{
+	font-weight: bold;
+
+}
+.commit-1 {
+	padding: 0 10px;
+	position: absolute;
+    bottom: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 100%;
+}
+.commit-2 span{
+	font-weight: bold;
+}
+.commit-2 {
+	position: absolute;
+    padding: 0 10px;
+    bottom: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 100%;
+}
+.commit- span{
+	font-weight: bold;
+}
+
+.commit-3 {
+	position: absolute;
+    padding: 0;
+    bottom: 4px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+}
+
+
 .right-column {
 	width: 50%;
 	float: right;
@@ -206,8 +261,159 @@ a {
 	height: 100%;
     width: 100%;
     max-width: 100%
+    padding-bottom:0px;
 }
 .belements .row {
 	margin-right: 0px;
 	margin-left: 0px;
+}
+/*post blog*/
+.postblog {
+	max-width: 100%;
+	height: 300px;
+	background: white;
+}
+.postelement {
+	background: #f1ecec;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+	float: left;
+	letter-spacing: 0.5px;
+	margin-top: 90px;
+	border: initial;
+	height: 100%;
+    width: 100%;
+    max-width: 100%
+}
+.postelement p{
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.7);
+}
+.postelement h3{
+	color: #a4d28f;
+}
+/*contact us*/
+.contact-us {
+	background: url(../images/contact-bg.png);
+	width: 100%;
+	height: 700px;
+	background-size: cover;
+}
+.contact-conteiner {
+	width: 100%;
+	height: 300px;
+}
+.mapwrapper {
+	width: 50%;
+	float:left;
+	height: 100%;
+}
+.formwrapper {
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+.formwrapper form {
+	    height: 100%;
+}
+.map img {
+	max-width: 100%;
+	height: 100%;
+}
+.map {
+	height: 100%;
+	padding: 0 15px;
+}
+
+form .name-email {
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: 100%;
+}
+
+form .textbutton {
+	margin-left: 0px;
+	margin-right: 0px;
+	max-width: 100%;
+}
+.col-6 input {
+	width: 100%;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	padding-left: 5px;
+	background: rgba(171,171,171,0.2);
+	border: none;
+
+}
+
+.col-12 textarea {
+	color: white;
+	margin-top: 15px;
+	width: 100%;
+	padding-bottom: 65px;
+	margin-top: 30px;
+	padding-top: 15px;
+	padding-left: 5px;
+	background: rgba(171,171,171,0.2);
+	border: none;
+}
+.contact-button button {
+	border-radius: 30px;
+    padding: 10px;
+ 	margin: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	background: #a4d28f;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+.contact-us h4{
+	color: white;
+}
+.contact-us .headler-separator {
+	background: white;
+}
+/*footer*/
+.fwrapper {
+	background: #1f2426;
+	height: 50px;
+}
+.copyright-text {
+	float: left;
+}
+.copyright-text p {
+	color: white;
+	margin: 0;
+	padding-top: 15px;
+	font-size: 12px;
+	margin-left: 15px;
+}
+.copyright-text span {
+	color: red;
+}
+footer .sm-icons {
+    display: block;
+    float: right;
+   }
+footer .sm-icons ul {
+    margin-top: 6px;
+}
+
+footer .sm-icons ul li {
+    list-style: none;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 20px;
+    background: #a2cf8e;
+    border-radius: 50%;
+}
+footer .sm-icons ul li a {
+    height: 36px;
+    line-height: 36px;
+    padding: 12px;
+    color: black;
+    margin-right: 15px;
 }

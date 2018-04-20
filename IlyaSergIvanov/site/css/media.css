@@ -1,0 +1,78 @@
+@media (max-width: 1024px){
+	.row {
+	margin-right: 15px;
+	margin-left: 15px;
+	}	
+}
+@media (max-width: 768px){
+.row {
+	margin-right:15px;
+	margin-left: 15px;
+	}	
+	.what-we-do {
+	height: 1000px;
+}
+.new-offers {
+	height: 900px;
+}
+	.left-column {
+	width: 100%;
+	float: left;
+	padding-right: 66px;
+	padding-left: 80px;
+	
+}
+.right-column {
+	width: 100%;
+	float: left;
+	padding-left: 80px;
+    padding-top: 25px;
+    padding-right: 65px;
+}
+.portfolio {
+	height: 1400px;
+}
+.elements .one {
+	margin-right:0px;
+	margin-left: 0px;
+	padding-right: 0;
+    padding-left: 75px;
+	float: left;
+	width: 50%;
+}	
+.elements .two {
+	margin-right:0px;
+	margin-left: 0px;
+	padding-right: 75px;
+    padding-left: 0;
+	margin-top: 0;
+	float: right;
+     width: 50%;
+}
+.blocks img {
+	width: auto;
+}	
+.col-3 {
+	padding:15px;
+}
+.blog {
+	height: 1300px;
+}
+.postblog {
+	height: 700px;
+	padding-top: 50px;
+}
+.postelement {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.email-input{
+	padding-top: 65px;
+}
+.col-12 textarea {
+	margin-top: 20px;
+}
+footer .sm-icons ul {
+    margin-right: 15px;
+}
+}
