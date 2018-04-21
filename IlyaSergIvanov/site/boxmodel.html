@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>box model</title>
 	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/media.css">
 	<style>
+		.header{
+			background: #e0e0e0;
+		}
+		.menu-item {
+			display: inline-block;
+			padding: 1rem 2rem;
+		}
 		* {
 			box-sizing: border-box;
 		}
@@ -73,10 +82,71 @@
 			background: grey;
 
 		}
+		.level-2 {
+			display: block;
+		}
+		ul .menu-level-2 {
+			background: grey;
+		}
+		.header ul {
+			padding: 0;
+
+		}
+		.menu-level-2 {
+			position: absolute;
+			background: green;
+			left: 0;
+			top: 100%;
+		}
+		.level-1 {
+			position: relative;
+		}
+		/*modal*/
+		.fade {
+			background: rgba(0, 0, 0, 0.6);
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			/*hide*/
+			display: none;
+		}		
+		.modal-content {
+			max-width: 400px;
+			background: white;
+			padding: 2rem;
+			margin: auto;
+			margin-top: 200px;
+		}
 		
 	</style>
 </head>
 <body>
+	<header class="header">
+		<ul class="menu">
+			<li class="menu-item level-1">link</li>
+			<li class="menu-item level-1">link</li>
+			<li class="menu-item level-1">link</li>
+			<li class="menu-item level-1">
+				<span> link</span>
+				<ul class="menu-level-2">
+					<li class="menu-item level-2">link</li>
+					<li class="menu-item level-2">link</li>
+					<li class="menu-item level-2">link</li>
+					<li class="menu-item level-2">link</li>
+				</ul>
+			</li>
+		</ul>
+		
+	</header>
+	<div class="modal fade">
+		<div class="modal-content">
+			<h2>Подпишитесь на рассылку</h2>
+			<input type="email">
+			<button>Отправить</button>
+		</div>
+	</div>
 	<div class="box box-1">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit aliquid quidem tenetur ipsam sint sunt saepe commodi magnam maxime omnis quod repellat eum rem vitae incidunt quos numquam, doloremque illum?
 	</div>
@@ -142,6 +212,13 @@
 					</div>
 				</div>
 			</div>
+	</section>
+	<section class="flex">
+		<div class="flex-container">
+			text
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eligendi vel laboriosam suscipit ipsa, error saepe eveniet nobis velit nemo magnam harum illum non deserunt facere perferendis aliquam et, cumque.</p>
+			<div>123</div>
+		</div>
 	</section>
 </body>
 </html>
