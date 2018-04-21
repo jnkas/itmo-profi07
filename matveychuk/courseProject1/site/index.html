@@ -5,113 +5,292 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Meteor</title>
+    <meta name="description" content="Integer ut dolor eget magna congue gravida ut at arcu. Vivamus maximus neque
+quis luctus tempus. Vestibulum consequat." />
     <link rel="shortcut icon" href="image/favicon (1).ico" type="image/x-icon">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link href="css/fontAwesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <script src="js/JavaScript.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #site{
+            min-width:230px;
+        }
+        body {
+            min-width: 230px;
+            font-family: "Open Sans";
+        }
+    </style>
 </head>
 <body>
-    <header style="flex-wrap:wrap; display:block;">
-        <div style="float:left; margin-top:25px;">
-            <img src="image/white_logo.png" />
+    <header>
+        <div>
+            <img src="image/white_logo.png" alt="not found image"/>
         </div>
-        <nav style="margin-top:37px;">
-            <ul style="">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#abou-us">ABOUT US</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
+        <nav>
+            <ul class="header">
+                <li class="header"><a class="header" href="#home">HOME</a></li>
+                <li class="header"><a class="header" href="#abou-us">ABOUT US</a></li>
+                <li class="header"><a class="header" href="#portfolio">PORTFOLIO</a></li>
+                <li class="header"><a class="header" href="#blog">BLOG</a></li>
+                <li class="header"><a class="header" href="#contact">CONTACT US</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="home" id="home" style="text-align:center;">
-            <div style="color:white; display:block; padding-top:250px;">
-                <p style="font-size:15px;">DESIGN A HOBBY</p>
-                <p style="font-size:30px; font-weight:700; margin-top:7px;">RESPONSIVE LAYOUT</p>
+        <div class="home" id="home">
+            <div class="home-design-a-hobby">
+                <h2 style="font-size:15px; font-weight:normal;">DESIGN A HOBBY</h2>
+                <h1 style="font-size:30px; font-weight:700; margin-top:7px;">RESPONSIVE LAYOUT</h1>
                 <p style="font-size:10px; margin-top:15px;">
                     Integer ut dolor eget magna congue gravida ut at arcu. Vivamus maximus neque<br />
                     quis luctus tempus. Vestibulum consequat.
                 </p>
-                <button class="button view-details" style="margin-top:15px;">VIEW DETAILS</button>
+                <form action="#openModal">
+                    <button class="button button-green" style="margin-top:15px;" href="#openModal">VIEW DETAILS</button>
+                </form>
             </div>
         </div>
         <div class="what-we-do" id="what-we-do">
-            <div style="width:100%; text-align:center;">
-                <p class="what-we-do-text">WHAT WE DO</p>
-            </div>
-            <div style="width:100%; min-height:200px; text-align:center;">
-                <div style="display:inline-block;">
-                    <div class="what-we-do-block">
-                        <img class="service-main" src="image/first-service-main.png"/>
-                        <p class="service-main">Easy Customizations</p>
-                        <p class="service-main">Meteor is free HTML website template by Tooplate. Feel free to use this layout for your project.</p>
-                    </div>
-                    <div class="what-we-do-block">
-                        <img class="service-main" src="image/second-service-main.png" />
-                        <p class="service-main">Creative Ideas</p>
-                        <p class="service-main">Biodiesel schitz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
-                    </div>
+            <div class="div-margins">
+                <div style="text-align:center;">
+                    <h3>WHAT WE DO</h3>
                 </div>
-                <div style="display:inline-block;">
-                    <div class="what-we-do-block">
-                        <img class="service-main" src="image/third-service-main.png" />
-                        <p class="service-main">Good Profit</p>
-                        <p class="service-main">Biodiesel schitz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                <div class="what-we-do-block clear" style="text-align:center;">
+                    <div>
+                        <div>
+                            <div class="block">
+                                <img class="service-main" src="image/first-service-main.png" alt="not found image" />
+                                <h4 class="service-main">Easy Customizations</h4>
+                                <p class="service-main">Meteor is free HTML website template by Tooplate. Feel free to use this layout for your project.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="block">
+                                <img class="service-main" src="image/second-service-main.png" alt="not found image" />
+                                <h4 class="service-main">Creative Ideas</h4>
+                                <p class="service-main">Biodiesel schitz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="what-we-do-block">
-                        <img class="service-main" src="image/fourth-service-main.png" />
-                        <p class="service-main">Open To Public</p>
-                        <p class="service-main">Biodiesel schitz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                    <div>
+                        <div>
+                            <div class="block">
+                                <img class="service-main" src="image/third-service-main.png" />
+                                <h4 class="service-main">Good Profit</h4>
+                                <p class="service-main">Biodiesel schitz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="block">
+                                <img class="service-main" src="image/fourth-service-main.png" />
+                                <h4 class="service-main">Open To Public</h4>
+                                <p class="service-main">Biodiesel schitz suculents phone cliche ramps snackwave coloring book tumeric poke, typewriter.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="abou-us" id="abou-us" style="text-align:center;">
-            <div style="display:inline-block; max-width:400px; color:white; text-align:left; vertical-align:middle; margin: 25px 15px;">
-                <p>
-                    New offers just arrived, <br />
-                    Get it now and take profit.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-                    dicta qui similique, culpa non, doloribus laboriosam dolore omnis saepe
-                    sint quia numquam esse cum nihil deserunt ullam ipsa.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat inventore
-                    odit tempore esse beatae commodi, perspiciatis iure. Hic, cum, impedit provident
-                    vitae distinctio quae architecto atque asperiores, delectus, eos molestias!
-                </p>
-                <button class="button discover-more" style="margin:10px;">DISCOVER MORE</button>
-                <button class="button" style="margin:10px;">PURCHASE NOW</button>
-            </div>
-            <div style="display:inline-block; vertical-align:middle; margin: 25px 15px;">
-                <img src="image/what-we-do-right-image.png" style="width:100%; height:100%; display:inline-block; vertical-align:middle;"/>
+            <div class="div-margins clear">
+                <div class="div-margins-text">
+                    <h3>
+                        New offers just arrived, <br />
+                        Get it now and take profit.
+                    </h3>
+                    <p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+                        dicta qui similique, culpa non, doloribus laboriosam dolore omnis saepe
+                        sint quia numquam esse cum nihil deserunt ullam ipsa.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat inventore
+                            odit tempore esse beatae commodi, perspiciatis iure. Hic, cum, impedit provident
+                            vitae distinctio quae architecto atque asperiores, delectus, eos molestias!
+                        </p>
+                        <form action="#openModal" style="display:inherit">
+                            <button class="button button-white" style="margin:10px;">DISCOVER MORE</button>
+                        </form>
+                        <form action="#openModal" style="display:inherit">
+                            <button class="button button-green" style="margin:10px;">PURCHASE NOW</button>
+                        </form>
+                </div>
+                <div class="div-margins-img">
+                    <img src="image/what-we-do-right-image.png" style="width:100%; height:100%; display:inline-block; vertical-align:middle;" alt="not found image" />
+                </div>
             </div>
         </div>
-        <div class="portfolio" id="portfolio"></div>
+        <div class="portfolio" id="portfolio">
+            <div class="div-margins clear">
+                <div style="width:100%; text-align:center;">
+                    <h3>OUR PORTFOLIO</h3>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="portfolio-menu"><a class="portfolio-menu" id="All" href="javascript:setImageVisible('All', 'img-portfolio', true)">All</a></li>
+                        <li class="portfolio-menu"><a class="portfolio-menu" id="Nature" href="javascript:setImageVisible('Nature', 'Nature', true)">Nature</a></li>
+                        <li class="portfolio-menu"><a class="portfolio-menu" id="Workspace" href="javascript:setImageVisible('Workspace', 'Workspace', true)">Workspace</a></li>
+                        <li class="portfolio-menu"><a class="portfolio-menu" id="City" href="javascript:setImageVisible('City', 'City', true)">City</a></li>
+                        <li class="portfolio-menu"><a class="portfolio-menu" id="Technology" href="javascript:setImageVisible('Technology', 'Technology', true)">Technology</a></li>
+                    </ul>
+                </nav>
+                <div style="padding:30px 0;">
+                    <div style="text-align:center;">
+                        <div class="block-img">
+                            <img class="img-portfolio Workspace" src="image/portfolio_01.jpg" alt="not found image" />
+                            <img class="img-portfolio Workspace" src="image/portfolio_02.jpg" alt="not found image" />
+                        </div>
+                        <div class="block-img">
+                            <img class="img-portfolio Workspace" src="image/portfolio_03.jpg" alt="not found image" />
+                            <img class="img-portfolio City" src="image/portfolio_04.jpg" alt="not found image" />
+                        </div>
+                    </div>
+                    <div style="text-align:center;">
+                        <div class="block-img">
+                            <img class="img-portfolio Nature" src="image/portfolio_05.jpg" alt="not found image" />
+                            <img class="img-portfolio Technology" src="image/portfolio_06.jpg" alt="not found image" />
+                        </div>
+                        <div class="block-img">
+                            <img class="img-portfolio Workspace" src="image/portfolio_07.jpg" alt="not found image" />
+                            <img class="img-portfolio Workspace" src="image/portfolio_08.jpg" alt="not found image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="blog" id="blog">
-            <div style="clear:both;">
-                <div style="width:50%; float:left; padding:10px;">
-                    <img src="image/blog_01.jpg" style="width:100%; height:100%;" />
+            <div class="div-margins clear">
+                <div style="width:100%; text-align:center;">
+                    <h3>OUR BLOG POSTS</h3>
                 </div>
-                <div style="width:50%; float:left; padding:10px;">
-                    <img src="image/blog_02.jpg" style="width:100%; height:100%;" />
-                    <img src="image/blog_03.jpg" style="width:100%; height:100%;" />
+                <div class="blog-img">
+                    <div class="blog_01">
+                        <img class="img1" src="image/blog_01.jpg" style="width:100%; display:flex;" alt="not found image" />
+                        <div class="blog-on" style="">
+                            <p style="font-size:15px; font-weight:bold; margin-bottom:6px;">Delecioius Dood Served</p>
+                            <p style="font-size:15px; font-weight:normal;">Posted: <span style="font-weight:bold;">George</span> / Date: <span style="font-weight:bold;">11 Aug 2017</span> / Category: <span style="font-weight:bold;">Design</span></p>
+                        </div>
+                    </div>
+                    <div class="blog-img-1">
+                        <div class="blog_02">
+                            <img src="image/blog_02.jpg" style="width:100%; display:flex;" alt="not found image" />
+                            <div class="blog-on" style="">
+                                <p style="font-size:15px; font-weight:bold; margin-bottom:6px;">Creative & Clean Workspace</p>
+                                <p style="font-size:15px; font-weight:normal;">Posted Kerley /Date: 24 Jul 2017/Category: Artwork</p>
+                            </div>
+                        </div>
+                        <div class="blog_03">
+                            <img src="image/blog_03.jpg" style="width:100%; display:flex;" alt="not found image"/>
+                            <div class="blog-on" style="">
+                                <p style="font-size:15px; font-weight:bold; margin-bottom:6px;">Crasched Plane Captured</p>
+                                <p style="font-size:15px; font-weight:normal;">Posted Johnny /Date: 16 Jul 2017/Category: Branding</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div style="clear:both"></div>
         </div>
-        <div class="result" id="result"></div>
+        <div class="result" id="result" style="width:100%; text-align:center;">
+            <div class="div-margins clear">
+                <div class="result-main-block">
+                    <div>
+                        <div class="result-block">
+                            <h3>926</h3>
+                            <p>REGULAR VISITORS</p>
+                        </div>
+                        <div class="result-block">
+                            <h3>214</h3>
+                            <p>FINISHED PROJECTS</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="result-block">
+                            <h3>118</h3>
+                            <p>HAPPY CLIENTS</p>
+                        </div>
+                        <div class="result-block">
+                            <h3>16</h3>
+                            <p>TOTAL AWARDS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="contact" id="contact">
+            <div class="div-margins clear">
+                <div style="width:100%; text-align:center;">
+                    <h3>CONTACT US</h3>
+                </div>
+                <div class="contact-maps-form">
+                    <div class="contact-maps" style="float:left; width:50%; height:300px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26832.798925097806!2d103.85980452538732!3d1.344773911239894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1523432089118" frameborder="0" style="border:0; width:100%; height:100%;" allowfullscreen></iframe>
+                    </div>
+                    <div class="contact-form" style="float:left; width:50%">
+                        <form>
+                            <div class="form-contact-input" style="padding:0 15px 0 15px;">
+                                <div class="form-contact" style="padding:0 10px 0 0;">
+                                    <input class="form-contact" type="text" placeholder="Your name..." style="float:left; width:100%; height:40px; padding:0 0 0 15px; font: 400 13.3333px Arial;" />
+                                </div>
+                                <div class="form-contact" style="padding:0 0 0 10px;">
+                                    <input class="form-contact" type="text" placeholder="Your email..." style="float:left; width:100%; height:40px; padding:0 0 0 15px; font: 400 13.3333px Arial;" />
+                                </div>
+                                <div style="clear:both;"></div>
+                            </div>
+                            <div class="form-contact-textarea" style="">
+                                <textarea class="form-contact" placeholder="Your message..." style="width:100%; height:165px; padding:5px 0 0 15px; font: 400 13.3333px Arial;"></textarea>
+                            </div>
+                            <button class="button button-green" style="margin:10px 0 0 15px;">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="openModal" class="modalDialog">
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26832.798925097806!2d103.85980452538732!3d1.344773911239894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1523432089118" width="500" height="350" frameborder="0" style="border:0; margin-top:75px" allowfullscreen></iframe>
+                <a href="#close" title="Закрыть" class="close">X</a>
+                <form>
+                    <input type="text" placeholder="Enter name" />
+                    <input type="email" placeholder="Enter email" />
+                    <input type="tel" placeholder="Enter tel" />
+                    <button class="button button-green">SEND</button>
+                </form>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="div-margins">
+            <div class="footer-copyright" style="">
+                <p style="color:white;">
+                    Copyright © 2018 Company Name - Design: <span style="color:red;">Toolplate</span>
+                </p>
+            </div>
+            <div class="footer-button" style="">
+                <form action="https://www.facebook.com/" style="display:inline-block;" target="_blank">
+                    <button class="footer-button fa-facebook-f" style="font-family: 'FontAwesome';"></button>
+                </form>
+                <form action="https://vk.com/" style="display:inline-block;" target="_blank">
+                    <button class="footer-button fa-vk" style="font-family: 'FontAwesome';"></button>
+                </form>
+                <form action="https://twitter.com/" style="display:inline-block;" target="_blank">
+                    <button class="footer-button fa-twitter" style="font-family: 'FontAwesome';"></button>
+                </form>
+                <form action="https://www.instagram.com/" style="display:inline-block;" target="_blank">
+                    <button class="footer-button fa-instagram" style="font-family: 'FontAwesome';"></button>
+                </form>
+                <form action="https://web.telegram.org/" style="display:inline-block;" target="_blank">
+                    <button class="footer-button fa-telegram" style="font-family: 'FontAwesome';"></button>
+                </form>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </footer>
 </body>
 </html>
