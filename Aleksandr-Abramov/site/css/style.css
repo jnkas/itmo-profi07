@@ -555,6 +555,11 @@ footer .footer-section {
   color: white;
 }
 
+.copyright a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .copyright span {
   color: red;
 }
