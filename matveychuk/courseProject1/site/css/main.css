@@ -1,112 +1,584 @@
-﻿* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+﻿/** ===========================
+ *  шаблоны
+ *  ===========================
+*/
+.div-margins{
+    width: 1140px;
+    margin:auto;
 }
 
-div.home {
+.clear::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+/** ===========================
+ *  блок home
+ *  ===========================
+*/
+.home {
+    text-align: center;
     background: url(../image/slide_03.jpg) no-repeat center top;
     background-size: 100% 100%;
-    background-blend-mode: color;
     height: 600px;
-    width:100%;
+    width: 100%;
 }
+
+.home-design-a-hobby {
+    color: white;
+    display: block;
+    padding-top: 250px;
+}
+
+/** ===========================
+ *  блок what-we-do
+ *  ===========================
+*/
+
+.what-we-do {
+    background: rgb(234, 234, 234);
+    background-size: 100% 100%;
+    background-blend-mode: color;
+    padding: 40px 0;
+}
+
+.what-we-do h3 {
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 0 20px 0;
+}
+
+.what-we-do h3::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 60px;
+    border-bottom: 3px solid #000;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+
+.what-we-do-block > div {
+    float: left;
+    width: 50%;
+}
+
+.what-we-do-block > div > div {
+    padding: 0 10px;
+    float: left;
+    width: 50%;
+    max-width: 300px;
+}
+
+.block {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 7px;
+    padding: 15px 15px 15px 15px;
+}
+
+.what-we-do-block h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.what-we-do-block p {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/** ===========================
+ *  блок about-us
+ *  ===========================
+*/
+
+.abou-us {
+    background: url(../image/what-we-do-bg.png);
+    background-size: 100% 100%;
+    /*min-height: 400px;*/
+}
+
+.abou-us > .div-margins {
+    padding: 40px 0;
+}
+
+.div-margins-text {
+    float: left;
+    width: 50%;
+    max-width: 500px;
+    color: white;
+    text-align: left;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.div-margins-text h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.div-margins-text p {
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.div-margins-img {
+    float: right;
+    width: 50%;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+/** ===========================
+ *  блок portfolio
+ *  ===========================
+*/
+
+div.portfolio {
+    background: rgb(234, 234, 234);
+    background-size: 100% 100%;
+}
+
+div.portfolio > div {
+    padding: 40px 0;
+}
+
+.portfolio h3 {
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 0 20px 0;
+}
+
+.portfolio h3::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 60px;
+    border-bottom: 3px solid #000;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+
+.portfolio nav {
+    text-align: center;
+}
+
+.portfolio ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.portfolio li {
+    display: inline;
+    padding: 20px;
+}
+
+.portfolio a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.block-img {
+    display: inline-block;
+}
+
+.img-portfolio {
+    max-width: 280px;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+/** ===========================
+ *  блок blog
+ *  ===========================
+*/
+
+div.blog {
+    background: url(../image/blog-bg.png);
+    background-size: 100% 100%;
+}
+
+div.blog > div {
+    padding: 40px 0;
+}
+
+.blog h3 {
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 0 20px 0;
+    color:white;
+}
+
+.blog h3::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 60px;
+    border-bottom: 3px solid #fff;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+
+.blog-img {
+    width: auto;
+    padding: 0 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.blog_01 {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.blog-img-1 {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.blog_02, .blog_03 {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.blog-on {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0 10px 10px;
+    color: white;
+    display: none;
+}
+
+.blog_01:hover .blog-on {
+    display: block !important;
+}
+
+.blog_02:hover .blog-on {
+    display: block !important;
+}
+
+.blog_03:hover .blog-on {
+    display: block !important;
+}
+
+/** ===========================
+ *  блок result
+ *  ===========================
+*/
+
+.result {
+    background: rgb(255, 255, 255);
+    background-size: 100% 100%;
+}
+
+.result-main-block {
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.result-main-block > div {
+    display: inline-block;
+}
+
+.result-block {
+    background-color: rgb(245, 245, 245);
+    margin: 10px;
+    padding: 30px 15px;
+    display: inline-block;
+    width: 261px;
+}
+
+.result h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(92, 180, 126);
+    margin-bottom: 10px;
+}
+
+.result p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/** ===========================
+ *  блок contact
+ *  ===========================
+*/
+
+.contact {
+    background: url(../image/contact-bg.png);
+    background-size: 100% 100%;
+}
+
+.contact > div {
+    padding: 40px 0 40px 0;
+}
+
+.contact h3 {
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 20px 20px;
+    color: white;
+}
+
+.contact h3::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 60px;
+    border-bottom: 3px solid #fff;
+    margin-top: 5px;
+    border-radius: 50px;
+}
+
+input.form-contact, textarea.form-contact {
+    background: rgba(180, 180, 180, 0.2);
+    border: none;
+}
+
+div.form-contact {
+    float: left;
+    width: 50%;
+}
+
+div.form-contact-textarea {
+    padding: 0 15px 15px 15px;
+    margin-top: 25px;
+}
+
+/** ===========================
+ *  кнопки
+ *  ===========================
+*/
 
 .button {
     font-size: 14px;
     height: 40px;
     width: 130px;
-    /*position: absolute;
-            top: 55%;
-            left: 44%;*/
     border-radius: 50px;
     border: none;
-    border-color: rgba(144, 222, 122, 1);
     cursor: pointer;
-    background: rgba(144, 222, 122, 1);
     outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.button-green {
+    border-color: rgba(144, 222, 122, 1);
+    background: rgba(144, 222, 122, 1);
     color: white;
 }
 
-button.button:hover {
+.button-green:hover {
     background-color: rgb(100, 167, 96);
 }
 
-button.discover-more {
-    border-color: rgba(255, 255, 255, 1);
-    background: rgba(255, 255, 255, 1);
+.button-white {
+    border-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     color: black;
 }
 
-button.discover-more:hover {
+.button-white:hover {
     background-color: rgb(200, 200, 200);
 }
 
-div.what-we-do {
-    background: rgb(234, 234, 234);
-    background-size: 100% 100%;
-    background-blend-mode: color;
+/** ===========================
+ *  media
+ *  ===========================
+*/
+
+@media (max-width: 1440px) {
+    .div-margins {
+        width: 79.17%;
+    }
+
+    .what-we-do-block > div > div {
+        padding: 10px 10px;
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+    .result-block {
+        width: 200px;
+    }
 }
 
-div.abou-us {
-    background: url(../image/what-we-do-bg.png);
-    background-size: 100% 100%;
-    background-blend-mode: color;
-    /*min-height: 400px;*/
+@media (max-width: 1024px) {
+    .div-margins-text {
+        float: none;
+        margin: auto;
+        width: 100%;
+        max-width: 500px;
+        padding: 0;
+    }
+
+    .div-margins-img {
+        float: none;
+        margin: auto;
+        width: 100%;
+        max-width: 500px;
+        padding: 0;
+    }
 }
 
-div.portfolio {
-    background: rgb(234, 234, 234);
-    background-size: 100% 100%;
-    background-blend-mode: color;
-    height: 500px;
+@media (max-width: 768px) {
+    .what-we-do-block > div {
+        float: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    .portfolio li {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .blog-img {
+        flex-direction: column;
+        padding: 0 0 50px 0;
+    }
+
+    .blog-img-1 {
+        padding-left: 0;
+    }
+
+    .blog_01 {
+        padding-bottom: 10px;
+    }
+
+    .blog-img-1 img {
+        padding: 10px 0 10px 0;
+    }
+
+    .result-block {
+        width: 100px;
+    }
+
+    .form-contact-input {
+        padding: 0 0 0 0 !important;
+    }
+
+    .form-contact-textarea {
+        padding: 0 0 15px 0 !important;
+        margin: 0 !important;
+    }
+
+    .contact-maps-form div {
+        width: 100% !important;
+    }
+
+    div.contact button {
+        margin: 10px 0 0 0 !important;
+    }
+
+    .contact-form {
+        margin-top: 15px;
+    }
+
+    .contact div.form-contact {
+        padding: 0 0 15px 0 !important;
+    }
 }
 
-div.blog {
-    background: url(../image/blog-bg.png);
-    background-size: 100% 100%;
-    background-blend-mode: color;
-    /*height: 500px;*/
+@media (max-width: 425px) {
+    .home-design-a-hobby {
+        padding-top: 300px;
+    }
 }
 
-div.result {
-    background: rgb(234, 234, 234);
-    background-size: 100% 100%;
-    background-blend-mode: color;
-    height: 200px;
+/** ===========================
+ *  модальное окно
+ *  ===========================
+*/
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.43);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
 }
 
-div.contact {
-    background: url(../image/contact-bg.png);
-    background-size: 100% 100%;
-    background-blend-mode: color;
-    height: 500px;
-}
-
-.what-we-do-block {
-    width: 220px;
-    background: rgba(255, 255, 255, 1);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    border-radius: 7px;
-    display: inline-block;
-    margin: 20px 20px;
-}
-p.what-we-do-text {
-    font-size: 15px;
-    font-weight: 700;
-    display: inline-block;
-    margin: 20px 20px;
-}
-
-p.what-we-do-text::after {
-    content: "";
+.modalDialog:target {
     display: block;
-    margin:auto;
-    width:60px;
-    border-bottom: 3px solid #000;
-    margin-top:5px;
-    border-radius:50px;
+    pointer-events: auto;
 }
-.service-main {
-    margin: 15px;
+
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    background: #e2e2e2;
+}
+
+.close {
+    background: rgba(0, 0, 0, 0.47);
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: rgba(0, 0, 0, 0.80);
+
+}
+
+.modalDialog input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.modalDialog button {
+    width: 80px !important;
+    height: 20px !important;
 }
