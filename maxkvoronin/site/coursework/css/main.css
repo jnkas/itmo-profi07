@@ -1,12 +1,26 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
+section{
+    padding: 50px 0;
+}
+
+
 header {
-    padding-right: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
 }
 
 .logo {
     padding-left: 50px;
-    float: left;
+}
+
+.logo img {
+    max-width: 125px;
 }
 body {
     font-family: "Open Sans", Arial, sans-serif;
@@ -16,6 +30,7 @@ body {
 
 nav {
     text-align: right;
+    padding-right: 15px;
 }
 
 img {
@@ -25,9 +40,9 @@ img {
 .header__menu li {
     padding-left: 35px;
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     text-transform: uppercase;
-    margin: 0 10px 0 10px;
+    line-height: 35px;
 }
 
 /*выравниваем менюшку относительно логотипа*/
@@ -40,12 +55,16 @@ img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 750px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .title_block {
     text-align: center;
-    padding-top: 10%;
 }
 .title_block p:first-child , h1   {
     text-transform: uppercase;
@@ -73,7 +92,7 @@ img {
 .block_name__black {
     text-transform: uppercase;
     color: black;
-    padding: 50px 0;
+    padding-bottom: 50px;
     text-align: center;
     font-weight: bold;
 }
@@ -81,7 +100,7 @@ img {
 .block_name__white {
     text-transform: uppercase;
     color: white;
-    padding: 50px 0;
+    padding-bottom: 50px;
     text-align: center;
     font-weight: bold;
 }
@@ -99,7 +118,7 @@ img {
 
 .services {
     padding: 15px;
-    box-shadow:0px 2px 5px 5px #f7dde7;
+    box-shadow: 0px 0px 17px 4px #e0e0e0;
     text-align: center;
 }
 
@@ -108,15 +127,11 @@ img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 50px;
-}
-
-.offers_block .col-6 {
-    padding: 15px 15px;
 }
 
 .offers_block img {
     width: 100%;
+    padding-top: 15px;
 }
 
 
@@ -124,27 +139,9 @@ img {
     clear: both;
 }
 
-
-.offers_block_inline {
-    display: inline-block;
-    margin: auto;
+.offers_block_col {
+    padding: 0 15px
 }
-
-.offers_colomn_left {
-    width: 470px;
-    float: left;
-    text-align: left;
-    padding-right: 50px;
-    padding-bottom: 20px;
-}
-.offers_colomn_left button {
-    margin-right: 20px;
-}
-
-.offers_colomn_right {
-    float: left;
-}
-
 
 .portfolio_block {
     background: white;
@@ -154,7 +151,6 @@ img {
 .portfolio_block .col-3 {
     padding: 15px 15px;
 }
-
 
 .portfolio_nav_menu li {
     list-style-type: none;
@@ -299,6 +295,7 @@ textarea:hover, .text:hover, .email:hover {
 
 button {
     font-size: 0.7rem;
+    width: 132px;
 }
 
 
