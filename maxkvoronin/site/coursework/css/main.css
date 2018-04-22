@@ -5,22 +5,12 @@ section{
 }
 
 
-header {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-}
-
 .logo {
-    padding-left: 50px;
+
 }
 
 .logo img {
-    max-width: 125px;
+
 }
 body {
     font-family: "Open Sans", Arial, sans-serif;
@@ -28,9 +18,8 @@ body {
     color: white;
 }
 
-nav {
-    text-align: right;
-    padding-right: 15px;
+.nav_item {
+    font-size: 0.7em;
 }
 
 img {
@@ -38,7 +27,6 @@ img {
 }
 
 .header__menu li {
-    padding-left: 35px;
     list-style-type: none;
     display: inline-block;
     text-transform: uppercase;
@@ -55,22 +43,28 @@ img {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
 }
 
 .title_block {
     text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    right: 25%;
 }
-.title_block p:first-child , h1   {
+.title_block span:first-child {
     text-transform: uppercase;
+    font-size: 0.8em
 }
 .title_block h1{
     font-size: 2em;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.title_block p {
+    font-size: 0.8em;
+    margin: 0 0 10px 0;
 }
 
 .block_name__black hr {
@@ -177,23 +171,31 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+}
+
+.post {
+    padding: 0 15px 22px 15px;
+    position: relative;
 
 }
 
-.blog-posts {
-    display: inline-block;
-    padding: 15px 15px;
+.short_post {
+    position: absolute;
+    height: 80px;
+    background: rgba(0,0,0,.5);
+    left: 15px;
+    bottom: 26px;
+    width: calc(100% - 30px);
+    text-align: left;
+    padding: 15px;
+}
+.short_post h4 {
+    margin: 0px;
+}
+.short_post p {
+    font-size: 0.8em;
 }
 
-.blog-posts__left-column {
-    float: left;
-}
-.blog-posts__right-column {
-    float: left;
-}
-.post + .post {
-    padding-top: 25px;
-}
 
 .blog_statistics {
     background: white;

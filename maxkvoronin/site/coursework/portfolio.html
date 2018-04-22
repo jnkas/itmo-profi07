@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css" >
+    <link rel="stylesheet" href="css/menu.css" >
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="css/fontAwesome.css" rel="stylesheet">
 
@@ -40,44 +42,75 @@
                 font-size: 0.5rem;
                 width: 122px;
             }
+            .title_block h1 {
+                font-size: 1.5em;
+            }
+            .header {
+                flex-direction: column;
+            }
+            .short_post p {
+                font-size: 0.5em;
+
+            }
+            .short_post {
+                height: 35px;
+                padding: 0 0 0 10px;
+            }
+            .short_post h4 {
+                margin-bottom: -10px;
+            }
         }
+        .header {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .logo {
+            flex-grow: 1;
+        }
+        header {
+            position: relative;
+        }
+        .nav_item {
+            text-transform: uppercase;
+            padding: 10px 0 0 10px;
+
+        }
+
     </style>
-
 </head>
-
-
 <body>
-
-<div class="top_container col-12">
-    <header>
-
-            <div class="logo">
-                <img src="img/white_logo.png" alt="Meteor logo">
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="logo"><img src="img/white_logo.png" alt="Meteor logo"></div>
+                <div class="nav_item">home</div>
+                <div class="nav_item">about us</div>
+                <div class="nav_item">portfolio</div>
+                <div class="nav_item">blog</div>
+                <div class="nav_item">contact us</div>
             </div>
-            <nav class="nav">
-                <ul class="header__menu">
-                    <li>home</li>
-                    <li>about us</li>
-                    <li>portfolio</li>
-                    <li>blog</li>
-                    <li>contact us</li>
-                </ul>
-            </nav>
+        </header>
+    </div>
 
-    </header>
-
+<div class="top_container">
     <!--Title block-->
-    <section class="title_block col-3">
-        <p>
-            design is a hobby
-        <p>
-        <h1>
-            responsive layout
-        </h1>
-        <p>
-            Lorem ipsum dolor sit amet, officiis repellendus saepe? Molestiae, vero!
-        </p>
-        <button>view details</button>
+    <section class="title_block">
+        <div class="container">
+            <div class="col-12">
+                <span>design is a hobby</span>
+                <h1>
+                    responsive layout
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad debitis deserunt eius itaque molestiae recusandae, vero!
+                </p>
+                <button>view details</button>
+            </div>
+        </div>
     </section>
 </div>
 
@@ -189,6 +222,48 @@
     </div>
 </section>
 
+    <!--Block of blog posts-->
+    <section class="blog_block">
+        <div class="block_name__white">
+             our blog posts
+         <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="posts">
+                    <div class="col-6">
+                        <div class="post">
+                            <img src="img/blog_01.jpg" alt="">
+                            <div class="short_post">
+                                <h4>Delicious Food Served</h4>
+                                <p>Posted: <strong>George</strong> / Date: <strong>11 aug 2017</strong> / Category: <strong>Design</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="post">
+                            <img src="img/blog_02.jpg" alt="">
+                            <div class="short_post">
+                                <h4>Creative & Clean Workspace</h4>
+                                <p>Posted: <strong>Kerly</strong> / Date: <strong>11 jul 2017</strong> / Category: <strong>Artwork</strong></p>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <img src="img/blog_03.jpg" alt="">
+                            <div class="short_post">
+                                <h4>Delicious Food Served</h4>
+                                <p>Posted: <strong>Johny</strong> / Date: <strong>16 jul 2017</strong> / Category: <strong>Branding</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+
+
+
+
+    </section>
 </body>
 </html>
