@@ -1,4 +1,55 @@
-﻿footer{
+﻿footer {
     background: rgba(0, 0, 0, 1);
-    height:70px;
+}
+
+button.footer-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 100%;
+    background: rgba(144, 222, 122, 1);
+    cursor: pointer;
+}
+
+    button.footer-button:hover {
+        background-color: rgb(100, 167, 96);
+    }
+
+div.footer-button {
+    float: right;
+    margin: 16px 0 16px 0;
+}
+
+.footer-copyright {
+    float: left;
+    margin: 20px 0;
+}
+
+@media(max-width: 768px) {
+    div.footer-button {
+        text-align: center;
+        float: none;
+        display: inline-block;
+        width: 100%;
+        margin: 16px 0px 16px 0;
+    }
+
+    .footer-copyright {
+        margin: 20px 0px;
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
+@media(max-width: 425px) {
+    footer > dev {
+        float: initial;
+        text-align: center;
+    }
 }
