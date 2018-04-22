@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
 	<title>Курсовой проект</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header>
@@ -67,7 +69,7 @@
 							<div class="service_item">
 								<div class="pic"><img src="Images/third-service-main.png" alt="pic"></div>
 								<h3>Good profit</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam cum minus, dolorum dolor praesentium.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam cum minus, dolorum dolor.</p>
 							</div>	
 						</div>
 						<div class="col-3">
@@ -158,18 +160,25 @@
 						<div class="row big">
 							<div class="left-column">
 								<div class="col-12">
-									<div class="pic"><img src="Images/blog_01.jpg" alt="pic"></div>
+									<div class="pic-1"><img src="Images/blog_01.jpg" alt="pic">
+										<div class="commit-1"><h3>Delecioius Food Served</h3><p>Posted: <span> George </span> / Date:<span> 11 Aug 2017</span> / Category:<span> Design</span></p>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="right-column">
 								<div class="row one">
 									<div class="col-12" >
-										<div class="pic"><img src="Images/blog_02.jpg" alt="pic"></div>
+										<div class="pic-2"><img src="Images/blog_02.jpg" alt="pic">
+											<div class="commit-2"><h3>Creative & Clean Workspace</h3><p>Posted: <span> Kerley </span> / Date:<span> 24 Jul 2017</span> / Category:<span> Artwork</span></p>
+										</div>
 									</div>	
 								</div>
 								<div class="row two">
 									<div class="col-12">
-										<div class="pic"><img src="Images/blog_03.jpg" alt="pic"></div>
+										<div class="pic-3"><img src="Images/blog_03.jpg" alt="pic">
+											<div class="commit-1"><h3>Crashed Plane Captured</h3><p>Posted: <span> Johnny </span> / Date:<span> 16 Jul 2017</span> / Category:<span> Branding</span></p>
+										</div>
 									</div>
 								</div>						
 							</div>	
@@ -179,32 +188,32 @@
 			</div>	
 		</section>
 		<section>
-			<div class="six">
+			<div class="postblog">
 				<div class="container">	
-					<div class="section-headler">
-						<h4>What we do</h4>
-						<div class="headler-separator"></div>
-					</div>
 					<div class="elements">
-						<div class="block">
-							<div class="pic"><img src="Images/first-service-main.png" alt="pic"></div>
-							<h3>Easy customization</h3>
-							<p>Meteor if free HTML website template by Tooplate. Feel free to use this layout for your project.</p>
+						<div class="col-3">
+							<div class="postelement">
+								<h3>926</h3>
+								<p>Regular visitors</p>
+							</div>
 						</div>
-						<div class="block">
-							<div class="pic"><img src="Images/second-service-main.png" alt="pic"></div>	
-							<h3>Creative Ideals</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui cum ex, praesentium et minus. </p>
+						<div class="col-3">
+							<div class="postelement">
+								<h3>214</h3>
+								<p>Finished projects</p>
+							</div>
 						</div>
-						<div class="block">
-							<div class="pic"><img src="Images/third-service-main.png" alt="pic"></div>
-							<h3>Good profit</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam cum minus, dolorum dolor praesentium.</p>
+						<div class="col-3">
+							<div class="postelement">
+								<h3>118</h3>
+								<p>Happy clients</p>
+							</div>
 						</div>
-						<div class="block">
-							<div class="pic"><img src="Images/fourth-service-main.png" alt="pic"></div>
-							<h3>Open To Public</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima vel cumque nulla nostrum.</p>
+						<div class="col-3">
+							<div class="postelement">
+								<h3>16</h3>
+								<p>Total awards</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -212,40 +221,75 @@
 		</section>
 		<section>
 			<div class="contact-us">
-				<div class="container">	
+				<div class="container">
 					<div class="section-headler">
 						<h4>Contact Us </h4>
 						<div class="headler-separator"></div>
 					</div>
-					<div class="map">
-	                	<img src="Images/map.jpg" alt="A map ">
-	            	</div>
-	                <div class="contact-form">
-		            	<form action="" method="post">
-							 <div class="name-input">
-		                        <input name="name" type="text" id="name" placeholder="Your name..." required="">                   
-		                     </div>
-		                     <div class="email-input">
-		                        <input name="email" type="email" id="email" placeholder="Your email..." required="">
-		                     </div>
-		                     <div class="message-input">
-		                       <textarea name="message" rows="6" id="message" placeholder="Your message..." required=""></textarea>
-		                     </div>
-		                     <div class="contact-button">
-		                     	<button type="submit" class="cta-button">Send Message</button>
-		                     </div>
-						</form>	
-	           		 </div>
-				</div>
-			</div>	
-        </section>	
+					<div class="contact-conteiner">
+						<div class="mapwrapper">
+							<div class="map">
+					            <img src="Images/map.jpg" alt="A map ">
+					        </div>
+					    </div>
+					    <div class="formwrapper"> 
+					        <form action="" method="Get">
+					        	<div class="row name-email">
+								    <div class="name-input">
+							  			<div class="col-6">
+									        <input name="name" type="text" id="name" placeholder="Your name..." required="">       
+									    </div>            
+									</div>
+									<div class="email-input">
+									    <div class="col-6">
+									        <input name="email" type="email" id="email" placeholder="Your email..." required="">
+									    </div>
+									</div>
+								</div>	
+								<div class="row textbutton">
+									<div class="message-input">
+										<div class="col-12">
+									    	<textarea name="message" rows="6" id="message" placeholder="Your message..." required=""></textarea>
+									    </div>
+									</div>
+									<div class="contact-button">
+										<button type="submit" class="cta-button">Send Message</button>
+									</div>
+								</div>
+						   </form>
+						</div>
+					</div>
+				</div>	
+			</div>  			   	
+		</section>	
 		
 	</main>	
 	<footer>
 		<section>
-			<div class="container">		
-				<div class="copyright-text">
-					<p>Copyright &copy; 2018 I.Ivanov - Design: Tooplate </p>
+			<div class="fwrapper">
+				<div class="container">
+					<div class="copyright-text">
+						<p>Copyright &copy; 2018 I.Ivanov - Design: <span>Tooplate</span></p>
+					</div>
+					<div class="sm-icons">
+	                    <ul>
+	                        <li>
+	                            <a href="#"><i class="fa fa-facebook"></i></a>
+	                        </li>
+	                        <li>
+	                            <a href="#"><i class="fa fa-twitter"></i></a>
+	                        </li>
+	                        <li>
+	                            <a href="#"><i class="fa fa-linkedin"></i></a>
+	                        </li>
+	                        <li>
+	                            <a href="#"><i class="fa fa-rss"></i></a>
+	                        </li>
+	                        <li>
+	                            <a href="#"><i class="fa fa-dribbble"></i></a>
+	                        </li>
+	                    </ul>
+                	</div>
 				</div>
 			</div>	
 		<section>
