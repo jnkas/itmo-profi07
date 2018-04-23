@@ -16,7 +16,7 @@ img {
     min-height: 600px;
     background: url("../images/slide_03.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
 }
 
 .container {
@@ -132,6 +132,7 @@ section {
 .preference-wrap {
     margin-top: 30px;
     margin-left: -15px;
+    margin-right: -15px;
 }
 
 .preference-wrap::after {
@@ -259,10 +260,10 @@ section {
     margin-bottom: 50px;
 }
 
-.example-row {
+/*.example-row {
     margin-left: -10px;
     margin-right: -10px;
-}
+}*/
 
 .example-item {
     float: left;
@@ -329,8 +330,8 @@ section {
     opacity: 0;
     transition: all 1s ease;
 }
-
-.post-item-content:hover {
+.post-wrap-item, .post-wrap-item:hover 
+.post-item-content{
     opacity: 1;
     cursor: pointer; 
 }
@@ -532,4 +533,230 @@ section::after {
     display: block;
     height: 0;
     visibility: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+    .preference-wrap {
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+
+    .example-item {
+        padding: 5px;
+    }
+
+    .progress-wrapper {
+        margin-left: 0;
+        margin-right: 0; 
+    }
+
+    .post-wrap-item + .post-wrap-item {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .logo {
+    width: 30%; 
+    }
+    
+    .example-item {
+        padding: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    
+    .container {
+        text-align: center;
+    }
+
+    .logo {
+        float: none;
+        width: 100%;
+    }
+
+    .menu {
+        float: none;
+    }
+
+    .preference-item-wrap {
+        width: 50%;
+    }
+
+    ..preference-item-wrap{
+        padding: 0;
+    }
+
+    .preference-item {
+        box-shadow: none;
+    }
+
+    .post-wrap-item + .post-wrap-item {
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    footer {
+        text-align: center;
+    }
+
+    .menu ul{
+        padding-left: 0;
+    }
+
+    .copyright {
+        width: 100%;
+    }
+
+    .social {
+        width: 100%;
+    }
+
+    .social ul{
+        padding-left: 0;   
+    }
+
+    .social ul li{
+        padding-top: 10px;   
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .menu ul li{
+        display: block;
+        margin-left: 0; 
+    }
+
+    .main_block {
+        margin-top: 15px; 
+    }
+
+    .top_wrapper {
+    min-height: 0;
+    }
+
+    button {
+        margin-bottom: 20px;
+    }
+
+    .preference {
+        padding-top: 20px;
+    }
+
+    .graphic {
+        width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .example-item {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    .portfolio {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-menu ul li {
+        margin-top: 0; 
+        margin-bottom: 0; 
+    }
+
+    .post {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .post-wrap {
+        margin-top: 20px;
+    }
+
+    .post-column-left {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+
+    .post-column-right {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .progress-item-wrap {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .progress {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .contact {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .contact-left {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-right {
+        width: 100%;
+        padding-left: 0;
+    }
+
+        .main_block {
+            width: 100%;  
+    }
+}
+
+@media only screen and (max-width: 710px) {
+    .preference-item {
+        margin-bottom: 0;  
+    }
+
+    .preference-item-wrap {
+        width: 100%;
+    }
+
+    .graphic {
+        padding: 0; 
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .example-item {
+        width: 100%;
+    }
+
+    .progress-item-wrap {
+        width: 100%;
+    }
+
+    .form-top-wrapper-left {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .form-top-wrapper-right {
+        width: 100%;
+        padding-left: 0;
+    }
 }
