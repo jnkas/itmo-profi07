@@ -15,7 +15,7 @@ h1, h2, h3 {
 
 .container {
  	width: 900px;
- 	height: 300px;	
+ 	height: 40rem;	
  	margin: 0 auto;
 }
  	
@@ -28,7 +28,7 @@ ul li, a {
 
 .section-one {
 	padding: 4rem 0;
-    padding-bottom: 60%;
+    /*padding-bottom: 25rem;*/
   	background:  url(../img/slide_03.jpg) no-repeat top;
 }
  	
@@ -44,8 +44,14 @@ nav ul li {
 	font-size: 10px;
 	text-align: right;
 	margin-right: 3%;
+<<<<<<< HEAD:Tempest999(Ilin_Igor)/site/css/style.css
+}	
+
+
+=======
 }
 	
+>>>>>>> a89760f694d054e231060a056881dee2347b54da:public/css/style.css
 nav ul li a {
 	color: #d8d8d4;
 }
@@ -109,6 +115,16 @@ nav ul li a:hover {
 	font-size: 12px;
 }
 
+<<<<<<< HEAD:Tempest999(Ilin_Igor)/site/css/style.css
+/*Section one end*/
+
+
+/*Sectio two*/
+.tasks{
+	text-align: center;
+	margin-top: 100px;
+}
+=======
 .button-details button
 
 
@@ -118,7 +134,20 @@ nav ul li a:hover {
 
 
 /*Section two*/
+>>>>>>> a89760f694d054e231060a056881dee2347b54da:public/css/style.css
 
+.tasks h1 {
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+hr {
+	width: 60px;
+	text-align: center;
+	height: 1px;
+	color: black;
+	background-color: black;
+}
  
 
 	
