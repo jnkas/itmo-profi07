@@ -1,0 +1,207 @@
+
+		
+	/*media contact form*/
+@media only screen and (min-width:150px) and (max-width: 1600px){
+  .pictureBoxwithinfor{ margin-left: 220px;} 
+  .pictureBoxwithinfor1{  margin-left:215px;}
+ .forr{margin-left: 9.6%; width: 94%;
+} 
+
+}
+@media only screen and (min-width:150px) and (max-width: 1400px){
+  .pictureBoxwithinfor{float: left;; margin-left: 120px;}
+        .MainBoxcontent{
+    	overflow:hidden;
+}
+  .pictureBoxwithinfor1{  margin-left:115px;} 
+ .forr{margin-left: 3.9%; width: 100%;
+} 
+    .MainPicBoxConteiner1{
+
+    height:350px;
+
+}
+}
+@media only screen and (min-width:150px) and (max-width: 1360px){
+  .pictureBoxwithinfor{ margin-left: 100px;} 
+  .pictureBoxwithinfor1{  margin-left:95px;}
+ .forr{margin-left: 0; width: 100%;
+}     
+}
+@media only screen and (min-width:150px) and (max-width: 1200px){
+  .pictureBoxwithinfor{float: left;; margin-left: 0;}
+        .MainBoxcontent{
+    	overflow:hidden;
+}
+  .pictureBoxwithinfor1{  margin-left:15px;}  
+}
+@media only screen and (min-width:150px) and (max-width: 1000px){
+#centbimg{width:auto;height: 700px;}
+ .pictureBoxwithinfor{float: left;width: 570px; margin-left: 215px;}  
+.MainBoxcontent{	height: 800px;
+  	background: url(img/contact-bg.png) no-repeat center; 
+    background-size: cover;
+    text-align: center;
+width: 100%;
+    padding-top: 0;
+    	overflow:auto;
+}
+.pictureBoxwithinfor1{ margin-left: 0;} 
+
+.pictureBoxwithinfor1{ margin-left: 0;width:1169px} 
+ .MainBoxcontent1 {	height: 1130px;width:570px;	overflow:hidden;}
+.Mainbox{overflow:hidden;
+height:500px;
+}
+.LeftMainbox{
+
+    margin-top: 30px;
+
+}  
+}
+@media only screen and (min-width:150px) and (max-width: 800px){
+
+
+
+    .headerBlogPost{
+ 
+    top:5%;
+
+    width: 60%; /* Need a specific value to work */  
+    
+     line-height: 0.6;
+}
+
+    #bgri{height: 120%;width: auto;}
+    
+.centbtn2 {
+    border-radius: 22px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 22px;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 20px;
+    opacity: 1;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+    .btns-ul li{
+    display: block;
+     padding-left: 0;
+width: 100%;
+          text-align: center;
+        margin-top: 50px;
+            
+}
+
+    #largebox{margin: 0;padding:0;
+	width:100%;display:block;
+	}
+	
+	#box1 p, #box2,#box3,#box4{margin:0;margin-right:0px;}
+.LeftMainbox{width: 50%;left: 0;display: block;
+    margin-top: -10px;
+     line-height: 1.2; 
+}   
+.LeftMainbox nav{
+ 
+    height: 160px;
+
+}
+.LeftMainbox nav ul{
+padding-left: 0;
+}
+.LeftMainbox nav ul li{
+   width: 100%;
+margin-left: 0;
+    text-align: center;
+}
+.LeftMainbox nav a:link, .LeftMainbox nav a:visited{
+
+    display: block;
+    padding: 10px 25px;
+height: 20px;
+}
+    #largebox2{
+display: block;
+  height: 500px;
+}
+
+    #box12, #box22,#box32,#box42{
+    float: left;
+    width:100%;
+ margin: 0;
+
+
+    
+}
+    .MainPicBoxConteiner1{
+   display: block;
+    height:250px;
+     //  background-color: #1ff;
+}
+    .container {
+  overflow: hidden;
+     //display: contents;    
+        height: 100%;
+        //width: 570px;
+}
+ #centbimg{width:auto;height: 600px;}
+    .containerCentral {
+    // overflow: auto;
+    color: #fff;
+  //  position: absolute;
+       // display:contents; 
+    top: 50%;
+    left: 50%;
+        width: 100%;
+    transform: translate(-50%,-20%);
+    text-align: center!important;
+}
+.Mainbox{overflow:hidden;
+height:600px;
+}
+    .menu{width: 100%;}
+  
+    .menu ul li a{width: 100%;}
+    .Logo{width: 100%;}
+        }
+@media only screen and (min-width:150px) and (max-width: 600px){
+  .pictureBoxwithinfor{ margin-left: 0;}
+    .MainBoxcontent{
+    	overflow:auto;
+}
+.Mainbox{overflow:hidden;
+height:2000px;
+}
+    #centbimg{width:auto;height: 600px;}
+.LeftMainbox{
+
+    margin-top: -10px;
+     line-height: 1.2; 
+} 
+    .container {
+  overflow: hidden;
+
+        width: 570px;
+}
+.Mainbox{
+
+     width: 570px; 
+height:600px;
+
+}
+
+.MainBoxcontent1 {	height: 1130px;width:570px;	overflow:hidden;}
+.rowtop1{margin-bottom:0;}
+ .forr {}   
+ .forr .four {margin-left: 0%; } 
+.btn3 {width:100%;}
+.mainPbox {
+    width: 70%;
+    margin: auto;
+    padding-top: 130px;
+}
+}	

@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    -webkit-padding-start: 0;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
 .col-4,
 .col-5,
 .col-6,
+.col-6-top,
 .col-7,
 .col-8,
 .col-9,
@@ -56,6 +58,10 @@ body {
 }
 
 .col-6 {
+    width: 50%;
+}
+
+.col-6-top {
     width: 50%;
 }
 
