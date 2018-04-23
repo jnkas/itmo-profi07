@@ -1,0 +1,718 @@
+body{
+    margin: 0;
+      font: 700 13px Helvetica,Arial;
+      background-color: #e4dfdf;
+      line-height: 1.6;
+}
+.blacktext{
+ color: black;
+ line-height: 1.6;
+}
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    width: 100%;
+    overflow:hidden;
+}
+ #centbimg{width:100%;overflow:hidden;}
+
+
+.button{
+
+  
+    border-radius: 3px;
+  
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 30px;
+    width: 100px;
+    box-sizing: border-box;
+    
+}
+ul{
+    padding:0;
+    list-style-type: none;
+}
+li{
+    display: inline;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    float: right;
+    
+}
+a:hover{
+    color: #000;
+    background-color: #dadada;
+}
+/* Bottom right text */
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 70%; /* Need a specific value to work */ 
+   
+   
+    padding-left: 20px;
+    padding-right: 20px;
+  
+ 
+ 
+
+}
+.Logo{
+   float: left;
+  
+}
+/**************Central menu**************/
+.containerCentral {
+       color: #fff;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center!important;    
+}
+.H1pc
+{
+  margin: 0;
+}
+.centbtn{
+border-radius: 22px;
+  background-color:  #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.5s;
+   box-sizing: border-box;
+}
+.centbtn:hover {    color: #000;
+    background-color: #dadada;}
+/****************4 top border block********************/
+.borderTop{
+    margin: auto;
+    border-top: 5px solid black;
+    width: 3%;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 50px;
+     background-color: #dadada;
+}
+
+/****************4 images block********************/
+    /* Setting up our grid */
+.container14 {
+	width: 100%; /*Set the width of the entire website here */
+	//height:450px;
+	margin-right: auto;
+	margin-left: auto; /* Margin-left and right are set to auto to center the container */
+    overflow: hidden;
+	   //background-color: red;
+}
+.row1 {
+	width: 100%;
+	clear: both; /* Clear creates new styles for the next row */
+	padding: 0px;
+	margin: 0;
+	  //background-color: green;
+}
+.four {
+	width: 23.5%;
+	float:left;
+	margin-right: 30px;
+}
+      
+        
+.forr{margin-left: 16.4%; padding-top:0;height: 400px; width: 84%;
+    
+    //background-color: brown;
+}
+        /*//1290px*/
+.forr .four{height: 260px; background-color: #fbeab6;width: 260px;}
+.forr .altext{   text-align: center;
+    padding: 20px;
+     font: 700 13px Helvetica,Arial;
+    background-color: #fff;
+     box-shadow: 0 0px 25px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+ .forr .altext h2{ justify-content: center;text-align: center;vertical-align: middle;padding-top: 50px;}
+.lastBlock{margin-right: 0;}
+
+
+/****************images block with 2 btns********************/
+.Mainbox{
+     position: relative;
+     width: 100%; 
+	
+    margin: auto;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+.Mainbox #centbimg{
+    width: 100%;
+	 height:500px;
+}
+.MainCentralbox{
+   position: absolute;
+    top: 20px;
+   left: 5%;
+    width: 90%;
+   //  background-color: #00F;
+}
+.LeftMainbox{
+    width: 40%;
+    margin-top: 80px;
+   // background-color: #1ff;
+    float: left;
+     font: 700 15px Helvetica,Arial;
+     line-height: 1.6;
+    color: #fff;
+	clear:both;
+}
+.btns_ul{
+    margin-left: 0; 
+   float: left;
+ 
+    padding-top: 10px;
+   //  background-color: #fff;
+}
+btns_ul.a{
+
+    text-decoration: none;
+
+    
+}
+btns-ul.li{
+    display: inline;
+     padding-left: 0;
+
+}
+.centbtn2{
+border-radius: 22px;
+  background-color:  #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 22px;
+  text-align: center;
+  font-size: 12px;
+ 
+  margin-right: 20px;
+  opacity: 1;
+  transition: 0.5s;
+   box-sizing: border-box;
+}
+.btns_ul a{
+  
+    text-decoration: none;
+ 
+    
+}
+
+.LeftMainbox nav{
+   // background-color: #666;
+    height: 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+ .LeftMainbox nav ul{
+    list-style: none;
+    margin: 0 auto;
+}
+.LeftMainbox nav ul li{
+    float: left;
+    display: inline;
+            border-radius: 22px;
+    background-color: #4CAF50;
+     margin-left: 0; 
+    margin-right: 5%;
+}
+.LeftMainbox nav a:hover, LeftMainbox nav a:active,.LeftMainbox nav .active a:link, LeftMainbox nav .active a:visited{
+    opacity: 1;
+    transition: 0.5s;
+    // background-color:#CF5C3F;
+  text-shadow: none; 
+         border-radius: 22px;
+    color: black;
+}
+.LeftMainbox nav a:link, .LeftMainbox nav a:visited{
+   // color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+height: 20px;
+      text-decoration: none;
+
+}
+.LeftMainbox nav ul li a{
+   color: #fff;
+    
+    // border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;   
+}
+
+.RightMainbox{
+    margin-top: 60px;
+   padding-left: 40px;
+    width: 40%;
+    float: left;
+overflow:auto;
+}
+/****************Multiple images grid********************/
+.myBtnContainer{
+   //   background-color:  #4CAF50;
+    height: 35px;
+ 
+  padding: 0;
+}
+.myBtnContainer ul{
+  
+   
+    text-align: center; 
+}
+.myBtnContainer ul li{
+
+
+ 
+}
+.myBtnContainer a{
+  color: #636262;
+        text-decoration: none;
+}
+.btn3{
+    display: inline-block;
+    border-radius: 3px;
+  
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    width: 100px;
+    box-sizing: border-box;
+    
+}
+.btn3.active {
+  //background-color: #4CAF50;
+  color: #4CAF50;
+}
+.myBtnContainer a:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+/****************Multiple images grid********************/
+/* Center website */
+.MainPicBoxConteiner1{
+   display: block;
+    height:550px;
+     //  background-color: #1ff;
+}
+.mainPbox {
+  
+    width: 70%;
+    margin: auto;
+    //  background-color: #1ff;
+     padding-top: 30px;
+}
+
+/* Create three equal columns that floats next to each other */
+.columnsImg {
+    float: left;
+    width: 20%;
+   //  background-color: #11f;
+  padding-bottom: 2%; 
+}
+.columnsImg img{
+    width: 100%;
+}
+.Pbox1, .Pbox5{
+ padding-left: 7%; 
+   
+}
+.Pbox2,.Pbox3,.Pbox4,.Pbox6,.Pbox7,.Pbox8{
+ padding-left: 2%; 
+}
+.Pbox4,.Pbox8{
+ padding-right: 7%; 
+}
+/****************Our Blog Posts box********************/
+
+.headerBlogPost{
+     position: absolute;
+    top:5%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 60%; /* Need a specific value to work */  
+    
+    height: auto; 
+    color: #fff;
+     line-height: 1.6;
+}
+
+.borderTopWhite{
+        margin: auto;
+    border-top: 5px solid white;
+    width: 5%;
+    margin-top: -13px;
+    padding: 0;
+    margin-bottom: 50px;
+    background-color: #dadada;
+}
+
+
+
+        /*
+		
+.rTopim:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.RightPicBoxcnt img{
+  
+    margin-top: 0;
+ 
+      
+  
+}
+*/
+.MainBoxcontent1{	position:relative;
+height: 715px;
+  	background: url(img/blog-bg.png) no-repeat center; 
+    background-size: cover;
+    text-align: center;
+width: 100%;
+
+    padding-top: 0;
+overflow:auto;
+}
+
+.pictureBoxwithinfor1{float: left;width: 1170px; height: 715px;
+    //background-color: #fbeab6;
+    margin-top: 100px;margin-left: 19%;margin-right:auto;}
+.LeftpictureBox1{float: left;width: 570px;height: 470px; background: url(img/blog_01.jpg) no-repeat center; 
+    margin-right: 30px;}
+.RightpictureBox1{float: left;
+    //background-color: aqua;
+    width: 570px;margin: 0;height: 470px;}
+.rowtop1{float: left;height:220px;
+    //background-color: #e6e6e6;
+	 background: url(img/blog_02.jpg) no-repeat center; 
+    margin: 0;padding: 0; margin-bottom:30px;width: 100%;}
+
+
+.rowbott1{float: left;height:220px;
+    //background-color: #fbeab6;
+	  background: url(img/blog_03.jpg) no-repeat center; 
+    margin: 0;padding: 0;;width: 100%;}
+.lefImageText1{
+margin-top:360px;
+height:100px;
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+text-align:left;
+padding-left:20px; 
+padding-top:10px; 
+color:#fff; 
+}
+.rightTopImageText1{
+margin-top:110px;
+height:100px;
+   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+text-align:left;
+padding-left:20px;
+padding-top:10px;  
+color:#fff; 
+}
+
+
+
+
+
+   .leftText h3,p,.rBotimText h3,p,.rTopimText h3{padding-left: 3%;padding-bottom: 0;line-height: 1; clear: both;}   
+/****************Blog4images********************/
+#largebox2{
+    margin-top: 50px;
+  width:80%;
+   height: 150px;
+   // background-color: #00F;
+   // padding-left: 17%;
+    margin-left: auto; 
+   margin-right: auto;
+    
+}
+#box12, #box22,#box32,#box42{
+    float: left;
+    width:15%;
+ 
+
+   text-align: center;
+padding-bottom: 10px;
+    padding-top: 10px;
+     font: 700 13px Helvetica,Arial;
+    color: #4CAF50;
+    background-color: #c5bebe;
+    
+}
+#box22,#box32,#box42{
+  margin-left: 2%;   
+}
+#box42{
+    margin-right: 17%;
+}
+#box12{
+    margin-left: 17%;
+}
+/****************ContactUsForm********************/
+
+.row {
+	width: 100%;
+	clear: both; /* Clear creates new styles for the next row */
+	padding: 0px;
+	margin: 0px;
+}
+.MainBoxcontent{	height: 565px;
+  	background: url(img/contact-bg.png) no-repeat center; 
+    background-size: cover;
+    text-align: center;
+width: 100%;
+position:relative;
+    padding-top: 0;
+}
+.pictureBoxwithinfor{float: left;width: 1160px; height: 320px;
+    //background-color: #fbeab6;
+    margin-top: 122.5px;margin-left: 19.8%;}
+.LeftpictureBox{float: left;width: 570px;height: 320px; background: url(img/map.jpg) no-repeat center; 
+    margin-right: 20px;}
+.RightpictureBox{float: left;
+    //background-color: aqua;
+    width: 570px;margin: 0;height: 320px;}
+.rowtop{float: left;height:50px;
+    //background-color: #e6e6e6;
+    margin: 0;padding: 0; padding-bottom:20px;width: 100%;}
+.texttopname{float: left;height: 50px; margin: 0; width:50%; 
+    //background-color:  #d13328;
+}
+.topleftTexbox{margin-right: 20px;width: 265px;}
+
+
+
+/* Floating column for inputs: 75% width */
+/*
+.col-75 {
+  float: left;
+  width: 22%;
+  margin-top: 0px;
+   // height: 50px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 2%;
+}
+*/
+.col-75mes {
+  float: left;
+  width: 46%;
+  //margin-top: 2%;
+   // height: auto;
+  padding-left: 1%;
+  //background: rgba(255,255,255,0.2); 
+        color: #1ff;
+}
+/* Style inputs, select elements and textareas */
+.col-75 input[type=text], select{
+  width: 100%;
+  padding: 12px;
+   border:none;
+  box-sizing: border-box;
+  resize: vertical;
+   // height: 50px;
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
+.col-75mes input[type=text], textarea{
+  width: 100%;
+ // padding: 12px;
+  //border: 1px solid #ccc;
+  //border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+    height: 185px;
+  background: rgba(255,255,255,0.2);
+    color: #fff;
+     
+    border:none;
+     font-size:20px;
+}
+.btns_ul2 a{ 
+    text-decoration: none;    
+}
+.btns_ul2{
+    margin-left: 2%; 
+      //margin-bottom: 3%; 
+   float: left;
+ //height: 24%;
+    padding-top: 10px;
+     //background-color: #fff;
+      text-decoration: none;
+}
+/****************footer********************/
+#footer{
+//position: absolute;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+ background-color:  #292929; 
+    clear: both;
+}
+
+/****************footer btns********************/
+.FooterContainer{
+      // background-color:  #292929;
+   // height: 30px;
+ width: 48%;
+    //height: 80px;
+    float: left;
+  padding-top: 30px; 
+    padding-left: 0;
+     
+}
+.foterLefttext{
+    width: 48%;
+    margin: 0;
+    float: left;
+    color: #fff;
+    text-align: center;
+     padding-top: 30px; 
+}
+.FooterContainer ul{
+   // margin-left: 50%;
+   margin-top: 0;
+   text-align: center;
+}
+.FooterContainer ul li{
+   margin-top: 0;
+
+ 
+}
+.FooterContainer a{
+  //color: #636262;
+        text-decoration: none;
+    margin-left: 10px;
+     margin-top: 0;
+}
+
+
+.FooterContainer a:hover{
+    color: #000;
+    background-color: #fff;
+}
+.fa {
+    //padding: 10px;
+    padding-top: 2%;
+    padding-left: 1.7%;
+    padding-right: 1.7%;
+    padding-bottom: 1.3%;
+    //font-size: 15px;
+   // width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+     
+}
+.fa-facebook {
+  background: #4CAF50;
+  color: white;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+   // z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    //bottom: 50%;
+    width: 100%; /* Full width */
+    height: 80%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*modal form*/
+    #theForm{
+    background-color: #474e5d;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+       
+    overflow: auto;  	   
+        }
+        .row{
+            display: table-row;
+        }
+        .row label{
+            display: table-cell;
+            padding: 10px;
+            text-align: left;
+        }
+        .row input{
+            display: table-cell;
+                  padding: 2px;
+        }
+        
+        /* Set a style for all buttons */
+.send {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    //margin: 8px 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+  
+}
+.send:hover {
+    opacity:1;
+          
+}
+
+
+
