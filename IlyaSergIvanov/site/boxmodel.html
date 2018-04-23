@@ -2,24 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
 	<title>box model</title>
-	<link rel="stylesheet" href="css/grid.css">
-	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="grid.css">
+	<link rel="stylesheet" href="media.css">
+	<meta name="viewport" content="width=device-width">
 	<style>
-		.header{
-			background: #e0e0e0;
-		}
-		.menu-item {
-			display: inline-block;
-			padding: 1rem 2rem;
-		}
-		* {
-			box-sizing: border-box;
-		}
-		body {
-			margin: 0;
-		}
 		.box-1 {
 		    margin: 40px 30px 25px 70px;
 		    padding: 215px 35px 220px 10px;
@@ -52,10 +39,7 @@
 		    width: 50%;
 		    padding: 30px;
 		}
-		.container {
-		    max-width: 1040px;
-		    margin: auto;
-		}
+
 		section + section {
 			background: green;
 		}
@@ -78,48 +62,63 @@
 		.clearfix {
 			clear: both;
 		}
-		.what-we-do{
-			background: grey;
+		.service__item {
+		    background: #fff;
+		    padding: 10px;
+		    text-align: center;
+		    margin-bottom: 20px;
+		    box-shadow: 0 0 14px 4px #646464;
+		}
+		.what-we-do {
+		    background: #b9b9b9;
+		}
 
+		/* heder styles */
+		.header {
+		    background: #bfbfbf;
+		}
+		.menu-item {
+		    display: inline-block;
+		    padding: 1rem 2rem;
 		}
 		.level-2 {
-			display: block;
-		}
-		ul .menu-level-2 {
-			background: grey;
+		    display: block;
 		}
 		.header ul {
-			padding: 0;
-
-		}
-		.menu-level-2 {
-			position: absolute;
-			background: green;
-			left: 0;
-			top: 100%;
+    		padding: 0;
 		}
 		.level-1 {
-			position: relative;
+		    position: relative;
 		}
-		/*modal*/
+		.menu-level-2 {
+		    background: #757575;
+		    position: absolute;
+		    left: 0;
+		    top: 100%;
+		}
+		/* modal */
 		.fade {
-			background: rgba(0, 0, 0, 0.6);
-			position: fixed;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			/*hide*/
-			display: none;
-		}		
-		.modal-content {
-			max-width: 400px;
-			background: white;
-			padding: 2rem;
-			margin: auto;
-			margin-top: 200px;
+		    background: rgba(0, 0, 0, 0.6);
+		    position: fixed;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    /* hide */
+		    display: none;
 		}
-		
+		.modal-content {
+		    max-width: 400px;
+		    background: #fff;
+		    padding: 2rem;
+		    margin: auto;
+		    margin-top: 200px;
+		}
+		section.flex {
+		    color: #fff;
+		    font-size: 2rem;
+		    	        background: green;	
+		}
 	</style>
 </head>
 <body>
@@ -129,7 +128,7 @@
 			<li class="menu-item level-1">link</li>
 			<li class="menu-item level-1">link</li>
 			<li class="menu-item level-1">
-				<span> link</span>
+				<span>link</span>
 				<ul class="menu-level-2">
 					<li class="menu-item level-2">link</li>
 					<li class="menu-item level-2">link</li>
@@ -138,13 +137,12 @@
 				</ul>
 			</li>
 		</ul>
-		
 	</header>
 	<div class="modal fade">
 		<div class="modal-content">
 			<h2>Подпишитесь на рассылку</h2>
 			<input type="email">
-			<button>Отправить</button>
+			<button>отправить</button>
 		</div>
 	</div>
 	<div class="box box-1">
@@ -177,9 +175,10 @@
 						<img src="cw/images/blog_03.jpg" alt="">
 					</div>
 				</div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
-		<div class="clearfix"></div>
+		
 
 		<h2>lorem</h2>
 	</section>
@@ -188,37 +187,59 @@
 			<h1>What we do</h1>
 			<div class="row service">
 				<div class="col-2">
-					<div class="service_item">
-						<h4>Title</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut laborum atque, pariatur cupiditate ex temporibus enim maxime autem praesentium fugiat consequuntur possimus tempora quas ea mollitia amet, quasi recusandae, deleniti.</p>
+					<div class="service__item">
+						<h4>title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, rem.</p>
 					</div>
 				</div>
-				<div class="col-4">
-					<div class="service_item">
-						<h4>Title</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut laborum atque, pariatur cupiditate ex temporibus enim maxime autem praesentium fugiat consequuntur possimus tempora quas ea mollitia amet, quasi recusandae, deleniti.</p>
+				<div class="col-3">
+					<div class="service__item">
+						<h4>title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, rem.</p>
 					</div>
 				</div>
-				<div class="col-4">
-					<div class="service_item">
-						<h4>Title</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut laborum atque, pariatur cupiditate ex temporibus enim maxime autem praesentium fugiat consequuntur possimus tempora quas ea mollitia amet, quasi recusandae, deleniti.</p>
+				<div class="col-5">		
+					<div class="service__item">
+						<h4>title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, rem.</p>
 					</div>
 				</div>
-				<div class="col-2">
-					<div class="service_item">
-						<h4>Title</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut laborum atque, pariatur cupiditate ex temporibus enim maxime autem praesentium fugiat consequuntur possimus tempora quas ea mollitia amet, quasi recusandae, deleniti.</p>
+				<div class="col-2">	
+					<div class="service__item">
+						<h4>title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, rem.</p>
 					</div>
 				</div>
+				<!-- <div style="clear: both;"></div> -->
 			</div>
-	</section>
-	<section class="flex">
-		<div class="flex-container">
-			text
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eligendi vel laboriosam suscipit ipsa, error saepe eveniet nobis velit nemo magnam harum illum non deserunt facere perferendis aliquam et, cumque.</p>
-			<div>123</div>
 		</div>
 	</section>
+	<style>
+		
+/*.chat {
+	background: grey;
+	max-width: 300px;
+	margin-top: 10px;
+}
+
+
+svg {
+	max-width: 25px;
+}
+	</style>
+	
+	<section>
+		<div class="container">
+			<div class="chat">
+				<div class="animated-box">
+					<svg aria-hidden="true" data-prefix="fas" data-icon="pencil-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-pencil-alt fa-w-16 fa-3x"><path fill="currentColor" d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z" class=""></path>
+					</svg>
+					
+				</div>
+				<textarea name="id" cols="30" rows="20" ></textarea>
+			</div>
+		</div>
+	</section>
+	
 </body>
 </html>

@@ -106,24 +106,10 @@ body {
 .chat {
 	background: grey;
 	max-width: 300px;
-	margin-top: 40px;
-	padding-top: 100px;
+	margin-top: 10px;
 }
-
-
 
 
 svg {
 	max-width: 25px;
-}
-svg {
-	animation: editing 1s linear infinite 2s;
-} 
-@keyframes editing {
-	0% {
-		margin-left: 0px;
-	}
-	100% {
-		margin-left: 100px;
-	}
 }

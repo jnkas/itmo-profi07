@@ -1,8 +1,8 @@
-/*.container {
+.container {
 			max-width: 1040px;
 		    margin: auto;
 
-		}*/
+		}
 body {
 			margin: 0;
 		}
@@ -98,32 +98,18 @@ body {
 	width: 100%
 }
 }
-.container {
+/*.container {
 	padding: 0 1rem;
 	max-width: 100%;
 }
 
-.chat {
-	background: grey;
-	max-width: 300px;
-	margin-top: 40px;
-	padding-top: 100px;
+section.flex {
+	color: white;
+	font-size: 2rem;
+	background: green;
+
 }
-
-
-
-
-svg {
-	max-width: 25px;
-}
-svg {
-	animation: editing 1s linear infinite 2s;
-} 
-@keyframes editing {
-	0% {
-		margin-left: 0px;
-	}
-	100% {
-		margin-left: 100px;
-	}
+.flex-container {
+	height: 150px;
+	display: flex;
 }
