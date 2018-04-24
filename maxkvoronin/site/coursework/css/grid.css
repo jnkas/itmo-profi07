@@ -3,10 +3,6 @@
     -webkit-padding-start: 0;
 }
 
-body {
-    margin: 0;
-}
-
 .container {
     max-width: 1140px;
     margin-right: auto;

@@ -1,7 +1,45 @@
 body {
+    margin: 0;
     font-family: "Open Sans", Arial, sans-serif;
     background: #5d6f85;
     color: white;
+}
+
+.fade {
+    display: none;
+}
+.fade:target {
+    display: flex;
+    pointer-events: auto;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    padding: 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+#close_modal:target {
+    display: none;
+}
+
+.modal-content {
+    background-color: rgba(244,244,244,.8);
+    border: 0;
+    color: #7f8488;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    transition-duration: 1s;
+    padding: 2rem;
+
+}
+.modal-item {
+    padding-top: 15px;
 }
 
 header {
@@ -126,7 +164,9 @@ img {
     width: 100%;
     padding-top: 15px;
 }
-
+.block_offers .button {
+    margin-right: 5px;
+}
 
 .clearfix {
     clear: both;
@@ -229,9 +269,10 @@ img {
     background-size: cover;
 }
 
-.block_contact .col-6 {
-    padding: 15px 15px;
+.block_contact .row > .col-6 {
+    padding: 14px 15px;
 }
+
 
 .contact_info {
     max-width: 1240px;
@@ -257,6 +298,15 @@ img {
     min-height: 54px;
 }
 
+.paddleft {
+    padding-left: 15px;
+}
+
+.paddright {
+    padding-right: 15px;
+}
+
+
 textarea {
     min-height: 150px;
     padding-top: 10px;
@@ -281,7 +331,7 @@ textarea:hover, .text:hover, .email:hover {
     box-shadow:0 2px 10px 5px #97B1BF;
 }
 
-button {
+.button {
     font-size: 0.7rem;
     width: 132px;
 }
@@ -300,6 +350,36 @@ button {
     text-align: center;
     overflow: hidden;
     transition-duration: 0.4s;
+}
+
+.button {
+    color: white;
+    text-transform: uppercase;
+    background-color: #a2cf8e;
+    border-radius: 20px;
+    border: 0;
+    padding: 12px 18px;
+    text-align: center;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    float: left;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    transition-duration: 1s;
+    background:#fff;
+    box-shadow:0px 2px 10px 5px #97B1BF;
+    color:#000;
+}
+
+.button:focus {
+    border: none;
 }
 
 button:hover {
@@ -438,6 +518,10 @@ ul.social-icons {
         font-size: 0.5rem;
         width: 122px;
     }
+    .button {
+        font-size: 0.5rem;
+        width: 122px;
+    }
     .title_block h1 {
         font-size: 1.5em;
     }
@@ -476,6 +560,13 @@ ul.social-icons {
         text-transform: uppercase;
         padding: 10px 0 0 0px;
     }
+    .paddleft {
+        padding: 0;
+    }
+    .paddright {
+        padding: 0;
+    }
+
 }
 @media handheld and (max-width: 640px) and (orientation: landscape) {
     .title_block {
