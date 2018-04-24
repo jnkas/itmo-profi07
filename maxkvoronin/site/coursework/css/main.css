@@ -566,12 +566,6 @@ ul.social-icons {
     .paddright {
         padding: 0;
     }
-
 }
-@media handheld and (max-width: 640px) and (orientation: landscape) {
-    .title_block {
-        top: 50%;
-        font-size: 70%;
-    }
 
-}
+
