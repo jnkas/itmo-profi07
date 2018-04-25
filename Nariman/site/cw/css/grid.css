@@ -12,11 +12,18 @@ body {
 }
 
 .row {
-	margin-right: -15px;
-	margin-left: -15px;
+	margin: 50px -15px;
 }
 
 .row::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.blog-posts::after {
     content: ".";
     clear: both;
     display: block;
@@ -86,4 +93,37 @@ body {
 
 .col-12 {
 	width: 100%;
+}
+@media (max-width: 768px) {
+	.col-1,
+	.col-2,
+	.col-3,
+	.col-4,
+	.col-5,
+	.col-6,
+	.col-7,
+	.col-8,
+	.col-9,
+	.col-10,
+	.col-11,
+	.col-12 {
+		width: 100%
+	}
+	.container {
+		padding: 0 1rem;
+	}
+}
+.website-traffic::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.contacts::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
