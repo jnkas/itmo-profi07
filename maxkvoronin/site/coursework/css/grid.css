@@ -3,6 +3,7 @@
     -webkit-padding-start: 0;
 }
 
+/* we change container size in media queries*/
 .container {
     max-width: 1140px;
     margin-right: auto;
