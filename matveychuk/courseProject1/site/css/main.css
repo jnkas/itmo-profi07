@@ -2,13 +2,28 @@
  *  шаблоны
  *  ===========================
 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#site {
+    min-width: 230px;
+}
+
+body {
+    min-width: 230px;
+    font-family: "Open Sans";
+}
+
 .div-margins{
     width: 1140px;
     margin:auto;
 }
 
 .clear::after {
-    content: ".";
+    content: "";
     clear: both;
     display: block;
     height: 0;
@@ -32,11 +47,30 @@
     padding-top: 250px;
 }
 
+.home-design-a-hobby > h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.home-design-a-hobby > h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 7px;
+}
+
+.home-design-a-hobby > p {
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.home-design-a-hobby button {
+    margin-top: 15px;
+}
+
 /** ===========================
  *  блок what-we-do
  *  ===========================
 */
-
 .what-we-do {
     background: rgb(234, 234, 234);
     background-size: 100% 100%;
@@ -59,6 +93,10 @@
     border-bottom: 3px solid #000;
     margin-top: 5px;
     border-radius: 50px;
+}
+
+.what-we-do > .div-margins > div {
+    text-align: center;
 }
 
 .what-we-do-block > div {
@@ -99,6 +137,7 @@
     background: url(../image/what-we-do-bg.png);
     background-size: 100% 100%;
     /*min-height: 400px;*/
+    text-align: center;
 }
 
 .abou-us > .div-margins {
@@ -127,11 +166,26 @@
     font-weight: normal;
 }
 
+.abou-us form {
+    display: inline-block
+}
+
+.abou-us button {
+    margin: 10px;
+}
+
 .div-margins-img {
     float: right;
     width: 50%;
     vertical-align: middle;
     padding-left: 10px;
+}
+
+.div-margins-img img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /** ===========================
@@ -147,6 +201,19 @@ div.portfolio {
 div.portfolio > div {
     padding: 40px 0;
 }
+
+.portfolio > .div-margins > div {
+    text-align: center;
+}
+
+.portfolio > .div-margins > div:nth-child(1) {
+    width: 100%;
+}
+
+.portfolio > .div-margins > div:nth-child(3) {
+    padding: 30px 0;
+}
+
 
 .portfolio h3 {
     font-size: 20px;
@@ -215,6 +282,11 @@ div.blog > div {
     padding: 40px 0;
 }
 
+.blog > .div-margins > div:nth-child(1) {
+    width: 100%;
+    text-align: center;
+}
+
 .blog h3 {
     font-size: 20px;
     font-weight: 700;
@@ -239,6 +311,11 @@ div.blog > div {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.blog-img img {
+    width: 100%;
+    display: flex;
 }
 
 .blog_01 {
@@ -274,6 +351,21 @@ div.blog > div {
     display: none;
 }
 
+.blog-on h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.blog-on p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.blog-on span {
+    font-weight: bold;
+}
+
 .blog_01:hover .blog-on {
     display: block !important;
 }
@@ -294,6 +386,8 @@ div.blog > div {
 .result {
     background: rgb(255, 255, 255);
     background-size: 100% 100%;
+    width: 100%;
+    text-align: center;
 }
 
 .result-main-block {
@@ -340,6 +434,11 @@ div.blog > div {
     padding: 40px 0 40px 0;
 }
 
+.contact > .div-margins > div:nth-child(1) {
+    width: 100%;
+    text-align: center;
+}
+
 .contact h3 {
     font-size: 20px;
     font-weight: 700;
@@ -358,6 +457,50 @@ div.blog > div {
     border-radius: 50px;
 }
 
+.contact-maps {
+    float: left;
+    width: 50%;
+    height: 300px;
+}
+
+.contact-maps iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    float: left;
+    width: 50%
+}
+
+.form-contact-input {
+    padding: 0 15px 0 15px;
+}
+
+.form-contact-input > div:nth-child(1) {
+    padding: 0 10px 0 0;
+}
+
+.form-contact-input > div:nth-child(2) {
+    padding: 0 0 0 10px;
+}
+
+.form-contact-input input {
+    float: left;
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 15px;
+    font: 400 13.3333px Arial;
+}
+
+.form-contact-textarea textarea {
+    width: 100%;
+    height: 165px;
+    padding: 5px 0 0 15px;
+    font: 400 13.3333px Arial;
+}
+
 input.form-contact, textarea.form-contact {
     background: rgba(180, 180, 180, 0.2);
     border: none;
@@ -373,11 +516,13 @@ div.form-contact-textarea {
     margin-top: 25px;
 }
 
+.contact-form button {
+    margin: 10px 0 0 15px;
+}
 /** ===========================
  *  кнопки
  *  ===========================
 */
-
 .button {
     font-size: 14px;
     height: 40px;
@@ -408,6 +553,73 @@ div.form-contact-textarea {
 
 .button-white:hover {
     background-color: rgb(200, 200, 200);
+}
+/** ===========================
+ *  модальное окно
+ *  ===========================
+*/
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.43);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    background: #e2e2e2;
+}
+
+.close {
+    background: rgba(0, 0, 0, 0.47);
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: rgba(0, 0, 0, 0.80);
+}
+
+.modalDialog input {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.modalDialog button {
+    width: 80px !important;
+    height: 20px !important;
 }
 
 /** ===========================
@@ -512,73 +724,4 @@ div.form-contact-textarea {
     .home-design-a-hobby {
         padding-top: 300px;
     }
-}
-
-/** ===========================
- *  модальное окно
- *  ===========================
-*/
-
-.modalDialog {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.43);
-    z-index: 99999;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    display: none;
-    pointer-events: none;
-}
-
-.modalDialog:target {
-    display: block;
-    pointer-events: auto;
-}
-
-.modalDialog > div {
-    width: 400px;
-    position: relative;
-    margin: 10% auto;
-    padding: 20px 20px 20px 20px;
-    border-radius: 10px;
-    background: #e2e2e2;
-}
-
-.close {
-    background: rgba(0, 0, 0, 0.47);
-    color: #FFFFFF;
-    line-height: 25px;
-    position: absolute;
-    right: -12px;
-    text-align: center;
-    top: -10px;
-    width: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
-    box-shadow: 1px 1px 3px #000;
-}
-
-.close:hover {
-    background: rgba(0, 0, 0, 0.80);
-
-}
-
-.modalDialog input {
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.modalDialog button {
-    width: 80px !important;
-    height: 20px !important;
 }

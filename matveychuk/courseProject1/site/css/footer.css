@@ -1,4 +1,12 @@
-﻿footer {
+﻿.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+footer {
     background: rgba(0, 0, 0, 1);
 }
 
@@ -10,11 +18,12 @@ button.footer-button {
     border-radius: 100%;
     background: rgba(144, 222, 122, 1);
     cursor: pointer;
+    font-family: 'FontAwesome';
 }
 
-    button.footer-button:hover {
-        background-color: rgb(100, 167, 96);
-    }
+button.footer-button:hover {
+    background-color: rgb(100, 167, 96);
+}
 
 div.footer-button {
     float: right;
@@ -25,6 +34,23 @@ div.footer-button {
     float: left;
     margin: 20px 0;
 }
+
+.footer-copyright p {
+    color: white;
+}
+
+.footer-copyright p span {
+    color: red;
+}
+
+div.footer-button form {
+    display: inline-block;
+}
+
+/** ===========================
+ *  media
+ *  ===========================
+*/
 
 @media(max-width: 768px) {
     div.footer-button {
