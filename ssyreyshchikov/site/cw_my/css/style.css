@@ -473,7 +473,7 @@ section {
     padding-top: 10px;
 }
 
-form button {
+.contact-right button {
     float: left;
 }
 
@@ -511,6 +511,7 @@ footer {
     padding-top: 50px;
 }
 
+
 .social svg {
     width: 20px;
     height: 20px;
@@ -525,6 +526,11 @@ footer {
     text-align: center;
     line-height: 3;
 
+}
+
+.social-item:hover {
+    background: #fff;
+    cursor: pointer;
 }
 
 section::after {
@@ -599,6 +605,10 @@ section::after {
 }
 
 @media only screen and (max-width: 710px) {
+    .contact-right button {
+        float: none;
+    }
+
     footer {
         text-align: center;
     }
@@ -626,9 +636,9 @@ section::after {
     .copyright {
         padding-top: 20px;
     }
-}
 
-@media only screen and (max-width: 710px) {
+
+
     .menu ul li{
         display: block;
         margin-left: 0; 
@@ -723,15 +733,20 @@ section::after {
         .main_block {
             width: 100%;  
     }
-}
 
-@media only screen and (max-width: 710px) {
+
     .preference-item {
         margin-bottom: 0;  
     }
 
     .preference-item-wrap {
         width: 100%;
+    }
+
+
+    .post-wrap-item {
+        width: 80%;
+        margin: auto;
     }
 
     .graphic {
@@ -759,4 +774,47 @@ section::after {
         width: 100%;
         padding-left: 0;
     }
+}
+
+.fade {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+.modal-content {
+    max-width: 450px;
+    background-color: #fff;
+    padding: 2rem 2rem;
+    margin: auto;
+    margin-top: 200px;
+    text-transform: uppercase;
+    text-align: center;
+    position:   relative;   
+}
+
+.fade:target {
+    display: block;
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+}
+ 
+.close:hover { 
+    background: #b1d2a3; 
 }
