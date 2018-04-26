@@ -13,6 +13,9 @@ section{
 	padding-bottom: 80px;
 }
 
+button{
+	outline: none;
+}
 
 /*СЕКЦИЯ MAIN*/
 .main{
@@ -24,15 +27,15 @@ section{
 }
 
 .header{
-	padding-top: 25px;
+	margin-top: 50px;
 }
 
-ul{
+.menu ul{
 	padding: 0;
 	text-align: right;
 }
 
-li{
+.menu li{
 	display: inline-block;
 	padding: 8px 0 0 40px;
 }
@@ -51,11 +54,18 @@ li{
 	text-decoration: none;
 }
 
+.fa-bars{
+	width: 35px;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+}
 
 .maininfo{
 	text-align: center;
 	color: white;
 	margin-top: 35rem;
+	padding: 0 20px;
 }
 
 .maininfo h2{
@@ -97,6 +107,38 @@ button{
 button:hover{
 	background: #FFFFFF;
 	color: #515151;
+}
+
+.menu_bar{
+	background: #f2f2f2;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 40%;
+	transform: translateX(100%);
+	z-index: 998;
+}
+
+.active_menu{
+	transform: translateX(0%);
+}
+
+.menu_bar nav{
+	margin: 10rem 1rem 0 0;
+}
+
+.menu_bar ul{
+	padding: 0;
+}
+
+.menu_bar li{
+	text-transform: uppercase;
+	list-style-type: none;
+}
+
+.menu_bar a{
+	color: #7E7E7E;
 }
 
 /*СЕКЦИЯ WHAT WE DO*/
@@ -171,6 +213,10 @@ button:hover{
 	margin-top: 6.5rem;
 }
 
+.picture img{
+	max-width: 100%;
+}
+
 .discover_btn{
 	margin-right: 1.5rem;
 }
@@ -193,10 +239,6 @@ button:hover{
     width: 65px;
 }
 
-.our_portfolio img{
-	margin-top: 20px;
-}
-
 .portfolio_menu a{
 	color: #7E7E7E;
 	transition: all 0.5s ease;
@@ -213,24 +255,46 @@ button:hover{
 	text-align: center;
 }
 
-.photos{
-	margin-top: 3rem;
+.portfolio_menu li{
+	display: inline-block;
+}
+
+.photos_min img{
+	margin-top: 4rem;
+	max-width: 100%;
+}
+
+.photos_max img{
+visibility:hidden; 
+position: absolute;
+max-width: 50%;
+margin-top: 20px;
 }
 
 
-
-/*ПЯТАЯ СЕКЦИЯ*/
-.five{
+/*СЕКЦИЯ blog_posts*/
+.blog_posts{
 	background: url(img/blog-bg.png);
 	color: white;
 }
 
-.left, .right{
-	display: inline-block;
+.blog_posts h3{
+	text-align: center;
+	padding-top: 5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
 }
 
-.five hr{
+.blog_posts hr{
 	background-color: #FFFFFF;
+	border: none; 
+    height: 3px; 
+    width: 65px;
+}
+
+.blog_posts img{
+	width: 100%;
 }
 
 .blog{
@@ -240,7 +304,6 @@ button:hover{
 
 .big_blog{
 	position: relative;
-	height: 470px;
 }
 
 .black_title{
@@ -253,20 +316,29 @@ button:hover{
 	text-align: left;
 }
 
+.black_title h1{
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 8px;
+	margin-bottom: 0;
+}
+
 .black_title p{
 	font-size: 13px;
 	margin: 0;
 	padding-top: 15px;
+	box-sizing: border-box;
+}
 
+.two{
+	margin-top: 30px;
 }
 
 .min_blog{
 	position: relative;
-	height: 220px;
-	margin: 0 0 30px 30px;
 }
 
-/*СЕКЦИЯ ШЕСТЬ*/
+/*СЕКЦИЯ statistics*/
 
 .tablets{
 	margin-top: 80px;
@@ -275,11 +347,8 @@ button:hover{
 
 .tab{
 	text-align: center;
-	background: #E3E3E3;
-	height: 6.6rem;
-	padding: 0 50px;
-	display: inline-block;
-	margin-left: 20px;
+	background: #f5f5f5;;
+	padding: 25px;
 }
 
 .tab p{
@@ -291,38 +360,47 @@ button:hover{
 }
 
 .tab h1{
-	margin-top: 20px;
+	margin-top: 10px;
 	color: #a5ce8c;
 	font-size: 23px;
+	font-weight: 600;
 }
 
-/*СЕКЦИЯ СЕМЬ*/
+/*СЕКЦИЯ contacts*/
 
-.seven{
+.contacts{
 	background: url(img/contact-bg.png);
 }
 
-.seven h3{
+.contacts h3{
 	color: #FFFFFF;
+	text-align: center;
+	padding-top: 5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+
 }
 
-.seven hr{
+.geo{
+
+}
+
+.contacts hr{
 	background-color: #FFFFFF;
+	border: none; 
+    height: 3px; 
+    width: 65px;
 }
-
-.contacts{
-	margin-top: 5rem;
-}
-
-
 
 .contacts input{
 	border: none;
 	background: rgba(255, 255, 255 , 0.1);
 	padding: 20px 15px;
-	width: 237px;
 	font-size: 13px;
 	margin-right: 30px;
+	width: 100%;
+	color: white;
 }
 
 .contacts textarea{
@@ -332,8 +410,10 @@ button:hover{
 	padding: 10px 15px;
 	font-size: 13px;
 	margin-top: 30px;
-	width: 540px;
 	font-family: "Open Sans";
+	width: 100%;
+	color: white;
+	resize: none;
 }
 
 .contacts button{
@@ -353,19 +433,34 @@ footer{
 	font-size: 20px;
 }
 
+.fas{
+	color: #202528;
+	font-size: 20px;
+}
+
+
 .green_cycle{
 	background: #a5ce8c;
 	display: inline-block;
 	border-radius: 50%;
 	padding: 15px;
-	width: 22px;
 	text-align: center;
 	margin-left: 10px;
 }
 
 .social{
 	text-align: right;
-	margin-right: 20px;
+}
+
+.ico{
+	width: 20px;
+	height: 20px;
+}
+
+.ico svg{
+	color: white;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .design{
@@ -378,19 +473,79 @@ footer{
 	color: #bc3c3d
 }
 
-@media(max-width: 989px){
-	ul{text-align: center;
-		padding-top: 20px;
-	}
-	li{
-		padding:20px;
-	}
-	.logo{
-		text-align: center;
-	}
-	.maininfo{
-		margin-top: 20rem;
-	}
-	.offers{text-align: center;}
-	.picture{text-align: center;}
+.design p{
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+/*модальное окно*/
+
+.modal_window{
+	display: none;
+}
+
+.black_fon{
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.modal_form h1{
+	font-size: 18px;
+    margin-bottom: 28px;
+    line-height: 24px;
+}
+
+.modal_form {
+	width: 350px;
+	text-align: center;
+	background: #FFFFFF;
+	padding: 4rem 5rem;
+	border-radius: 3px;
+	background: #f2f2f2;
+	position: fixed;
+	transform: translateX(-50%);
+	left: 50%;
+	top: 15%;
+}
+
+.modal_form input{
+display: block;
+width: 100%;
+padding: 1.7rem;
+border-radius: 3px;
+margin-top: 15px;
+border: solid 2px #E0E0E0;
+}
+
+.modal_form textarea{
+	width: 100%;
+	border-radius: 3px;
+	margin: 15px 0;
+	border: solid 2px #E0E0E0;
+	padding: 15px;
+	resize: none;
+}
+
+.modal_btn{
+	color: #FFFFFF;
+	width: 100%;
+}
+
+.modal_btn:hover{
+	background: #FFFFFF;
+	color: #515151;
+	border: solid 1px #747474;
+}
+
+.fa-times{
+	width: 20px;
+    color: white;
+    position: absolute;
+    right: -28px;
+    top: 0;
+    cursor: pointer;
 }
