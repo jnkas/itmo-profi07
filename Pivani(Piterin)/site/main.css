@@ -417,7 +417,9 @@ margin-top: 20px;
 }
 
 .contacts button{
-margin: 30px 0 ;
+	margin: 30px 0 ;
+	color: #FFFFFF;
+	text-transform: uppercase;
 }
 
 /*FOOTER*/
@@ -427,17 +429,6 @@ footer{
 	padding-bottom: 30px;
 	background: #202528;
 }
-
-.fab{
-	color: #202528;
-	font-size: 20px;
-}
-
-.fas{
-	color: #202528;
-	font-size: 20px;
-}
-
 
 .green_cycle{
 	background: #a5ce8c;
