@@ -4,9 +4,15 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Meteor</title>
+		<link rel="icon" href="img/M.png">
 		<link href="css/hover-min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+	
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/adaptive.css">
 		<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
@@ -16,21 +22,26 @@
 		<section class="one">
 			<div class="container">
 				<row>
-					<div class="col-md-2 logo">
-						<img src="img/white_logo.png" alt="white_logo">
+					<div class=" col-lg-2 col-md-2">
+						<div class="logo">
+							<img src="img/white_logo.png" alt="white_logo">
+						</div>
 					</div>	
 
-					<div class="col-md-6 col-md-offset-4">
+
+					<div class="col-lg-6 col-lg-offset-4 col-md-7 col-md-offset-3">
 						
-							<nav>
-								<ul>
-									<li class="hvr-grow"><a href="">home</a></li>
-									<li class="hvr-grow"><a href="">about us</a></li>
-									<li class="hvr-grow"><a href=""> portfolio</a></li>
-									<li class="hvr-grow"><a href="">blog</a></li>
-									<li class="hvr-grow"><a href="">contact us</a></li>
-								</ul>
-							</nav>
+							<div class="menu">
+								<nav>
+									<ul>
+										<li class="hvr-grow"><a href="">home</a></li>
+										<li class="hvr-grow"><a href="">about us</a></li>
+										<li class="hvr-grow"><a href=""> portfolio</a></li>
+										<li class="hvr-grow"><a href="">blog</a></li>
+										<li class="hvr-grow"><a href="">contact us</a></li>
+									</ul>
+								</nav>
+							</div>
 					</div>
 
 					<div class="row">
@@ -39,7 +50,7 @@
 										<h2>design is a hobby</h2>
 										<h1>responsive layout</h1>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil repellat quasi in saepe eum eos corporis explicabo quos iste aliquam.</p>
-										<button class="view hvr-grow">
+										<button class="hvr-grow popup-btn">
 											view details
 										</button>
 
@@ -71,7 +82,7 @@
 				<div class="features">
 					
 						<div class="row">
-							<div class="col-md-3">
+							<div class="col-lg-3 col-md-3">
 								<div class="block">
 									<img src="img/first-service-main.png" alt="first-service-main">
 									<h2>Easy Customizations</h2>
@@ -80,7 +91,7 @@
 								
 							</div>
 								
-							<div class="col-md-3">
+							<div class="col-lg-3 col-md-3">
 								<div class="block">
 									<img src="img/second-service-main.png" alt="first-service-main">
 									<h2>Creative Ideas</h2>
@@ -88,7 +99,7 @@
 								</div>
 							</div>
 							
-							<div class="col-md-3">
+							<div class="col-lg-3 col-md-3">
 								<div class="block">
 									<img src="img/third-service-main.png" alt="first-service-main">
 									<h2>Good Profit</h2>
@@ -96,7 +107,7 @@
 								</div>
 							</div>
 							
-							<div class="col-md-3">
+							<div class="col-lg-3 col-md-3">
 								<div class="block">
 									<img src="img/fourth-service-main.png" alt="first-service-main">
 									<h2>Open to public</h2>
@@ -362,7 +373,46 @@
 		</section>
 
 		
-					
+		<div class="popup">
+			<div class="popup-dialog">
+				<div class="popup-dialog">
+					<div class="popup-content">
+						<button class="popup-close">&times</button>
+						<div class="popup-header">
+							<h4 >
+								Interesting?
+							</h4>
+							<p>Leave your data</p>	
+							
+						</div>
+						
+						<div class="popup-form">
+							<form action="#">
+								<input type="text" placeholder="Your name">
+								<input type="text" placeholder="Your phone number">
+							</form>
+							<button class="two hvr-shrink">send</button>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script
+		  src="http://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous">
+		  	
+		</script>
+
+		<script>
+			src="http://code.jquery.com/jquery-3.3.1.min.js"
+  			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  				crossorigin="anonymous"
+		</script>
+		<script src="js/script.js"></script>
+  
 	</body>
 						
 </html>		

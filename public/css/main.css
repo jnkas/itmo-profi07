@@ -306,3 +306,41 @@ section.seven {
   padding-left: 14px;
   padding-bottom: 8px;
 }
+/* Section seven end */
+/*Modal window */
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.popup-content {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  background-color: grey;
+  transform: translateX(-50%);
+  padding: 4rem 6rem;
+}
+.popup-form {
+  margin-top: 30rem;
+  padding: 0;
+}
+.popup-close {
+  position: absolute;
+  bottom: 11.5rem;
+  right: 0.5rem;
+  width: 2rem;
+  text-align: center;
+  background-color: transparent;
+  font-size: 2rem;
+}
+.popup-form {
+  padding: 0;
+  margin-top: 30rem;
+}
