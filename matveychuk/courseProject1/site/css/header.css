@@ -37,6 +37,11 @@ a.header:hover {
     color: lightgray;
 }
 
+/** ===========================
+ *  media
+ *  ===========================
+*/
+
 @media (max-width: 1440px) {
     header{
         width: 79.17%;

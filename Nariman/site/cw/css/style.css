@@ -2,77 +2,235 @@
     box-sizing: border-box;
 }
 p {
-	color: green;
 	font-family: serif;
+    font-size: 1rem
 }
-
 body {
     font-family: Arial;
+    display: block;
+    margin: 1px;
+    font-size: 10px;
 }
-
+div, section, ul, li {
+    font-size: 12px;
+}
 .box-1 {
     background: url(../images/slide_03.jpg);
     color: #fff;
     padding-top: 30px;
-    padding-right: 100px;
-}
-.first {
-    height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     clear: both;
 }
-
-div {
-	font-size: 10px;
+.first {
+    height: 300px;
 }
-
 .logo {
 	font-size: 22px;
     float: left;
     width: 50%;
     text-align: left;
-    margin-top: 10px;
-}
-
-body {
-    display: block;
-    margin: 1px;
-}
-
-body div section ul li {
-	font-size: 10px;
 }
 .menu {
     list-style: none;
     float: left;
     width: 50%;
-    text-align: right;
+    position: inherit;
+    right: 0;
 }
-
 li {
-    float: right;
+    float: left;
     display: block;
-    width: 70px;
+    width: 90px;
     height: 30px;
     text-align: center;
 }
 
-button {
+.button-1 {
     border: 0px;
     padding: 10px;
     border-radius: 15px;
-    background: #b4f1b6;
+    background: #84cc86;
+    color: white;
+    margin-top: 10px;
 }
 .container-1 {
     max-width: 1040px;
-    margin: 1px;
-    text-align: center;
+    margin: auto;
 }
 
 .container-2 {
     max-width: 100%;
-    margin: 1px;
     text-align: center;
+}
+header {
+    height: 150px;
+}
+h4 {
+    font-size: 1em;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+}
+h1 {
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-top: 0px;
+}
+.service__item {
+    background: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px -5px;
+}
+.what-we-do {
+    background: #efefef;
+    height: 100%;
+}
+.caption-1 {
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+.caption-2 {
+    margin: auto;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+hr {
+    max-width: 50px;
+    border-width: 1.5px;
+    border-color: black;
+}
+hr.white {
+    max-width: 50px;
+    border-width: 1.5px;
+    border-color: white;
+}
+.container-3 {
+    max-width: 1040px;
+    margin: auto;
+}
+.info {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.eat {
+    background: url(../images/what-we-do-bg.png);
+    color: #fff;
+    height: 450px;
+    padding-top: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    clear: both;
+}
+.button-2 {
+    display: block;
+    float: left;
+    border: 0px;
+    padding: 5px;
+    border-radius: 15px;
+    background: #fff;
+    color: black;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: -15px;
+    font-size: 10px;
+}
+.button-3 {
+    display: block;
+    float: left;    
+    border: 0px;
+    padding: 5px;
+    border-radius: 15px;
+    background: #84cc86;
+    color: white;
+    margin-top: 10px;
+}
+.picture-1 {
+    text-align: right;
+    margin-right: -15px;
+    margin-top: 15px;
+}
+.our-portfolio {
+    background: #efefef;
+    height: 100%;
+}
+.portfolio__item {
+    padding: 10px 0;
+}
+.Our-blog {
+    background: url(../images/blog-bg.png);
+    height: 100%;
+}
+.blog-posts {
+    margin: 50px -15px;
+}
+.post2 {
+    margin-bottom: 24px;
+}
+section.website-traffic {
+    margin: 40px auto;
+}
+.traffic {
+    background: #efefef;
+    text-align: center;
+    margin: 15px 0;
+    padding: 15px;
+}
+.contacts {
+    background: url(../images/contact-bg.png);
+    height: 500px;
+}
+.container-4 {
+    max-width: 1040px;
+    margin: auto;
+}
+.plan {
+    max-width: 100%;
+    margin: 0 -15px;
+}
+#name {
+    width: 100%;
+}
+#e-mail {
+    width: 100%;
+}
+#message {
+    width: 100%;
+    height: 180px;
+    background: #80808040;
+    border: 0;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: serif;
+    font-size: 16px;
+}
+input {
+    background: #80808040;
+    border: 0;
+    height: 30px;
+    padding: 10px;
+    color: white;
+}
+.title {
+    padding: 40px 0;
+}
+.send {
+    display: block;
+    float: left;
+    border: 0px;
+    padding: 10px;
+    border-radius: 15px;
+    background: #84cc86;
+    color: white;
+    margin-left: 15px;
+}
+.box-message {
+    margin-right: -30px;
 }

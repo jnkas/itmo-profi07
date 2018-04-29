@@ -1,78 +1,131 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
-
-section{
-    padding: 50px 0;
-}
-
-
-header {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
-}
-
-.logo {
-    padding-left: 50px;
-}
-
-.logo img {
-    max-width: 125px;
-}
 body {
+    margin: 0;
     font-family: "Open Sans", Arial, sans-serif;
     background: #5d6f85;
     color: white;
 }
 
-nav {
-    text-align: right;
-    padding-right: 15px;
+a {
+    text-decoration: none;
 }
 
 img {
     max-width: 100%;
 }
 
-.header__menu li {
-    padding-left: 35px;
-    list-style-type: none;
-    display: inline-block;
-    text-transform: uppercase;
-    line-height: 35px;
-}
 
-/*выравниваем менюшку относительно логотипа*/
-.header__menu {
-    padding-top: 10px;
-}
+/*
+    div #close_modal is parent of fade and modal window
+    #open_modal (fade) is parent of .modal-content (modal window)
 
-.top_container {
-    background: url("../img/slide_03.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    When user push PURCHASE NOW we go to url: "index.html#fade" and fade with modal window are open.
+    When user push SUBMIT in modal window we go to url: "index.html#close_modal", and
+    parent div #close_modal hide all children's.
+*/
+
+.fade {
+    display: none;
+}
+.fade:target {
     display: flex;
-    align-items: center;
-    align-content: center;
+    pointer-events: auto;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    padding: 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+#close_modal:target {
+    display: none;
 }
 
+/*  main modal window with button */
+.modal-content {
+    background-color: rgba(244,244,244,.8);
+    border: 0;
+    color: #7f8488;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    transition-duration: 1s;
+    padding: 2rem;
+
+}
+.modal-item {
+    padding-top: 15px;
+}
+
+/*  <header> is parent of div ".header" with logo and navigation items */
+
+header {
+    position: relative;
+}
+
+/*  it was decided not to use hamburger,
+    when window < 570px  ".header" has flex-direction: column;
+*/
+
+.header {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.nav_item {
+    text-transform: uppercase;
+    padding: 10px 0 0 30px;
+    font-size: 0.7em;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/*  .wrapper is background and parent div of 1st section
+    always full size of start screen (laptop, mobile, etc.)*/
+
+.wrapper {
+    background: url("../img/slide_03.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/*  "responsive layout" block   */
 .title_block {
     text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    right: 25%;
 }
-.title_block p:first-child , h1   {
+.title_block span:first-child {
     text-transform: uppercase;
+    font-size: 0.8em
 }
 .title_block h1{
     font-size: 2em;
+    text-transform: uppercase;
+    margin: 0;
+}
+.title_block p {
+    font-size: 0.8em;
+    margin: 0 0 10px 0;
 }
 
+/*  Classes of section names    */
 .block_name__black hr {
     height: 3px;
     width: 4%;
@@ -105,53 +158,54 @@ img {
     font-weight: bold;
 }
 
-
-.whatwedo_block {
+/*What-we-do block
+ .block_whatwedo is parent of .services
+ */
+.block_whatwedo {
     background: white;
     color: black;
 }
 
-.whatwedo_block .col-3 {
+.block_whatwedo .col-3 {
     padding: 15px 15px;
 }
 
-
 .services {
     padding: 15px;
-    box-shadow: 0px 0px 17px 4px #e0e0e0;
+    box-shadow: 0 0 17px 4px #e0e0e0;
     text-align: center;
 }
 
-.offers_block {
-    background: url("../img/what-we-do-bg.png");
-    background-position: center center;
-    background-repeat: no-repeat;
+/*  Offers block */
+.block_offers {
+    background: url("../img/what-we-do-bg.png") no-repeat center center;
     background-size: cover;
 }
 
-.offers_block img {
+.block_offers img {
     width: 100%;
     padding-top: 15px;
 }
-
-
-.clearfix {
-    clear: both;
+.block_offers .button {
+    margin-right: 5px;
 }
 
-.offers_block_col {
+.block_offers_pad {
     padding: 0 15px
 }
 
-.portfolio_block {
+
+
+.block_portfolio {
     background: white;
     text-align: center;
 }
 
-.portfolio_block .col-3 {
+.block_portfolio .col-3 {
     padding: 15px 15px;
 }
 
+/*  Portfolio   */
 .portfolio_nav_menu li {
     list-style-type: none;
     display: inline;
@@ -171,79 +225,72 @@ img {
     padding-bottom: 25px;
 }
 
-
-.blog_block {
-    background: url("../img/blog-bg.png");
-    background-repeat: no-repeat;
+/*  Block of blog posts */
+.block_blog {
+    background: url("../img/blog-bg.png") no-repeat;
     background-size: cover;
     text-align: center;
+}
+
+.post {
+    padding: 0 15px 22px 15px;
+    position: relative;
 
 }
 
-.blog-posts {
-    display: inline-block;
-    padding: 15px 15px;
+.post_short {
+    position: absolute;
+    height: 80px;
+    background: rgba(0,0,0,.5);
+    left: 15px;
+    bottom: 26px;
+    width: calc(100% - 30px);
+    text-align: left;
+    padding: 15px;
+}
+.post_short h4 {
+    margin: 0;
+}
+.post_short p {
+    font-size: 0.8em;
 }
 
-.blog-posts__left-column {
-    float: left;
-}
-.blog-posts__right-column {
-    float: left;
-}
-.post + .post {
-    padding-top: 25px;
-}
-
-.blog_statistics {
+/*  Statistics  */
+.block_stat {
     background: white;
     color: black;
     text-transform: uppercase;
     text-align: center;
 }
 
-.blog_statistics .col-3 {
+.block_stat .col-3 {
     padding: 15px 15px;
     text-transform: uppercase;
     text-align: center;}
 
 .stat_description  {
-    background: rgba(244, 244, 244, .2);
+    background: rgba(0, 0, 0, .05);
     padding: 0 15px 25px 15px;
-    font-size: 1.1vw;
+    font-size: 0.9em;
+    color: #5d6f85;
 }
 
 .stat_value  {
-    color: green;
-    font-size: 1.6vw;
+    color: #a2cf8e;
+    font-size: 1.6em;
     padding: 25px 0;
+    font-weight: bold;
 }
 
-.contact_block {
-    background: url("../img/contact-bg.png");
-    background-position: center center;
-    background-repeat: no-repeat;
+.block_contact {
+    background: url("../img/contact-bg.png") no-repeat center center;
     background-size: cover;
 }
 
-.padd {
-    padding: 15px 15px;
-}
-.padd_left {
-     padding-left: 15px;
- }
-
-.padd_right {
-    padding-right: 15px;
+.block_contact .row > .col-6 {
+    padding: 14px 15px;
 }
 
-.padd_top {
-    padding-top: 15px;
-}
-
-.padd_bott {
-    padding-bottom: 15px;
-}
 
 .contact_info {
     max-width: 1240px;
@@ -269,6 +316,15 @@ img {
     min-height: 54px;
 }
 
+.paddleft {
+    padding-left: 15px;
+}
+
+.paddright {
+    padding-right: 15px;
+}
+
+
 textarea {
     min-height: 150px;
     padding-top: 10px;
@@ -293,16 +349,11 @@ textarea:hover, .text:hover, .email:hover {
     box-shadow:0 2px 10px 5px #97B1BF;
 }
 
-button {
-    font-size: 0.7rem;
-    width: 132px;
-}
-
-
 .image_map {
     max-height: 310px;
 }
-    /*Button Three*/
+
+/*  Button Three    */
 button {
     color: white;
     text-transform: uppercase;
@@ -315,11 +366,45 @@ button {
     transition-duration: 0.4s;
 }
 
+/*
+    .button is class only for PURCHASE NOW. It's "kostyl" because we open link of
+    modal screen without reloading, not using js, ajax, etc...
+    <button> and .button div has similar design.
+    <button> used in modal window to send "GET" request with name and phone.
+*/
+
+.button {
+    color: white;
+    text-transform: uppercase;
+    background-color: #a2cf8e;
+    border-radius: 20px;
+    border: 0;
+    padding: 12px 18px;
+    text-align: center;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    float: left;
+    font-size: 0.7rem;
+    width: 132px;
+}
+
+.button:hover {
+    cursor: pointer;
+    transition-duration: 1s;
+    background:#fff;
+    box-shadow:0 2px 10px 5px #97B1BF;
+    color:#000;
+}
+
+.button:focus {
+    border: none;
+}
+
 button:hover {
     cursor: pointer;
     transition-duration: 1s;
     background:#fff;
-    box-shadow:0px 2px 10px 5px #97B1BF;
+    box-shadow:0 2px 10px 5px #97B1BF;
     color:#000;
 }
 
@@ -341,14 +426,17 @@ footer span {
     color: red;
 }
 
-/*Footer social icons styles*/
+footer .col-6 {
+    padding: 15px 15px;
+}
 
+/*  Footer social icons styles  */
 .fa {
     background-color: #a3d28e;
     border-radius: 20px;
 }
 .fa:hover {
-    box-shadow:0px 2px 10px 5px #97B1BF;
+    box-shadow:0 2px 10px 5px #97B1BF;
 }
 
 .footer-social-icons {
@@ -371,10 +459,6 @@ ul.social-icons {
 
 .fa-facebook {
     padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
     transition: .5s;
 }
 .fa-facebook:hover {
@@ -383,10 +467,6 @@ ul.social-icons {
 }
 .fa-twitter {
     padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
     transition: .5s;
 }
 .fa-twitter:hover {
@@ -395,34 +475,14 @@ ul.social-icons {
 }
 .fa-rss {
     padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
     transition: .5s;
 }
 .fa-rss:hover {
     background-color: #eb8231;
     color: #fff;
 }
-.fa-youtube {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-}
-.fa-youtube:hover {
-    background-color: #e64a41;
-    color: #fff;
-}
 .fa-linkedin {
     padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
     transition: .5s;
 }
 .fa-linkedin:hover {
@@ -431,13 +491,100 @@ ul.social-icons {
 }
 .fa-google-plus {
     padding:10px 9px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
     transition: .5s;
 }
 .fa-google-plus:hover {
     background-color: #e25714;
     color: #fff;
 }
+
+/*  when medium screen, we change grid sizes, container sizes and some sizes of block div's */
+@media (max-width: 1140px) {
+    .col-3 {
+        width: 50%;
+    }
+    .col-6 {
+        width: 100%;
+    }
+
+    .container {
+        max-width: 570px;
+    }
+
+    .block_contact .col-6 .col-6 {
+        width: 50%;
+    }
+    footer .col-6 {
+        width: 50%;
+    }
+
+}
+
+/*  when small screen we change grid sizes, some "kostils" for good mobile adaptive design */
+@media (max-width: 570px) {
+    .nav_item {
+        text-transform: uppercase;
+    }
+    .col-3 {
+        width: 100%;
+    }
+    .container {
+        max-width: 285px;
+    }
+    .block_offers {
+        font-size: 70%;
+    }
+    button {
+        font-size: 0.5rem;
+        width: 122px;
+    }
+    .button {
+        font-size: 0.5rem;
+        width: 122px;
+    }
+    .title_block h1 {
+        font-size: 1.5em;
+    }
+    .header {
+        flex-direction: column;
+    }
+    .post_short p {
+        font-size: 0.5em;
+
+    }
+    .post_short {
+        height: 35px;
+        padding: 0 0 0 10px;
+    }
+    .post_short h4 {
+        margin-bottom: -10px;
+    }
+
+    .block_contact .col-6 .col-6  {
+        width: 100%;
+    }
+    .block_contact .col-6 {
+        text-align: center;
+    }
+    .text, .email {
+        min-height: 30px;
+    }
+    footer .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-social-icons {
+        text-align: center;
+    }
+    .nav_item {
+        text-transform: uppercase;
+        padding: 10px 0 0 0;
+    }
+    .paddleft {
+        padding: 0;
+    }
+    .paddright {
+        padding: 0;
+    }
+}
+

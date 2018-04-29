@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+</head>
+
+<body>
+
+ <script>
+     //1
+     var a=200;var b=30;var c=15;
+
+    var res=a<b&&a<c?a:b<a&&b<c?b:c;
+    // document.write(res);
+     //2
+ 
+    var negativNum= -(Math.floor(Math.random() * 999) + 1);  //
+     
+    var positivNum= Math.floor(Math.random() * 1000);
+     var ranNums = [];
+     ranNums[0]=negativNum;
+     ranNums[1]=positivNum;
+     const randIndex = Math.floor(Math.random() * ranNums.length);
+     if(ranNums[randIndex]>=0&&ranNums[randIndex]<10)
+      document.write(ranNums[randIndex]+"->положительное однозначное число");
+     else if(ranNums[randIndex]>=10&&ranNums[randIndex]<100)
+     document.write(ranNums[randIndex]+"->положительное двузначное число");
+     else if(ranNums[randIndex]>=100&&ranNums[randIndex]<1000)
+     document.write(ranNums[randIndex]+"->положительное трехзначное число");
+     else if(ranNums[randIndex]<0&&ranNums[randIndex]>-10)
+     document.write(ranNums[randIndex]+"->отрицательное однозначное число");
+     else if(ranNums[randIndex]<=-10&&ranNums[randIndex]>-100)
+     document.write(ranNums[randIndex]+"->отрицательное двузначное число");
+     else if(ranNums[randIndex]<=-100&&ranNums[randIndex]>-1000)
+     document.write(ranNums[randIndex]+"->отрицательное трехзначное число");
+     //3
+     document.write("<br>");
+      var Num= Math.floor(Math.random() * 10);
+     var resv= Num==0?"ноль":Num==1?"один":Num==2?"два":Num==3?"три":Num==4?"четыре":Num==5?"пять":
+     Num==6?"шесть":Num==7?"семь":Num==8?"восемь":"девять";    
+    document.write(Num+"-"+resv);
+     //4
+      document.write("<br>");
+     Num= Math.floor(Math.random() * 5) + 1;
+     if(Num==1)
+      document.write(Num+"-"+"плохо");
+     else if(Num==2)
+      document.write(Num+"-"+"неудовлетворительно");
+     else if(Num==3)
+      document.write(Num+"-"+"удовлетворительно");
+     else if(Num==4)
+      document.write(Num+"-"+"хорошо");
+     else if(Num==5)
+      document.write(Num+"-"+"отлично");
+     //5
+     document.write("<br>");
+     a=1;b=1;c=2;
+     if(a==b ||a==c || b==c)document.write("true");
+     else document.write("false");
+</script>   
+    
+</body>
+</html>
