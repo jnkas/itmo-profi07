@@ -8,7 +8,13 @@ $(document).ready(function($) {
 		event.preventDefault();
 		$('.popup').fadeOut();
 	});
+
 });
+
+
+	
+		
+	
 
 		
 

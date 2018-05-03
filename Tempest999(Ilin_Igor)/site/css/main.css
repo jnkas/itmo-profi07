@@ -62,7 +62,6 @@ h3 {
   width: 70px;
   height: 3px;
   background-color: #121212;
-  margin-left: 5.3rem;
   margin-top: 5px;
   border: none;
 }
@@ -83,13 +82,12 @@ section.one {
   margin-top: 2rem;
 }
 nav ul {
-  margin-top: 3rem;
+  margin: 3rem 0 0 8rem;
 }
 nav ul li {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 10px;
-  text-align: right;
+  font-size: 1.1rem;
   margin-left: 3rem;
 }
 nav ul li a {
@@ -344,7 +342,6 @@ section.seven {
   position: fixed;
   text-align: center;
   left: 50%;
-  top: 10%;
   background-color: #fff;
   transform: translateX(-50%) translateY(30%);
   padding: 4rem 6rem;
@@ -358,6 +355,7 @@ section.seven {
   border: 1px solid grey;
   border-radius: 8px;
   margin-left: 5px;
+  margin-bottom: 1rem;
   padding: 1rem;
 }
 .popup .two {
@@ -365,3 +363,5 @@ section.seven {
   margin-top: 3rem;
   width: 20rem;
 }
+/* Modal window end */
+/* Adaptive */

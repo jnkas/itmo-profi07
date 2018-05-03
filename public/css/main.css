@@ -5,6 +5,9 @@ body {
   font-family: "Open Sans";
   background-color: #f4f4f4;
 }
+input {
+  outline: none;
+}
 button {
   background-color: #a2cf8e;
   cursor: pointer;
@@ -59,7 +62,6 @@ h3 {
   width: 70px;
   height: 3px;
   background-color: #121212;
-  margin-left: 5.3rem;
   margin-top: 5px;
   border: none;
 }
@@ -80,14 +82,13 @@ section.one {
   margin-top: 2rem;
 }
 nav ul {
-  margin-top: 3rem;
+  margin: 3rem 0 0 8rem;
 }
 nav ul li {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 10px;
-  text-align: right;
-  margin-left: 5rem;
+  font-size: 1.1rem;
+  margin-left: 3rem;
 }
 nav ul li a {
   color: #FFFAFA;
@@ -261,7 +262,6 @@ section.seven {
   background: rgba(255, 255, 255, 0.1);
   border: none;
   color: white;
-  outline: none;
 }
 .main-form input.mail {
   margin-left: 2rem;
@@ -309,6 +309,7 @@ section.seven {
 /* Section seven end */
 /*Modal window */
 .popup {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -316,31 +317,51 @@ section.seven {
   right: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 9;
-  background-color: rgba(0, 0, 0, 0.6);
 }
-.popup-content {
-  position: fixed;
-  left: 50%;
-  top: 10%;
-  background-color: grey;
-  transform: translateX(-50%);
-  padding: 4rem 6rem;
+.popup-header h4 {
+  font-size: 4rem;
+  font-weight: bold;
 }
-.popup-form {
-  margin-top: 30rem;
-  padding: 0;
+.popup-header p {
+  font-size: 2.5rem;
 }
 .popup-close {
   position: absolute;
-  bottom: 11.5rem;
-  right: 0.5rem;
+  top: -1rem;
+  right: 1rem;
   width: 2rem;
   text-align: center;
+  border: none;
   background-color: transparent;
+  color: black;
   font-size: 2rem;
 }
-.popup-form {
-  padding: 0;
-  margin-top: 30rem;
+.popup-content {
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  background-color: #fff;
+  transform: translateX(-50%) translateY(30%);
+  padding: 4rem 6rem;
+  border-radius: 5px;
 }
+.popup-form {
+  margin-top: 4rem;
+  padding: 1rem;
+}
+.popup-form input {
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.popup .two {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  width: 20rem;
+}
+/* Modal window end */
+/* Adaptive */

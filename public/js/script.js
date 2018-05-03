@@ -1,3 +1,22 @@
-var modal = document.getElementByID('myModal')
-var btn =  document.getElementByID('myBtn')
-var span = 
+$(document).ready(function($) {
+	$('.popup-btn').on('click', function(event) {
+		event.preventDefault();
+		$('.popup').fadeIn();
+	});
+
+	$('.popup-close').on('click', function(event) {
+		event.preventDefault();
+		$('.popup').fadeOut();
+	});
+
+});
+
+
+	
+		
+	
+
+		
+
+
+
