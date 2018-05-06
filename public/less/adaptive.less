@@ -1,71 +1,347 @@
 
 @media (max-width: 1200px) {
 	
+
+
 	nav ul {
-		margin-left: 9rem;
+		margin-left: 7rem;
 	}
 
-	.features {
-		transform: translateY(-18%);
-	}	
-}
+	.background {
+		
+		&.one {
+			margin-left: 6.5rem;
+			max-width: 84.9%;
+		}
 
-@media (max-width: 992px) {
-	nav ul {
-		margin-left: 12rem;
-	}	
-	
-	.features {
-		transform: translateY(-18%);
+		&.two {
+			max-width: 84.9%;
+		}
+		&.three {
+			max-width: 84.9%;
+		}		
+			
+			
 	}
 	
+	section {
+		&.five {
+			img {
+				max-width: 90%;
+			}
+				
+		}
+	}
+	
+
+	.fruits {
+		margin-left: 5rem;
+		height: 37.6rem;
+	}	
+
+	.doing {
+		margin-left: 1rem;
+	}
+
 	.eat {
+		transform: translate(-4%,18%);
 		img {
-			transform: translate(45%,-40%);
+			margin-left: 0;
+		}
+	}
+	
+	.airplane {
+		img {
+			margin-top: 4.5rem;
+		}
+	}
 
+	.main {
+		&-form {
+			input {
+				width: 45%;
+				&.mail {
+					margin-right: 5px;
+				}
+			}
 		}
 	}
 
 }
 
+
+
+	
+
+@media (max-width: 992px) {
+	
+	nav ul  {
+		margin-right: -4%;
+	}
+	
+	.titular {
+		margin-bottom: 20rem;
+		
+		&.four {
+			margin-bottom: -10rem;
+		}
+	}
+
+	.features {
+		transform: translateY(-18%);
+	}
+	
+	.eat {
+		transform: translate(30%,-30%);
+	}
+
+	section {
+		&.five {
+			img {
+				width: 100%;
+				margin: 2rem 4rem;
+			}
+		}
+		
+		.glasses {
+			width: 10%;
+		}
+	}
+		 
+	.titular {
+		&.white {
+			margin-bottom: 4rem;
+		}
+	}
+
+	.background {
+		
+		margin-bottom: 2rem;
+		&.one {
+			margin-left: 5.3rem;
+			max-width: 67.7rem;
+		}	
+
+		&.two {
+			margin-left: 5.3rem;
+			max-width: 67.7rem;
+		}
+		&.three {
+			margin-left: 5.3rem;
+			max-width: 69rem;
+		}	
+			
+	}
+
+	.contact {
+		
+		hr {
+			margin-left: 43%;
+		}
+	}
+
+	.map {
+		margin: 10rem 3rem;
+	}
+
+	.main {
+		&-form {
+			margin: 0 3rem;
+			input {
+				width: 46%;
+				&.mail {
+					transform: translateX(5%);
+				}
+			}
+		}
+	}
+	
+}
+	
+
+
+
+
 @media (max-width: 768px) {
+	
+
+	.background {
+		width: 67.2%;
+
+	}
+		
+
 	.logo {
-		margin-left: 40%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
 	}
 
 	.responsive {
 		margin-bottom: 10rem;
 	}
-	
-	.menu {
 		
-		nav ul {
-			display: flex;
-			margin-left: 10rem;
+	
+	nav ul {
+		display: flex;
+	  	flex-direction: column;
+	  	margin: 0 auto;
+	  	margin-top: 5rem;
+		margin-bottom: -12rem;
+		line-height: 4rem;
+		margin-right: 2rem;	
+		
+		li {
+			font-size: 1.4rem;
+			margin: auto;
 		}
 	}
 
+	.eat {
+		transform: translate(3%,-6%);
+		img {
+			max-width: 100%;
+		}
+	}
+		
+
 	.titular {
-		margin: 0 0 30rem 0;
+		margin-bottom: 20rem;
 	}
 
 	.features {
-		margin-bottom: -30%;
+		margin: 0rem 0 -30% 0;
+
+		.block {
+			margin-top: 5rem;
+		}
+	}
+
+	.pf {
+		margin: -8rem 0 0 9.8rem;
+		
+	}
+
+
+	.up {
+		display: none;
+	}
+
+	.down {
+		display: none;
+	}
+
+	.big {
+		&-photo {
+			display: inline-block;
+			margin: 15rem 0;
+			text-align: center;
+				 
+				img {
+				 	margin-top: 2rem; 
+				}
+		}
+	}
+				 	
+
+			 	
+			
+		section {
+			&.four {
+				img {
+					max-width: 80%;
+				}
+			}	
+		}
+
+		section {
+			&.five {
+				img {
+					max-width: 70%;
+					margin-top: 5rem
+				}
+			}	
+		}
 	}
 	
-	.eat {
-		// margin-left: -30rem;
+
+	.airplane {
+		margin-top: 0;
+		margin-left: 1rem;
 	}
 
-}	
+	
+			
+	.statistics {
+		.block {
+			margin-bottom: 3rem;
+		}
+	}
 
-@media (min-width: 0px) and (max-width: 768px) {
-	.eat {
-		// transform: translateX(-30%);
-		text-align: center;
+
+@media (max-width: 605px) {
+	.main {
+		&-form {
+			input {
+				width: 45%;
+				&.mail {
+					margin-right: 5px;
+				}
+			}
+		}
 	}
 }
- 
+	
+	
+@media (max-width: 497px) {
+	.main {
+		&-form {
+			input {
+				width: 45%;
+				&.mail {
+					margin-right: 2px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 467px) {
+	.main {
+		&-form {
+			input {
+				width: 44%;
+				&.mail {
+					margin-right: 2px;
+				}
+			}
+		}
+	}
+}	
+
+@media (max-width: 399px) {
+	.main {
+		&-form {
+			input {
+				width: 42%;
+				&.mail {
+					margin-right: 2px;
+				}
+			}
+		}
+	}
+}	
+
+			
+		
+	
+	
+
+
+
+
+
+
 
 
 			

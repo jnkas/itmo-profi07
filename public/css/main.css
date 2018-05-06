@@ -65,6 +65,9 @@ h3 {
   margin-top: 5px;
   border: none;
 }
+.big-photo {
+  display: none;
+}
 .white h1 {
   color: white;
 }
@@ -145,7 +148,7 @@ section.three {
   background-size: cover;
 }
 .doing {
-  margin-top: 7rem;
+  margin: 7rem 5rem 0 0;
 }
 .doing h1 {
   font-size: 22px;
@@ -168,8 +171,10 @@ section.three {
   transition: 0.4s;
 }
 .eat {
-  margin-top: 6rem;
-  text-align: right;
+  transform: translateY(14%);
+}
+.eat img {
+  margin-left: 8rem;
 }
 /* Section three end */
 /* Section four */
@@ -181,7 +186,7 @@ section.three {
   margin: 17rem 6rem 5rem 0;
 }
 .portfolio nav {
-  margin: 4rem 0;
+  margin-right: 5rem;
 }
 .portfolio nav ul li a {
   text-transform: none;
@@ -195,25 +200,44 @@ section.three {
 .down {
   margin: 2rem 0 8.2rem 0;
 }
+.down img {
+  width: 100%;
+}
+.up img {
+  width: 100%;
+}
 /* Section four end */
-/* Sectio five */
+/* Section five */
 section.five {
   background: url(../img/blog-bg.png);
   background-position: center;
   background-size: cover;
 }
-.airplane {
-  margin-top: 20%;
+section.five img {
+  position: relative;
+}
+.airplane img {
+  margin-top: 3rem;
 }
 .blog {
   margin-bottom: 18.4rem;
 }
 .background {
-  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  width: 570px;
-  height: 80px;
-  bottom: 0rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 1.5rem;
+}
+.background.one {
+  max-width: 95%;
+}
+.background.two {
+  max-width: 95%;
+}
+.background.three {
+  max-width: 93.5%;
 }
 /* Section five end */
 /* Section six */
@@ -264,11 +288,11 @@ section.seven {
   color: white;
 }
 .main-form input.mail {
-  margin-left: 2rem;
+  margin-left: 3.5rem;
 }
 .main-form textarea {
   resize: none;
-  width: 52.3rem;
+  width: 100%;
   height: 18rem;
   overflow: hidden;
   margin-top: 2rem;
@@ -305,6 +329,9 @@ section.seven {
 .icons img {
   padding-left: 14px;
   padding-bottom: 8px;
+}
+.map {
+  margin-left: 4rem;
 }
 /* Section seven end */
 /*Modal window */
@@ -357,6 +384,7 @@ section.seven {
   margin-left: 5px;
   margin-bottom: 1rem;
   padding: 1rem;
+  width: 10%;
 }
 .popup .two {
   font-size: 1.6rem;
@@ -364,4 +392,3 @@ section.seven {
   width: 20rem;
 }
 /* Modal window end */
-/* Adaptive */
