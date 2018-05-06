@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+<style>
+    .container{width: 500px;height: 315px;background: yellow;margin: auto;}
+
+td:hover,
+td:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+    .form{margin-left: 10px;float: left;}
+    .setX{width: 100px;height: auto;background: red;text-align: center;}
+#users-table {
+        float: left;
+    //position: relative;
+        margin: auto;
+        width: 300px;
+        border-spacing: 0px;
+        background: red;
+}
+td {
+    //border: 15px black outset;
+    width: 100px;
+    height: 100px;
+    background: green;
+    text-align: center;
+    font-size: 30pt;
+}
+       table,th,td{border: 1px solid black;}
+
+.X {
+    background: url("icon.png") no-repeat center center;
+}
+.Z {
+    background: url("zero.png") no-repeat center center;
+}
+    
+   </style>
+</head>
+
+<body>
+    
+    <script src="masiv.js">
+    /*
+1.
+Заданы два массива 
+A = [ 12, 4, 3, 10, 1, 20 ]  
+B = [-3, -7, -100, -33] 
+необходимо их объединить 
+в один массив C добавив 
+массив B в конец(в начало) A. 
+
+*/
+        
+ 
+</script>
+<div class="container">
+<table id="users-table">
+    <tr>
+      <td id="00" onclick="displayXZ('00')"></td><td id="01" onclick="displayXZ('01')"></td><td id="02" onclick="displayXZ('02')"></td>
+
+    </tr>
+    <tr>
+      <td id="10" onclick="displayXZ('10')"></td><td id="11" onclick="displayXZ('11')"></td><td id="12" onclick="displayXZ('12')"></td>
+
+    </tr>
+     <tr>
+      <td id="20" onclick="displayXZ('20')"></td><td id="21" onclick="displayXZ('21')"></td><td id="22" onclick="displayXZ('22')"></td>
+
+    </tr>   
+
+        <!-- The Modal -->
+
+</table>
+
+      <input  type="button"  value="крест или 0" id="btn" class="form" onclick="print()">
+
+</div>
+<script src="krestNol.js">
+    /*
+2.
+Одномерным массивом задана доска 3 на 3 
+var area = 
+[ null, null, null, null, null, null, null, null, null ]
+
+Необходимо сформировать игровое поле состоящее из квадратов для крестиков-ноликов  в HTML. 
+
+При появлении в массиве 0-ля рисовать нолик , 1-цы крестик 
+
+Пример:  [ 1, null, 0, null, 1, null, null, null, null ] на поле 2-а крестика, и 1-н нолик.
+
+
+
+*/
+    
+ 
+</script>
+<script src="maxmin.js">
+    /*
+3.
+Задан массив  - [12,4,3,10,1,20]. 
+Удалить из него наименьшее и наибольшее значение.
+
+
+*/
+    
+ 
+</script>
+<script src="sortArray.js">
+    /*
+4. Задан массив - [12,4,3,10,1,20]. 
+Необходимо отсортировать его в порядке возрастания, 
+при этом не использовать готовый метод sort 
+и методы разобранные на занятии.
+Снабдите комментариями каждую строку.
+
+*/
+    
+ 
+</script>
+</body>
+</html>
