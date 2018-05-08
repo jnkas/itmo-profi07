@@ -2,255 +2,281 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Meteor</title>
+    <title>Meteor - Responsive Layout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="We describe our work, the main directions of our activity.">
+    <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/grid.css" >
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link href="css/fontAwesome.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/fontAwesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
 </head>
-
 <body>
-    <div class="top_container">
-        <header>
-            <div class="logo">
-                <img src="img/white_logo.png" alt="Meteor logo">
-            </div>
-            <nav>
-                <ul class="header__menu">
-                    <li>home</li>
-                    <li>about us</li>
-                    <li>portfolio</li>
-                    <li>blog</li>
-                    <li>contact us</li>
-                </ul>
-            </nav>
-        </header>
+<div id="close_modal">
+    <div class="fade" id="open_modal">
+        <div class="modal-content">
+            <form method="get" name="form" action="#close_modal">
+                <h2>Please type your identity</h2>
+                <div class="modal-item">
+                    <input class="text" type="text" name="userName" placeholder="Your name...">
+                </div>
+                <div class="modal-item">
+                    <input class="email" type="email" name="userEmail" placeholder="Your e-mail...">
+                </div>
+                <div class="modal-item">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
-        <!--Title block-->
-        <section class="title_block">
-                <p>
-                    design is a hobby
-                <p>
+<div class="container">
+    <header>
+        <div class="header">
+            <div class="logo"><img src="img/white_logo.png" alt="Meteor logo"></div>
+            <div class="nav_item">home</div>
+            <div class="nav_item">about us</div>
+            <div class="nav_item">portfolio</div>
+            <div class="nav_item">blog</div>
+            <div class="nav_item">contact us</div>
+        </div>
+    </header>
+</div>
+
+<div class="wrapper">
+    <section class="title_block">
+        <div class="container">
+            <div class="col-12">
+                <span>design is a hobby</span>
                 <h1>
                     responsive layout
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia natus <br>officiis repellendus saepe? Molestiae, vero!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad debitis deserunt eius itaque molestiae recusandae, vero!
                 </p>
                 <button>view details</button>
-        </section>
-    </div>
-
-
-    <!--what we do section -->
-    <section class="whatwedo_block">
-        <div class="block_name__black">
-            what we do
-            <hr>
+            </div>
         </div>
-        <div class="container">
-            <div class="row">
+    </section>
+</div>
+
+<section class="block_whatwedo">
+    <div class="block_name__black">
+        what we do
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
                 <div class="col-3">
                     <div class="services">
-                        <img src="img/first-service-main.png" alt="">
+                        <img src="img/first-service-main.png" alt="Easy Customizations">
                         <h4>Easy Customizations</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus  voluptate!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus  !</p>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="services">
-                        <img src="img/second-service-main.png" alt="">
+                        <img src="img/second-service-main.png" alt="Creative Ideas">
                         <h4>Creative Ideas</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus voluptate!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam possimus !</p>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="services">
-                        <img src="img/third-service-main.png" alt="">
+                        <img src="img/third-service-main.png" alt="Good Profit">
                         <h4>Good Profit</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, hic neque repellat sit!</p>
                     </div>
                 </div>
                 <div class="col-3">
                     <div class="services">
-                        <img src="img/fourth-service-main.png" alt="">
-                        <h4>Open to Public</h4>
+                        <img src="img/fourth-service-main.png" alt="Crashed Plane Catured">
+                        <h4>Crashed Plane Catured</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, hic neque repellat sit!</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!--Block of new offers-->
-    <section class="offers_block">
-        <div class="container">
-            <div class="row">
+<section class="block_offers">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 block_offers_pad">
+                <h2>New offers just arrived. Get it now and take profit</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, culpa dolores dolorum ducimus eaque, enim et eveniet facilis, magnam nesciunt nisi perferendis placeat quos sed voluptas? Consectetur consequuntur culpa optio.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci at dolor dolore eius error explicabo nisi quidem ratione similique. Dicta hic molestias nemo nulla tempore!</p>
+                <div class="col-12">
+                    <div class="button">discover more</div>
+                    <div class="button"><a href="#open_modal">purchase now</a></div>
+                </div>
+            </div>
+            <div class="col-6 block_offers_pad">
+                <img src="img/what-we-do-right-image.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block_portfolio">
+    <div class="block_name__black">
+        our portfolio
+        <hr>
+    </div>
+
+    <div class="container">
+        <ul class="portfolio_nav_menu">
+            <li>all</li>
+            <li>nature</li>
+            <li>workplace</li>
+            <li>city</li>
+            <li>technology</li>
+        </ul>
+
+        <div class="row">
+            <div class="col-3">
+                <img src="img/portfolio_01.jpg" alt="Chair">
+            </div>
+            <div class="col-3">
+                <img src="img/portfolio_02.jpg" alt="Notebook">
+            </div>
+            <div class="col-3">
+                <img src="img/portfolio_03.jpg" alt="Keyboard">
+            </div>
+            <div class="col-3">
+                <img src="img/portfolio_04.jpg" alt="City">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+                <img src="img/portfolio_05.jpg" alt="Mountain">
+            </div>
+            <div class="col-3">
+                <img src="img/portfolio_06.jpg" alt="Lamp">
+            </div>
+            <div class="col-3">
+                <img src="img/portfolio_07.jpg" alt="Hall">
+            </div>
+            <div class="col-3">
+                <img src="img/portfolio_08.jpg" alt="Woman">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block_blog">
+    <div class="block_name__white">
+        our blog posts
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="posts">
                 <div class="col-6">
-                    <h2>New offers just arrived. Get it now and take profit</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, culpa dolores dolorum ducimus eaque, enim et eveniet facilis, magnam nesciunt nisi perferendis placeat quos sed voluptas? Consectetur consequuntur culpa optio.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci at dolor dolore eius error explicabo nisi quidem ratione similique. Dicta hic molestias nemo nulla tempore!</p>
-                    <div>
-                        <button>discover more</button>
-                        <button>purchase now</button>
+                    <div class="post">
+                        <img src="img/blog_01.jpg" alt="Delicious Food Served">
+                        <div class="post_short">
+                            <h4>Delicious Food Served</h4>
+                            <p>Posted: <strong>George</strong> / Date: <strong>11 aug 2017</strong> / Category: <strong>Design</strong></p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6">
-                    <img src="img/what-we-do-right-image.png">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Block of portfolio-->
-    <section class="portfolio_block">
-        <div class="block_name__black">
-            our portfolio
-            <hr>
-        </div>
-
-        <div class="portfolio_nav">
-            <ul class="portfolio_nav_menu">
-                <li>All</li>
-                <li>Nature</li>
-                <li>Workplace</li>
-                <li>City</li>
-                <li>Technology</li>
-            </ul>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="img/portfolio_01.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="img/portfolio_02.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="img/portfolio_03.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="img/portfolio_04.jpg">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <img src="img/portfolio_05.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="img/portfolio_06.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="img/portfolio_07.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="img/portfolio_08.jpg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--&lt;!&ndash;Block of blog posts&ndash;&gt;-->
-    <!--<section class="blog_block">-->
-        <!--<div class="block_name__white">-->
-            <!--our blog posts-->
-            <!--<hr>-->
-        <!--</div>-->
-        <!--<div class="container">-->
-            <!--<div class="blog-posts">-->
-                <!--<div class="blog-posts__left-column">-->
-                    <!--<div class="post">-->
-                        <!--<img src="img/blog_01.jpg" alt="">-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="blog-posts__right-column">-->
-                    <!--<div class="post">-->
-                        <!--<img src="img/blog_02.jpg" alt="">-->
-                    <!--</div>-->
-                    <!--<div class="post">-->
-                        <!--<img src="img/blog_03.jpg" alt="">-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-
-    <section class="blog_statistics">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="stat_description">
-                        <div class="stat_value">926</div>
-                        regular visitors
+                    <div class="post">
+                        <img src="img/blog_02.jpg" alt="Creative & Clean Workspace">
+                        <div class="post_short">
+                            <h4>Creative & Clean Workspace</h4>
+                            <p>Posted: <strong>Kerly</strong> / Date: <strong>11 jul 2017</strong> / Category: <strong>Artwork</strong></p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="stat_description">
-                        <div class="stat_value">926</div>
-                        regular visitors
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="stat_description">
-                        <div class="stat_value">214</div>
-                        finished projects
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="stat_description">
-                        <div class="stat_value">16</div>
-                        total awards
+                    <div class="post">
+                        <img src="img/blog_03.jpg" alt="Delicious Food Served">
+                        <div class="post_short">
+                            <h4>Delicious Food Served</h4>
+                            <p>Posted: <strong>Johny</strong> / Date: <strong>16 jul 2017</strong> / Category: <strong>Branding</strong></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-     <!--Contacts-->
-    <section class="contact_block">
-        <div class="block_name__white">
-            contact us
-            <hr>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-6 padd">
-                    <img class="image_map" src="img/map.jpg">
+<section class="block_stat">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="stat_description">
+                    <div class="stat_value">926</div>
+                    regular visitors
                 </div>
-                <div class="col-6 padd">
-                            <div class="col-6 padd_right">
-                                <input class="text" type="text" placeholder="Your name...">
-                            </div>
-                            <div class="col-6 padd_left">
-                                <input class="email" type="email" placeholder="Your e-mail...">
-                            </div>
+            </div>
+            <div class="col-3">
+                <div class="stat_description">
+                    <div class="stat_value">926</div>
+                    regular visitors
                 </div>
-                <div class="col-6 padd">
-                    <textarea placeholder="Your text..."></textarea>
+            </div>
+            <div class="col-3">
+                <div class="stat_description">
+                    <div class="stat_value">214</div>
+                    finished projects
                 </div>
-                <div class="col-6 padd">
-                   <button>send message</button>
+            </div>
+            <div class="col-3">
+                <div class="stat_description">
+                    <div class="stat_value">16</div>
+                    total awards
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-6 padd">
+<section class="block_contact">
+    <div class="block_name__white">
+        contact us<hr>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img class="image_map" src="img/map.jpg">
+            </div>
+            <div class="col-6">
+                <div class="col-6 paddright">
+                    <input class="text" type="text" placeholder="Your name...">
+                </div>
+                <div class="col-6 paddleft">
+                    <input class="email" type="email" placeholder="Your e-mail...">
+                </div>
+            </div>
+            <div class="col-6">
+                <textarea placeholder="Your text..."></textarea>
+            </div>
+            <div class="col-6">
+                <button>send message</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="col-6">
                     <p>Copyright © 2018 Company Name - Design: <span>Voronin Maxim</span></p>
                 </div>
-                <div class="col-6 padd">
+                <div class="col-6">
                     <div class="footer-social-icons">
                         <ul class="social-icons">
                             <li><a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
                             <li><a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
                             <li><a href="#" class="social-icon"> <i class="fa fa-rss"></i></a></li>
-                            <li><a href="#" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
                             <li><a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
                             <li><a href="#" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
                         </ul>
@@ -258,6 +284,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
+
 </body>
 </html>

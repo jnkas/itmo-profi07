@@ -312,15 +312,19 @@ overflow:auto;
 /****************Multiple images grid********************/
 /* Center website */
 .MainPicBoxConteiner1{
+	/*
    display: block;
+   width:100%;
     height:550px;
-     //  background-color: #1ff;
+       background-color: #1ff;
+	*/ 
 }
+.MainPicBoxConteiner1:after { clear: both; }
 .mainPbox {
   
     width: 70%;
     margin: auto;
-    //  background-color: #1ff;
+     //background-color: #1ff;
      padding-top: 30px;
 }
 
@@ -396,10 +400,10 @@ height: 715px;
 width: 100%;
 
     padding-top: 0;
-overflow:auto;
+//overflow:auto;
 }
 
-.pictureBoxwithinfor1{float: left;width: 1170px; height: 715px;
+.pictureBoxwithinfor1{float: left;width: 1170px; 
     //background-color: #fbeab6;
     margin-top: 100px;margin-left: 19%;margin-right:auto;}
 .LeftpictureBox1{float: left;width: 570px;height: 470px; background: url(img/blog_01.jpg) no-repeat center; 
@@ -442,12 +446,14 @@ color:#fff;
 
    .leftText h3,p,.rBotimText h3,p,.rTopimText h3{padding-left: 3%;padding-bottom: 0;line-height: 1; clear: both;}   
 /****************Blog4images********************/
+.margRow{height:30px;
+}
 #largebox2{
-    margin-top: 50px;
+    margin-top: 0px;
   width:80%;
-   height: 150px;
-   // background-color: #00F;
-   // padding-left: 17%;
+  // height: 150px;
+    background-color: #00F;
+   // margin-bottom: 100px;
     margin-left: auto; 
    margin-right: auto;
     
@@ -493,7 +499,8 @@ position:relative;
 .pictureBoxwithinfor{float: left;width: 1160px; height: 320px;
     //background-color: #fbeab6;
     margin-top: 122.5px;margin-left: 19.8%;}
-.LeftpictureBox{float: left;width: 570px;height: 320px; background: url(img/map.jpg) no-repeat center; 
+#map{float: left;width: 570px;height: 320px; 
+ 
     margin-right: 20px;}
 .RightpictureBox{float: left;
     //background-color: aqua;

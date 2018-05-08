@@ -154,6 +154,7 @@
 
 </div>
 </div>  
+<div class="row1"></div>
     <h3 align="center" class="blacktext">OUR PORTFOLIO</h3>
         <div class="borderTop"></div>
    <!---Multiple images grid  --->    
@@ -227,7 +228,7 @@
     </div>
     </div>
    <!---Our Blog Posts box ---> 
-    
+    <div class="row1"></div>
 <div class="MainBoxcontent1">
             <div class="headerBlogPost">
             <h3 align="center" >CONTACT US</h3>
@@ -268,8 +269,9 @@
     </div>
     
 </div>
+        <div class="row1"></div>
    <!---Blog4images --->
-    
+ <div class="row1 margRow"></div>   
 <div id="largebox2">
   <div id="box12"> 
     <h2>926</h2>
@@ -291,7 +293,8 @@
               <h2>16</h2>
     <p style="color:#585858;">TOTAL AWARDS</p>
     </div>  
-</div>    
+</div> 
+     <div class="row1 margRow"></div>  
    <!---ContactUs Form --->
   
     
@@ -301,7 +304,25 @@
         <div class="borderTopWhite"></div>
         </div>
     <div class="pictureBoxwithinfor">
-      <div class="LeftpictureBox"></div>
+      <div id="map" ></div>
+<script>
+	function initMap() {
+  var myLatLng = {lat: 1.3464369638010516, lng: 103.86825468763504};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: myLatLng
+  });
+ var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
+</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIN_FhjL5sau7aB-olQHtSP-0VFxGyQ5Y&callback=initMap"
+
+    async defer></script>
       <div class="RightpictureBox">
                     <div row>
                          <div class="rowtop">

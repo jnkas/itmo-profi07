@@ -5,6 +5,9 @@ body {
   font-family: "Open Sans";
   background-color: #f4f4f4;
 }
+input {
+  outline: none;
+}
 button {
   background-color: #a2cf8e;
   cursor: pointer;
@@ -59,9 +62,11 @@ h3 {
   width: 70px;
   height: 3px;
   background-color: #121212;
-  margin-left: 5.3rem;
   margin-top: 5px;
   border: none;
+}
+.big-photo {
+  display: none;
 }
 .white h1 {
   color: white;
@@ -80,14 +85,13 @@ section.one {
   margin-top: 2rem;
 }
 nav ul {
-  margin-top: 3rem;
+  margin: 3rem 0 0 8rem;
 }
 nav ul li {
   display: inline-block;
   text-transform: uppercase;
-  font-size: 10px;
-  text-align: right;
-  margin-left: 5rem;
+  font-size: 1.1rem;
+  margin-left: 3rem;
 }
 nav ul li a {
   color: #FFFAFA;
@@ -144,7 +148,7 @@ section.three {
   background-size: cover;
 }
 .doing {
-  margin-top: 7rem;
+  margin: 7rem 5rem 0 0;
 }
 .doing h1 {
   font-size: 22px;
@@ -167,8 +171,10 @@ section.three {
   transition: 0.4s;
 }
 .eat {
-  margin-top: 6rem;
-  text-align: right;
+  transform: translateY(14%);
+}
+.eat img {
+  margin-left: 8rem;
 }
 /* Section three end */
 /* Section four */
@@ -180,7 +186,7 @@ section.three {
   margin: 17rem 6rem 5rem 0;
 }
 .portfolio nav {
-  margin: 4rem 0;
+  margin-right: 5rem;
 }
 .portfolio nav ul li a {
   text-transform: none;
@@ -194,25 +200,44 @@ section.three {
 .down {
   margin: 2rem 0 8.2rem 0;
 }
+.down img {
+  width: 100%;
+}
+.up img {
+  width: 100%;
+}
 /* Section four end */
-/* Sectio five */
+/* Section five */
 section.five {
   background: url(../img/blog-bg.png);
   background-position: center;
   background-size: cover;
 }
-.airplane {
-  margin-top: 20%;
+section.five img {
+  position: relative;
+}
+.airplane img {
+  margin-top: 3rem;
 }
 .blog {
   margin-bottom: 18.4rem;
 }
 .background {
-  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  width: 570px;
-  height: 80px;
-  bottom: 0rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 1.5rem;
+}
+.background.one {
+  max-width: 95%;
+}
+.background.two {
+  max-width: 95%;
+}
+.background.three {
+  max-width: 93.5%;
 }
 /* Section five end */
 /* Section six */
@@ -261,14 +286,13 @@ section.seven {
   background: rgba(255, 255, 255, 0.1);
   border: none;
   color: white;
-  outline: none;
 }
 .main-form input.mail {
-  margin-left: 2rem;
+  margin-left: 3.5rem;
 }
 .main-form textarea {
   resize: none;
-  width: 52.3rem;
+  width: 100%;
   height: 18rem;
   overflow: hidden;
   margin-top: 2rem;
@@ -306,3 +330,65 @@ section.seven {
   padding-left: 14px;
   padding-bottom: 8px;
 }
+.map {
+  margin-left: 4rem;
+}
+/* Section seven end */
+/*Modal window */
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+}
+.popup-header h4 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.popup-header p {
+  font-size: 2.5rem;
+}
+.popup-close {
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 2rem;
+}
+.popup-content {
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  background-color: #fff;
+  transform: translateX(-50%) translateY(30%);
+  padding: 4rem 6rem;
+  border-radius: 5px;
+}
+.popup-form {
+  margin-top: 4rem;
+  padding: 1rem;
+}
+.popup-form input {
+  border: 1px solid grey;
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 10%;
+}
+.popup .two {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  width: 20rem;
+}
+/* Modal window end */

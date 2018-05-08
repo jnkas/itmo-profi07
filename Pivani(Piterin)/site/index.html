@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Курсовая</title>
 	<link rel="icon" href="img/favicon.png">
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="media.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 	<link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
@@ -14,10 +15,12 @@
 		<div class="container">
 			<div class="header">
 				<div class="row">
-				<div class="col-md-2 col-md-offset-0 col-sm-4 col-sm-offset-4 ">
-					<div class="logo">
-						<img class="logo" src="img/white_logo.png" alt="логотип">
+					<div class="col-md-2 col-md-offset-0 col-sm-4 col-sm-offset-4 col-xs-6 ">
+						<div class="logo">
+							<img class="logo" src="img/white_logo.png" alt="логотип">
+						</div>
 					</div>
+				
 				</div>
 				<div class="col-md-8 col-md-offset-2 col-sm-12  ">
 					<div class="menu">
@@ -34,13 +37,25 @@
 				</div>
 			</div>
 			</div>
-			<div class="maininfo"><h2>design is a hobby</h2>
-			<h1>responsive layout</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, inventore voluptatibus amet<br>aperiam quod, dolorem cum minus consequatur.
-			</p>
-			<button>VIEW DETAILS</button>
-			</div>
+				<div class="maininfo">
+						<h2>design is a hobby</h2>
+						<h1>responsive layout</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, inventore voluptatibus amet<br>aperiam quod, dolorem cum minus consequatur.
+						</p>
+						<button class="details">VIEW DETAILS</button>
+				</div>
+		</div>
+		<div class="menu_bar">
+			<nav>
+					<ul>
+						<li> <a href="">home</a></li>
+						<li> <a href="">about us</a></li>
+						<li> <a href="">portfolio</a></li>
+						<li> <a href="">blog</a></li>
+						<li> <a href="">contact us</a></li>
+					</ul>
+				</nav>
 		</div>
 	</section>
 	<section class="what_we_do" >
@@ -116,143 +131,217 @@
 						<li> <a href="">Technology</a></li>
 					</ul>
 					</nav>
-					<div class="photos">
+					<div class="photos_min">
 						<div class="row">
-						<div class="col-md-3 col-sm-6">
+						<div class="col-md-3 ">
 							<img src="img/portfolio_01.jpg" alt="картинка">
 						</div>
-						<div class="col-md-3 col-sm-6">
-							<img src="img/portfolio_01.jpg" alt="картинка">
+						<div class="col-md-3 ">
+							<img src="img/portfolio_02.jpg" alt="картинка">
 						</div>
-						<div class="col-md-3 col-sm-6">
-							<img src="img/portfolio_01.jpg" alt="картинка">
+						<div class="col-md-3 ">
+							<img src="img/portfolio_03.jpg" alt="картинка">
 						</div>
-						<div class="col-md-3">
-							<img src="img/portfolio_01.jpg" alt="картинка">
+						<div class="col-md-3 ">
+							<img src="img/portfolio_04.jpg" alt="картинка">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-3 col-sm-6">
-							<img src="img/portfolio_01.jpg" alt="картинка">
+						<div class="col-md-3 ">
+							<img src="img/portfolio_05.jpg" alt="картинка">
 						</div>
-						<div class="col-md-3 col-sm-6">
-							<img src="img/portfolio_01.jpg" alt="картинка">
+						<div class="col-md-3 ">
+							<img src="img/portfolio_06.jpg" alt="картинка">
 						</div>
-						<div class="col-md-3 col-sm-6">
-							<img src="img/portfolio_01.jpg" alt="картинка">
+						<div class="col-md-3 ">
+							<img src="img/portfolio_07.jpg" alt="картинка">
 						</div>
-						<div class="col-md-3 col-sm-6">
-							<img src="img/portfolio_01.jpg" alt="картинка">
+						<div class="col-md-3 ">
+							<img src="img/portfolio_08.jpg" alt="картинка">
 						</div>
 					</div>
+					</div>
+					<div class="photos_max">
+						<img src="img/portfolio_big_01.jpg" alt="">
+						<img src="img/portfolio_big_02.jpg" alt="">
+						<img src="img/portfolio_big_03.jpg" alt="">
+						<img src="img/portfolio_big_04.jpg" alt="">
+						<img src="img/portfolio_big_05.jpg" alt="">
+						<img src="img/portfolio_big_06.jpg" alt="">
+						<img src="img/portfolio_big_07.jpg" alt="">
+						<img src="img/portfolio_big_08.jpg" alt="">
 					</div>
 		</div>
 	</section>
-	<section class="five">
+	<section class="blog_posts">
 		<div class="container">
 			<h3>our blog posts</h3>
 			<hr>
 			<div class="blog">
-				<div class="left">
-				<div class="big_blog">
-					<img src="img/blog_01.jpg" alt="">
-				<div class="black_title">
-					<h1>Delicious Food Served</h1>
-					<p>Post: <strong>George</strong> /Date: <strong>11 Aug 2017</strong> /Category: <strong>Design</strong></p>
-				</div>
-			</div>
-			</div>
-			<div class="right">
-				<div class="min_blog">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div class="big_blog">
+						<img src="img/blog_01.jpg" alt="">
+						<div class="black_title">
+							<h1>Delicious Food Served</h1>
+							<p>Post: <strong>George</strong> /Date: <strong>11 Aug 2017</strong> /Category: <strong>Design</strong></p>
+						</div>
+					</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="mini_blogs">
+						<div class="min_blog">
 					<img src="img/blog_02.jpg" alt="">
 				<div class="black_title">
 					<h1>Delicious Food Served</h1>
 					<p>Post: <strong>George</strong> /Date: <strong>11 Aug 2017</strong> /Category: <strong>Design</strong></p>
 				</div>
-			</div>
-			<div class="min_blog">
-					<img src="img/blog_03.jpg" alt="">
-				<div class="black_title">
-					<h1>Delicious Food Served</h1>
-					<p>Post: <strong>George</strong> /Date: <strong>11 Aug 2017</strong> /Category: <strong>Design</strong></p>
 				</div>
-			</div>
-			</div>
+				<div class="min_blog two">
+						<img src="img/blog_03.jpg" alt="">
+					<div class="black_title">
+						<h1>Delicious Food Served</h1>
+						<p>Post: <strong>George</strong> /Date: <strong>11 Aug 2017</strong> /Category: <strong>Design</strong></p>
+					</div>
+				</div>
+					</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section class="six">
+	<section class="statistics">
 		<div class="container">
 			<div class="tablets">
-				<div class="tab">
-					<h1>926</h1>
-					<p>regular visitors</p>
-				</div>
-				<div class="tab">
-					<h1>926</h1>
-					<p>regular visitors</p>
-				</div>
-				<div class="tab">
-					<h1>926</h1>
-					<p>regular visitors</p>
-				</div>
-				<div class="tab">
-					<h1>926</h1>
-					<p>regular visitors</p>
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<div class="tab">
+							<h1>926</h1>
+							<p>regular visitors</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="tab">
+							<h1>926</h1>
+							<p>regular visitors</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="tab">
+							<h1>926</h1>
+							<p>regular visitors</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="tab">
+							<h1>926</h1>
+							<p>regular visitors</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="seven">
+	<section class="contacts">
 			<h3>whot we do</h3>
 			<hr>
 			<div class="container">
-				<div class="contacts clearfix">
-					<div class="left">
-						<div class="geo">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386837.7287092687!2d-116.46771711318955!3d36.62933898406422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c70baaaaaaaaab%3A0x9f97481bfe85a9d8!2sArea+51+Alien+Center!5e0!3m2!1sru!2sru!4v1523868958475" width="570" height="355" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="geo">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386837.7287092687!2d-116.46771711318955!3d36.62933898406422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c70baaaaaaaaab%3A0x9f97481bfe85a9d8!2sArea+51+Alien+Center!5e0!3m2!1sru!2sru!4v1523868958475" width="100%" height="355" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</div>
+							</div>
+						<div class="col-md-6">
+							<form action="">
+								<div class="row">
+									<div class="col-md-6">
+										<input type="text" placeholder="Your Name..." >
+									</div>
+									<div class="col-md-6">
+										<input type="text" placeholder="Your E-mail..." >
+									</div>
+								</div>
+								<textarea name="" id="" cols="30" rows="10" placeholder="Your message..." ></textarea>
+								<button>Send Message</button>
+							</form>
 						</div>
-					</div>
-					<div class="right">
-						<form action="">
-							<input type="text" placeholder="Your Name..." >
-							<input type="text" placeholder="Your E-mail..." >
-							<textarea name="" id="" cols="30" rows="10" placeholder="Your message..." ></textarea>
-							<button>Send Message</button>
-						</form>
-					</div>
-				</div>
+						</div>
 			</div>
 	</section>
 	<footer>
-					<div class="container clearfix">
-						<div class="left">
-							<div class="design">
-							<p><span>Lorem </span> ipsum dolor sit amet, consectetur adipisicing elit.</p>	
-							</div>
-						</div>
-						<div class="right">
-							<div class="social">
-						<div class="green_cycle">
-							<i class="fab fa-facebook-f"></i>
-						</div>
-						<div class="green_cycle">
-							<i class="fab fa-twitter"></i>
-						</div>
-						<div class="green_cycle">
-							<i class="fab fa-vk"></i>
+			<div class="container">
+				<div class="row">
+				<div class="col-md-6 col-sm-6 col-md-12">
+					<div class="design">
+				<p><span>Lorem </span> ipsum dolor sit amet, consectetur adipisicing elit.</p>	
+			</div>				
+				</div>
+					<div class="col-md-6 col-sm-6 col-md-12">
+						<div class="social">
+							<div class="green_cycle">
+								<div class="ico">
+									<svg aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-twitter fa-w-16 fa-2x"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" class=""></path></svg>
+								</div>
 						</div>
 						<div class="green_cycle">
-							<i class="fab fa-instagram"></i>
+								<div class="ico">
+									<svg aria-hidden="true" data-prefix="fal" data-icon="anchor" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-anchor fa-w-18 fa-2x"><path fill="currentColor" d="M504.485 264.485c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.029c-7.56 7.56-2.206 20.485 8.485 20.485h49.129C461.111 420.749 390.501 473.6 304 479.452V192h52c6.627 0 12-5.373 12-12v-8c0-6.627-5.373-12-12-12h-52v-34.016c28.513-7.339 49.336-33.833 47.933-64.947-1.48-32.811-28.101-59.458-60.911-60.967C254.302-1.619 224 27.652 224 64c0 29.821 20.396 54.879 48 61.984V160h-52c-6.627 0-12 5.373-12 12v8c0 6.627 5.373 12 12 12h52v287.452C185.498 473.6 114.888 420.749 97.901 352h49.129c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.03c-4.686-4.686-12.284-4.686-16.971 0l-67.029 67.03C-3.074 339.074 2.28 352 12.971 352h52.136C83.963 448.392 182.863 512 288 512c110.901 0 204.938-68.213 222.893-160h52.136c10.691 0 16.045-12.926 8.485-20.485l-67.029-67.03zM256 64c0-17.645 14.355-32 32-32s32 14.355 32 32-14.355 32-32 32-32-14.355-32-32zM61.255 320L80 301.255 98.745 320h-37.49zm416 0L496 301.255 514.745 320h-37.49z" class=""></path></svg>
+								</div>
 						</div>
 						<div class="green_cycle">
-							<i class="fas fa-capsules"></i>
+								<div class="ico">
+									<svg aria-hidden="true" data-prefix="fab" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512" class="svg-inline--fa fa-facebook-f fa-w-9 fa-2x"><path fill="currentColor" d="M76.7 512V283H0v-91h76.7v-71.7C76.7 42.4 124.3 0 193.8 0c33.3 0 61.9 2.5 70.2 3.6V85h-48.2c-37.8 0-45.1 18-45.1 44.3V192H256l-11.7 91h-73.6v229" class=""></path></svg>
+								</div>
+						</div>
+						<div class="green_cycle">
+								<div class="ico">
+									<svg aria-hidden="true" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-instagram fa-w-14 fa-2x"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" class=""></path></svg>
+								</div>
+						</div>
+						<div class="green_cycle">
+								<div class="ico">
+									<svg aria-hidden="true" data-prefix="fal" data-icon="beer" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-beer fa-w-14 fa-2x"><path fill="currentColor" d="M384 96h-32V80c0-26.51-21.49-48-48-48H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h256c26.51 0 48-21.49 48-48v-22.112l60.621-30.311C434.443 368.666 448 346.731 448 322.334V160c0-35.29-28.71-64-64-64zm-64 336c0 8.822-7.178 16-16 16H48c-8.822 0-16-7.178-16-16V80c0-8.822 7.178-16 16-16h256c8.822 0 16 7.178 16 16v352zm96-109.666c0 12.199-6.778 23.166-17.689 28.622L352 374.112V128h32c17.645 0 32 14.355 32 32v162.334zM192 144v224c0 8.837-7.164 16-16 16s-16-7.163-16-16V144c0-8.837 7.164-16 16-16s16 7.163 16 16zm-64 0v224c0 8.837-7.164 16-16 16s-16-7.163-16-16V144c0-8.837 7.164-16 16-16s16 7.163 16 16zm128 0v224c0 8.837-7.163 16-16 16s-16-7.163-16-16V144c0-8.837 7.163-16 16-16s16 7.163 16 16z" class=""></path></svg>
+								</div>
 						</div>
 					</div>
-						</div>
-					</div>
+			</div>
+			</div>
 	</footer>
-
-	
+	<div class="modal_window">
+		<div class="black_fon">
+			<div class="modal_form">
+				<svg aria-hidden="true" data-prefix="fal" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-times fa-w-12 fa-2x"><path fill="currentColor" d="M217.5 256l137.2-137.2c4.7-4.7 4.7-12.3 0-17l-8.5-8.5c-4.7-4.7-12.3-4.7-17 0L192 230.5 54.8 93.4c-4.7-4.7-12.3-4.7-17 0l-8.5 8.5c-4.7 4.7-4.7 12.3 0 17L166.5 256 29.4 393.2c-4.7 4.7-4.7 12.3 0 17l8.5 8.5c4.7 4.7 12.3 4.7 17 0L192 281.5l137.2 137.2c4.7 4.7 12.3 4.7 17 0l8.5-8.5c4.7-4.7 4.7-12.3 0-17L217.5 256z" class=""></path></svg>
+				<h1>Оставьте контактные данные для связи</h1>
+				<form action="">
+					<input type="text" placeholder="Name">
+					<input type="text" placeholder="Phone">
+					<input type="text" placeholder="E-mail">
+					<textarea name="" id="" rows="5" placeholder="Text"></textarea>
+					<button class="modal_btn">SEND CONTACTS</button>
+				</form>
+			</div>
+		</div>
+	</div>
+<script
+  src="http://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+  <script>
+  	$(document).ready(function() {
+  		$('.details').on('click', function(event) {
+  			event.preventDefault();
+  			$('.modal_window').fadeIn();
+  		});
+  		$('.fa-times').on('click',function(event) {
+  			event.preventDefault();
+  			$('.modal_window').fadeOut();
+  		});
+  		$('.fa-bars').on('click',function(event) {
+  			event.preventDefault();
+  			$('.menu_bar').toggleClass('active_menu');;
+  		});
+  	});
+  </script>
 </body>
 </html>

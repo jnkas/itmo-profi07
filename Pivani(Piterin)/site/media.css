@@ -1,0 +1,80 @@
+
+
+@media(max-width: 991px){
+	.menu ul{text-align: center;
+		padding-top: 20px;
+	}
+	li{
+		padding:20px;
+	}
+	.logo{
+		text-align: center;
+	}
+	.maininfo{
+		margin-top: 20rem;
+	}
+	.offers{text-align: center;}
+	.picture{text-align: center;}
+
+	.photos_min{
+	visibility: hidden;
+	position: absolute;
+	}
+	
+	.photos_max img {
+		visibility: visible;
+		position: static;
+		max-width: 100%;
+	}
+
+	.mini_blogs{
+		margin-top: 30px;
+	}
+
+	.tab {
+	margin-top: 20px;
+	}
+	
+	.contacts input{
+		margin-top: 30px;
+	}
+}
+
+@media(max-width: 767px){
+	.menu{
+		display: none;
+	}
+
+	.fa-bars{
+		visibility: visible;
+		position: fixed;
+		z-index: 999;
+	}
+	.header{
+		margin-top: 4rem;
+	}
+
+	.social{
+	margin-top: 20px;
+	text-align: center;
+}
+
+	.design{
+	text-align: center;
+}
+}
+
+@media(max-width: 399px){
+	.maininfo h1{
+	font-size: 35px;
+}
+
+}
+
+@media(max-width: 467px){
+	li{
+		padding: 6px;
+	}
+}
+
+
