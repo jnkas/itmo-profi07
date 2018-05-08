@@ -21,7 +21,7 @@ if (z < y) {
 
 alert ( count + ' число минимальное и равняется ' + min ); 
 
-*/
+
 //Задание 2
 
 var x = parseInt (prompt ('введите число'));
@@ -51,7 +51,240 @@ else {
 	}
 	alert (str + 'число')
 }
-/*
-*/
 
+
+//Задание 3
+
+var x = parseInt (prompt ('введите цифру'));
+
+if (x < 0 || x > 9) {
+	alert ('это не цифра')
+}
+if (x === 0) {
+	alert ('нуль')
+}
+if (x === 1) {
+	alert ('единица')
+}
+if (x === 2) {
+	alert ('два')
+}
+if (x === 3) {
+	alert ('три')
+}
+if (x === 4) {
+	alert ('четыре')
+}
+if (x === 5) {
+	alert ('пять')
+}
+if (x === 6) {
+	alert ('шесть')
+}
+if (x === 7) {
+	alert ('семь')
+}
+if (x === 8) {
+	alert ('восемь')
+}
+if (x === 9) {
+	alert ('девять')
+}
+
+
+//Задание 4
+
+var x = parseInt (prompt ('введите оценку'));
+
+if (x < 1 || x > 5) {
+	alert ('это не оценка')
+}
+if (x === 1) {
+	alert ('плохо')
+}
+if (x === 2) {
+	alert ('неудовлетворительно')
+}
+if (x === 3) {
+	alert ('уловлетворительно')
+}
+if (x === 4) {
+	alert ('хорошо')
+}
+if (x === 5) {
+	alert ('отлично')
+}
+
+
+//Задание 5
+
+var a = parseInt (prompt ('первое число'));
+var b = parseInt (prompt ('второе число'));
+var c = parseInt (prompt ('третье число'));
+var flag = false
+
+if (a === b || b === c || c === a) {
+	flag = true
+}
+
+alert (flag)
+
+
+//__________________________________________________________________
+//Блок 2 
+//Задание 1
+
+var x = parseInt (prompt ('x'));
+var y = parseInt (prompt ('y'));
+var subx = x 
+
+if (y < x) {
+	x = y
+	y = subx
+}
+
+alert ('теперь x = ' + x + ', а y = ' + y)
+
+
+//Задание 2
+
+var x1 = parseInt (prompt ('x1'));
+var y1 = parseInt (prompt ('y1'));
+var z1 = parseInt (prompt ('z1'));
+
+var x2 = parseInt (prompt ('x2'));
+var y2 = parseInt (prompt ('y2'));
+var z2 = parseInt (prompt ('z2'));
+
+var x3 = parseInt (prompt ('x3'));
+var y3 = parseInt (prompt ('y3'));
+var z3 = parseInt (prompt ('z3'));
+
+var ab2 = Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2) + Math.pow(z2 - z1, 2);
+var bc2 = Math.pow(x3 - x2, 2) + Math.pow(y3 - y2, 2) + Math.pow(z3 - z2, 2);
+var ca2 = Math.pow(x1 - x3, 2) + Math.pow(y1 - y3, 2) + Math.pow(z1 - z3, 2);
+
+if ((ab2 === (bc2 + ca2)) || (bc2 === (ca2 + ab2)) || (ca2 === (ab2 + bc2))) {
+		alert ('треугольник прямой');
+} else {
+	alert ('треугольник не прямой')
+}
+
+
+//Задание 3
+
+var x = parseInt (prompt ('введите месяц от 1 до 12'));
+
+if (x < 1 || x > 12) {
+	alert ('это не месяц')
+}
+if (x >= 3 && x <= 5) {
+	alert ('весна')
+}
+if (x >= 6 && x <= 8) {
+	alert ('лето')
+}
+if (x >= 9 && x <= 11) {
+	alert ('осень')
+}
+if (x === 12 || x === 1 || x === 2) {
+	alert ('зима')
+}
+
+
+//Задание 4
+var unit = parseInt (prompt ('номер единицы длины'));
+var len = parseInt (prompt ('длина отрезка'));
+
+if (unit === 1) {
+	lenm = 0.1 * len
+}
+if (unit === 2) {
+	lenm = 1000 * len
+}
+if (unit === 3) {
+	lenm = len
+}
+if (unit === 4) {
+	lenm = 0.001 * len
+}
+if (unit === 5) {
+	lenm = 0.01 * len
+}
+
+alert (lenm)
+
+*/
+//Задание 5
+
+//Задание 6
+
+//Задание 7
+
+//__________________________________________________________________
+//Блок 3
+//Задание 1
+
+
+
+
+
+
+
+
+/*
+все, что ниже - мусор
+
+
+var ab = Math.pow(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2) + Math.pow(z2 - z1, 2),1/2);
+var bc = Math.pow(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2) + Math.pow(z2 - z1, 2),1/2);
+var ca = Math.pow(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2) + Math.pow(z2 - z1, 2),1/2);
+
+if (Math.pow(ab, 2) === (Math.pow(bc, 2) + Math.pow(ca, 2)) ||
+	Math.pow(bc, 2) === (Math.pow(ca, 2) + Math.pow(ab, 2)) ||
+	Math.pow(ca, 2) === (Math.pow(ab, 2) + Math.pow(bc, 2))) {
+		alert ('треугольник прямой');
+} else {
+	alert ('треугольник не прямой')
+}
+
+
+
+
+var arr =[1,5,8,3,0,3,888,44,72,82,9]
+
+z = false //z - упорядоченность
+while (z === false)
+	for (var j = 0; j < arr.length - 1; j++) {
+		if (arr[j] < arr[j+1])
+			
+			var z = true
+	}
+
+
+	for (var i = 0; i < arr.length - 1; i++) {
+		var a = arr[i]
+		var b = arr[i+1]
+		if (arr[i+1] < arr[i])
+			arr[i] = b
+			arr[i+1] = a
+	}
+
+	
+	
+	
+alert (arr)
+
+
+
+str.split('').reverse().join(',')
+
+for (начальное условие; условие; изменение счетчика) {
+
+}
+for ()
+	if (arr [i] > max) {
+		max = arr[i]
+	}
+*/
 
