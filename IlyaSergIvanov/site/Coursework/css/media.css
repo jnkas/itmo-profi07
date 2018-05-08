@@ -1,8 +1,37 @@
 @media (max-width: 1024px){
-	.row {
+.row {
 	margin-right: 15px;
 	margin-left: 15px;
-	}	
+}	
+.belements .left-column {
+	width: 50%;
+	padding-right: 0px; 
+}
+.belements .right-column {
+	width: 50%;
+	padding-left: 20px; 
+    padding-top: 0px; 
+}
+
+}
+@media (max-width: 1070px){
+.new-offers {
+	height: 900px;
+}
+.left-column {
+	width: 100%;
+	float: left;
+	padding-right: 66px;
+	padding-left: 80px;
+	
+}
+.right-column {
+	width: 100%;
+	float: left;
+	padding-left: 80px;
+    padding-top: 25px;
+    padding-right: 65px;
+}
 }
 @media (max-width: 768px){
 .row {
@@ -10,7 +39,7 @@
 	margin-left: 15px;
 	}	
 	.what-we-do {
-	height: 1000px;
+	height: 1100px;
 }
 .new-offers {
 	height: 900px;
@@ -29,6 +58,7 @@
     padding-top: 25px;
     padding-right: 65px;
 }
+
 .portfolio {
 	height: 1400px;
 }
@@ -56,7 +86,7 @@
 	padding:15px;
 }
 .blog {
-	height: 1300px;
+	height: 515px;
 }
 .postblog {
 	height: 700px;
@@ -75,4 +105,99 @@
 footer .sm-icons ul {
     margin-right: 15px;
 }
+}
+@media (max-width: 592px){
+.right-column .offers-pic img{
+	display: block;
+	width: 100%;
+}
+.what-we-do {
+	height: 1050px;
+
+}
+@media (max-width: 320px){
+
+.container-intro h1{
+	font-weight: 600;
+}
+a {
+	padding: 3px;
+
+}
+.menu ul li {
+	padding: 0px;
+} 
+.container-text {
+	width: auto;
+}
+.what-we-do {
+	height: 1200px;
+}
+.left-column{
+	padding: 0px;
+}
+.offers-text {
+	text-align:center;
+}
+.offers-text ul {
+	padding-right: 0px;
+}
+.offers-text ul li{
+	padding-right: 0px;
+}	
+.offers-text ul li{
+	padding-top: 20px;
+
+}
+.new-offers {
+	height: 1050px;
+}
+.pmenu ul li {
+	padding-top:20px;
+}
+.portfolio {
+	height: 2500px;
+}
+.elements .one {
+	padding-left: 0px;
+	float: none; 
+	width: 100%;
+}	
+.elements .two {
+	padding-right: 0px;
+    float: none;
+    width: 100%;
+}
+.right-column {
+	width: 100%;
+	padding-top: 0px; 
+ 	padding-left: 0px;
+ 	padding-right: 0px;
+}
+.blog {
+	height: 800px;
+}
+.mapwrapper {
+	width: 100%;
+	float:none;
+}
+.formwrapper {
+	padding-top: 20px;
+	width: 100%; 
+	float: none;
+}
+.contact-us {
+height: 860px;
+}
+.fwrapper {
+	height:90px;
+}
+.belements .left-column {
+	width: 100%;
+	
+}
+.belements .right-column {
+	padding-top: 20px;
+	width: 100%;
+	padding-left: 0px; 
 }

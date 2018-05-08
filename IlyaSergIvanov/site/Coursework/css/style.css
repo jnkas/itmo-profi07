@@ -131,10 +131,45 @@ a {
 	background: white;
 	color: black;
 } 
-.purchase-buttom {
-	border-radius: 30px;
-	padding: 10px;
-	background: #66bf92;
+
+	
+.purchase-buttom  {
+    background: #a2cf8e;
+    color: white;
+    border-radius: 30px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 10px;
+    cursor: pointer;
+}
+.popup-form {
+    position: absolute;
+    display: none;
+    background-color: #272e33;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+.popup-form form div .order-btn {
+    background: #a2cf8e;
+    color: white;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    border: none;
+    padding-top: 0px;
+    text-transform: uppercase;
+}
+.popup-form .name{
+    padding-left: 4px;
+    padding-bottom: 10px;
+}
+.popup-form .phone{
+	padding-bottom: 10px;
+}	
+.popup-form .obtn{
+	padding-left: 45px;
 }
 /*our portfolio*/
 
@@ -399,6 +434,7 @@ footer .sm-icons {
    }
 footer .sm-icons ul {
     margin-top: 6px;
+    margin-right: 15px;
 }
 
 footer .sm-icons ul li {
@@ -413,7 +449,7 @@ footer .sm-icons ul li {
 footer .sm-icons ul li a {
     height: 36px;
     line-height: 36px;
-    padding: 12px;
+    padding-right: 12px;
     color: black;
-    margin-right: 15px;
+    padding-left: 12px;
 }

@@ -7,8 +7,19 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/fontAwesome.css">
 </head>
 <body>
+<script type="text/javascript">
+function displayForm(){
+var x = document.getElementById("modal-win-form");
+if (x.style.display === "none") {
+    x.style.display = "block";
+} else {
+    x.style.display = "none";
+	   }
+} 
+</script>
 	<header>
 		<section class="first">
 			<div class="container">
@@ -100,9 +111,24 @@
 										</div>
 									</li>
 									<li>	
-										<div class="purchase-buttom">
-										<a href="">Purchase now</a>
-										</div>	
+										<div class="purchase-buttom" onclick="displayForm()">
+										<a>Purchase now</a>
+										</div>
+										<div class="popup-form" id="modal-win-form">
+		                                    <form>
+		                                        <div class="name">
+		                                            <label>Name</label>
+		                                            <input type="text" value="" />
+		                                        </div>
+		                                        <div class="phone">
+		                                        <label >Phone</label>
+		                                            <input type="phone" value="" />
+		                                        </div>
+		                                        <div class="obtn">
+		                                            <button class="order-btn">Place an order</button>
+		                                        </div>
+		                                    </form>   
+                                		</div>	
 									</li>	
 								</ul>
 							</div>
