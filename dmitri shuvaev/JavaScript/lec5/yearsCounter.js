@@ -6,8 +6,8 @@ const monthNamesRus = ["Январь", "Февраль", "Март", "Апрел
   "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
 ];
 const days=["дня","день","дней"];
-const hours=[" час "," часов "];
-const mins=[" минут "," минута "];
+const hours=[" часа "," час ","часов"];
+const mins=[" минуты "," минута ","минут"];
 //timer
 var timerID = null;
 var timerRunning = false;
@@ -52,16 +52,14 @@ function setTime(){
 }
 function Ndays( daysLeft,hrsLeft,minsLeft){
     var result=daysLeft+" ";
-    result+=setDay(daysLeft);
-    if(hrsLeft==1) result+=" "+hrsLeft+hours[0];
-    else
-    result+=" "+hrsLeft+hours[1];
-    if(minsLeft==1)result+=minsLeft+mins[1];
-    else
-     result+=minsLeft+mins[0];   
+    result+=setDay(daysLeft,days);
+    result+=" "+hrsLeft+setDay(hrsLeft,hours);
+  
+    result+=minsLeft+setDay(minsLeft,mins);
+    
 return result;  
 }
-function setDay(daysLeft){
+function setDay(daysLeft,days){
   
     var num=daysLeft%100;
         if(num==1)return days[1];
@@ -72,5 +70,6 @@ function setDay(daysLeft){
        else if(num>1&&num<5)return days[0];
        else return days[2];
 }
+
 
 
