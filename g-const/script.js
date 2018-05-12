@@ -214,11 +214,63 @@ if (unit === 5) {
 
 alert (lenm)
 
-*/
+
 //Задание 5
+
+var init1 = prompt ('введите строку');//исходная строка
+var init = init1.toLowerCase();//исходная строка на строчных буквах
+var str = '';//строка без лишних символов
+var odd = ' .,:;!@#&()–[{}]?/*\'\"\\';//лишние символы
+
+for (var i = 1; i <= init.length; i++) {
+	var symb = init.charAt(i - 1);
+	var flag = true;
+	for (var j = 1; j <= odd.length; j++) {
+		if (symb === odd.charAt(j - 1)) {
+			flag = false;// если i-й символ из строки равен одному из лишних символов, флаг меняется на false 
+		}
+	}
+	if (flag) {// если флаг false - не прибавляем лишний символ к строке
+		str = str + init.charAt(i - 1);
+	}
+	
+}
+
+var pal = ''
+
+for (var i = 1; i <= str.length; i++) {
+	pal = pal + str.charAt(str.length - i);
+}
+
+if (str === pal) {
+	alert('это палиндром');
+} else {
+	alert('это не палиндром');
+}
+
 
 //Задание 6
 
+var year = parseInt (prompt ('год'));
+
+if (year % 4 === 0) {
+	if (year % 100 === 0) {
+		if (year % 400 === 0) {
+			alert('високосный');
+		}
+		else {
+			alert('не високосный');
+		}
+	}	
+	else {
+		alert('високосный')
+	}
+} 
+else {
+	alert('не високосный')
+}
+
+*/
 //Задание 7
 
 //__________________________________________________________________
