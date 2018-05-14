@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+    <script src="canvasjs.min.js"></script>
+    
+</head>
+
+<body>
+<div id="chartContainer" style="height: 500px; width: 500px; margin: 0px auto;"></div>
+<script src="Graphxy.js">
+    
+ 
+</script>
+    <hr>
+<div id="chartContainer1" style="height: 500px; width: 500px; margin: 0px auto;"></div>
+    <script>
+ 
+        f = function () {
+var dps = [];
+var chart = new CanvasJS.Chart("chartContainer1", {
+	animationEnabled: true,
+    zoomEnabled: true,
+	theme: "light2",
+	title:{
+		text: "график функции y = f(x)",
+        fontSize: 30
+	},
+    	subtitles:[{
+		text: "1/x + Math.sqrt(x)",
+		fontSize: 14
+	}],
+    	axisX: {
+		title: "x",
+        stripLines: [{
+			value: 0,
+            color: "#000000",
+			//label: "y",
+			labelFontColor: "#808080",
+			//labelAlign: "near",
+            labelFontSize: 20
+		}]
+	},
+	axisY:{
+        title: "y",
+		includeZero: false
+	},
+	data: [{        
+		type: "line", 
+        //markerSize: 5,
+     
+        dataPoints: dps 
+	}]
+});
+			function f(x){
+             if(x==0)return 0;
+              return 1/x + Math.sqrt(x);
+		
+			}//
+    
+    function dr(){
+    for (var i = -5; i<=5; i+=0.01) {
+    
+   
+            dps.push({
+			x: i,
+			y: f(i)
+         
+		});      
+     
+ 
+        
+
+			}
+        chart.render();
+    }//
+    
+
+dr();
+}
+        f();
+    </script>
+     <hr>
+   
+    <script src="jsLibrary.js">
+    /*
+    3 Написать свою подключаемую js библиотеку для работы с массивом, хранящим целые числа.
+Библиотека должна обладать следующими методами:
+- поиск минимального элемента в переданном массиве;
+- поиск максимально элемента в переданном массиве;
+- расчет среднего арифметического значения элементов переданного массива;
+- создание копии (клонирование) переданного массива.
+*/
+    
+    </script>
+        <script src="Caesar%20Cipher.js">
+    /*
+4** Написать кодер для шифра Цезаря (https://ru.wikipedia.org/wiki/Шифр_Цезаря). 
+На вход принимается строка и сдвиг (число). На выход - зашифрованное/расшифрованное сообщение.
+Пример работы шифра Цезаря можно увидеть здесь: https://planetcalc.com/1434/
+Примеры данных для тестирования:
+1) Зашифрованное сообщение: 
+"Gur pyrnare naq avpre gur cebtenz, gur snfgre vg'f tbvat gb eha. Naq vs vg qbrfa'g, vg'yy or rnfl gb znxr vg snfg." 
+Сдвиг: -13. 
+Расшифрованное сообщение: 
+"The cleaner and nicer the program, the faster it's going to run. And if it doesn't, it'll be easy to make it fast."
+2) Исходное сообщение: 
+"There is no programming language, no matter how structured, that will prevent programmers from making bad programs.’ 
+Сдвиг: 25. 
+Зашифрованное сообщение: "Sgdqd hr mn oqnfqzllhmf kzmftzfd, mn lzssdq gnv rsqtbstqdc, sgzs vhkk oqdudms oqnfqzlldqr eqnl lzjhmf azc oqnfqzlr."
+*/
+    
+    </script>
+</body>
+</html>
