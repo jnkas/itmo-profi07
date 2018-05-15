@@ -1,4 +1,4 @@
-/*
+;/*
 //Блок 1
 //Задание 1
 
@@ -134,8 +134,8 @@ alert (flag)
 //Блок 2 
 //Задание 1
 
-var x = parseInt (prompt ('x'));
-var y = parseInt (prompt ('y'));
+var x = prompt ('x');
+var y = prompt ('y');
 var subx = x 
 
 if (y < x) {
@@ -194,7 +194,7 @@ if (x === 12 || x === 1 || x === 2) {
 
 //Задание 4
 var unit = parseInt (prompt ('номер единицы длины'));
-var len = parseInt (prompt ('длина отрезка'));
+var len = parseFloat (prompt ('длина отрезка'));
 
 if (unit === 1) {
 	lenm = 0.1 * len
@@ -270,12 +270,41 @@ else {
 	alert('не високосный')
 }
 
-*/
+
 //Задание 7
 
+var plate = parseInt (prompt ('количество тарелок'));
+var soap = parseFloat (prompt ('количество моющего средства'));
+var soapleft = soap
+var plateleft = plate
+
+//почему i++ выполняется до проверки условия??? 
+
+for (var i = 1; i <= plate && soapleft >= 0; i++) {
+	plateleft = plate - i + 1//Количество оставшихся тарелок
+	if (soapleft < 0.5 && plateleft > 0) {
+		alert ('Моющее средство закончилось. Осталось ' + plateleft + ' тарелок')
+	}
+	soapleft = soapleft - 0.5
+}
+if (soapleft === 0) {
+		alert ('Все тарелки вымыты, моющее средство закончилось')
+	}
+if (soapleft > 0) {
+		alert ('Все тарелки вымыты. Осталось ' + soapleft + ' ед. моющего средства')
+	}
+
+*/
 //__________________________________________________________________
 //Блок 3
 //Задание 1
+
+
+//__________________________________________________________________
+//Блок 4
+//Задание 1
+
+var	
 
 
 
