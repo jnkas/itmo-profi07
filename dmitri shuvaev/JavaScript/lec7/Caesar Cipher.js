@@ -3,17 +3,20 @@ var alphabet = ["А","Б","В","Г","Д","Е","Ё","Ж","З","И","Й","К","Л"
 //=============================================
 function CaesarCipher(text,shift){
     res="";
+     var _shift=shift%26;;
     for(var i=0;i<text.length;i++){
         var ch=text.charCodeAt(i);//git number
+         
         if(ch>=65&&ch<=90){
-            ch=ch+shift;
+            ch=ch+_shift;
             if(ch<65){
                 ch=ch+26;
             }
             res+=String.fromCharCode((ch-65)%26+65);   
         }
         else if(ch>=97&&ch<=122){
-            ch=ch+shift;
+          
+            ch=ch+_shift;
             if(ch<97){
                 ch=ch+26;
             }
@@ -37,15 +40,19 @@ function CaesarCipher(text,shift){
 }
 function convert(charv,shift){
     var index=0;
+    var _shift=shift%33;
     var len=alphabet.length;
     for(var i=0;i<len;i++){
         if(charv===alphabet[i]){
             index=i;
+            break;
         }
     }
-    index=index+shift;
+    index=index+_shift;
     if(index<0){
-       index=(len)+index;
+     
+        index=len+index;   
+        
     }
   return alphabet[index%33];
 }
@@ -56,9 +63,9 @@ siphertext=CaesarCipher(siphertext,-5);
 document.write("<br/>Cipher: "+siphertext);
 //
 siphertext="The cleaner and nicer the program, the faster it's going to run. And if it doesn't, it'll be easy to make it fast.";
-siphertext=CaesarCipher(siphertext,13);
+siphertext=CaesarCipher(siphertext,84);
 document.write("<br/>Cipher: "+siphertext);
-siphertext=CaesarCipher(siphertext,-13);
+siphertext=CaesarCipher(siphertext,-84);
 document.write("<br/>Cipher: "+siphertext);
 //
 siphertext="There is no programming language, no matter how structured, that will prevent programmers from making bad programs.";
