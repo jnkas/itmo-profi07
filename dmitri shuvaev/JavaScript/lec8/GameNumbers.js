@@ -9,7 +9,17 @@ while(arr.length < (size*size)){
     return randomnumber;
 
 }
+function randColors(){
+    function r() { return Math.floor(Math.random() * 255) };
 
+var color = 'rgb(' + r() + "," + r() + "," + r() + ')';
+    return color;
+}
+function randFontSize(){
+
+    var fonts=Math.floor((Math.random() * 60)+30)+'px' ;
+    return fonts;
+}
 function addTab(divel){
     
  size=parseInt(prompt("Ener num of rows"));
@@ -24,7 +34,9 @@ for(var i=0;i<size;i++){
       var td = document.createElement('TD');
         td.appendChild(document.createTextNode(randNm()));
         td.style.textAlign='center';
+        td.style.color=randColors();
         td.style.padding='5px';
+        td.style.fontSize = randFontSize();
           tr.appendChild(td);
     }
    
