@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+    <style>
+    .row {
+	width: 100%;
+	clear: both; /* Clear creates new styles for the next row */
+	padding: 0px;
+	margin: 0px;
+}
+
+    .hours,.minutes,.secondes{
+        float: left;
+        }
+    .back{
+            height: 40px;
+            text-align: center;
+            width: 150px;
+            margin: auto;
+        padding: 0 100px;
+        }
+        .hours:first-child, .minutes:first-child, .secondes:first-child { 
+            	margin-left: 0; /* This line of code makes the left-most column align to the left of the screen */
+}
+        .hours,.minutes,.secondes{
+            font-size: 32px;
+                margin: auto;
+            	width: 33%;
+            	margin-left: 0%;
+        }
+        
+    .timer{
+    float: left;
+
+    width: 60px;
+    height: 100px;
+    background-color: #484848;
+  margin-top: 30px;
+  padding: 10px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+.timer .num{
+    margin-top: 26px;
+    text-align: center;
+    bottom: 10px;
+    font-size:45px;
+    font-weight: bold;
+    background-color: #555555;
+    border-radius: 20px;
+}
+    
+#traffic-light {
+  height: 550px;
+  width: 200px;
+  float: left;
+  background-color: #333;
+  border-radius: 40px;
+  margin: 30px 0;
+  padding: 20px;
+}
+.bulb {
+  height: 150px;
+  width: 150px;
+  background-color: #111;
+  border-radius: 50%;
+  margin: 25px auto;
+  transition: background 500ms;
+}
+    </style>
+</head>
+
+<body>
+
+<div class="row">
+ 
+
+<div class="back">
+   <div class="hours"></div>
+   <div class="minutes"></div>
+   <div class="secondes"></div>
+
+    
+    
+</div>
+
+</div>
+
+
+    <script src="count_down.js">
+    
+    
+    </script>
+<div class="row">
+    <div id="tovar">
+  
+    </div>
+    
+</div>    
+    <script src="tovar.js">
+    /*
+    2. Создать объект «Товар» включающий:
+- свойства, такие как фото, артикул, 
+описание и т.п.;
+- метод, которому при вызове передается 
+id пустого div элемента и в этот html 
+элемент данный метод создаст и внесёт 
+все необходимые html элементы, стили, 
+и содержание для отображения 
+всей информации хранящихся в свойствах 
+объекта о данном товаре. Дизайн оформления 
+информации в html о товаре – 
+это ваше творчество.
+*/
+    
+    </script>
+<div class="row">
+        <div class="timer">
+            <div class="num" id="timer-num">0</div>
+        </div>
+<div id="traffic-light">
+  <div id="Red" class="bulb"></div>
+  <div id="Yellow" class="bulb"></div>
+  <div id="Green" class="bulb"></div>
+</div>
+</div>
+    <script src="traffic_light.js">
+    /*
+    3. Создать светофор (красный, желтый, 
+зелёный). Переключать цвет у светофора 
+через каждые 2 сек сверху вниз и снизу вверх. 
+*/
+    </script>
+<div class="row">
+    <div id="container">
+  
+    </div>
+    
+</div>   
+    <script src="GameNumbers.js">
+    /*
+4**. Доделать задачу с занятия (игра на внимательность). 
+Генерация игрового поля заданного размера.
+Суть - дана таблица с числами, распаложенными 
+в случайном порядке в ячейках таблицы. 
+Числа идут по порядку от 1 до N*N. 
+Все числа разного размера и цвета.
+*/
+    </script>
+</body>
+</html>
