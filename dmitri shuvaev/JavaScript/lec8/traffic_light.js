@@ -80,14 +80,14 @@ f = function(){
     var yelTimer = 2;// Time For Yellow Light
     var greTimer = 2;// Time For Green Light
     
-    var totalTime = greTimer + yelTimer + redTimer;
+    var totalTime = greTimer + yelTimer + redTimer+yelTimer;
     var timeCount = greTimer;
         
     if(greTimer && yelTimer && redTimer){
         var i = 0;
         var intr = setInterval(function(){
             if(i <= greTimer){
-                if(rOn.getOn()){
+                if(yOn.getOn()){
                     timeCount = greTimer;
                 }
         
@@ -102,7 +102,7 @@ f = function(){
            o.style.backgroundColor ='black';
            g.style.backgroundColor ='green'; 
                 
-            }else if(i > greTimer-1 && i <= greTimer + yelTimer+1){
+            }else if(i >= greTimer-1 && i <= greTimer + yelTimer+1){
                 if(gOn.getOn()){
                     timeCount = yelTimer;
                 }
@@ -118,7 +118,7 @@ f = function(){
        r.style.backgroundColor ='black'; 
        o.style.backgroundColor ='yellow';
        g.style.backgroundColor ='black';
-            }else{
+            }else if(i>=greTimer + yelTimer-1 && i<=greTimer + yelTimer + redTimer+2){
                 if(yOn.getOn()){
                     timeCount = redTimer;
                 }
@@ -135,10 +135,27 @@ f = function(){
      o.style.backgroundColor ='black';
      g.style.backgroundColor ='black';
             }
+            else{
+                if(rOn.getOn()){
+                    timeCount = yelTimer;
+                }
+        
+                gOn.setOn(false);
+                rOn.setOn(false);
+                yOn.setOn(true);
+            
+                timerNum.innerHTML = timeCount--;
+                
+                // Yellow Light Turn On
+             
+       r.style.backgroundColor ='black'; 
+       o.style.backgroundColor ='yellow';
+       g.style.backgroundColor ='black';    
+            }
             i++;
             // If Done, Repeat
    
-            if(i-1 >= totalTime+2)
+            if(i-1 >= totalTime+3)
                 i = 0;
         }, 1000); 
     }else{

@@ -1,61 +1,26 @@
-
-var Libtovar = (function () {
-    
-  // Keep this variable private inside this closure scope
-  //var img = new Image();
- var img_src = "sakura.jpg";
- tovar = {
+ var tovar = {
+        img_src: "sakura.jpg",
         articul: "Мебель",
         properties: "Ability of a material to deform under tensile load",
         description: "materials that satisfy human wants",
-         };
-function ph(placehere){
- var elem = document.createElement("img");
- elem.id="picture";
- elem.setAttribute("src", img_src);
- elem.setAttribute("height", "100");
- elem.setAttribute("width", "150");
- elem.setAttribute("alt", "Flower");
- placehere.appendChild(elem);   
-};
-  // Expose these functions via an interface while hiding
-  // the implementation of the module within the function() block
+     //============Object Method===========
+        photo: function(placehere) 
+        {
+         var elem = document.createElement("img");
+         elem.id="picture";
+         elem.setAttribute("src", this.img_src);
+         elem.setAttribute("height", "100");
+         elem.setAttribute("width", "150");
+         elem.setAttribute("alt", "Flower");
+         placehere.appendChild(elem);
+         },
+      //============Object Method===========
+        table: function(myTableDiv) {
 
-  return {
-    photo: function(placehere) {
-var elem = document.createElement("img");
-elem.id="picture";
-elem.setAttribute("src", img_src);
-elem.setAttribute("height", "100");
-elem.setAttribute("width", "200");
-elem.setAttribute("alt", "Flower");
-placehere.appendChild(elem);
-
-
-    },
-table: function addTable(myTableDiv) {
-    //var myTableDiv = document.getElementById(placehere);
 
     var table = document.createElement('TABLE');
     table.border = '1';
-    /*
-      for (var j = 0; j < 4; j++) {
-            var row = table.insertRow(j);
-                var cell1 = row.insertCell(0);
-                var cell2 = row.insertCell(1);
-                var cell3 = row.insertCell(2);
 
-
-
-      
-                cell1.id="cellid";
-                cell1.innerHTML ="Dmitry",      
-
-
-                cell2.innerHTML = student.rank,
-                cell3.innerHTML = student.stuclass;
-      }
-*/
 
     var tableBody = document.createElement('TBODY');
     table.appendChild(tableBody);
@@ -88,19 +53,20 @@ table: function addTable(myTableDiv) {
             var td = document.createElement('TD');
             td.width = '150';
             if(i==0&&j==0){
-                td.appendChild(document.createTextNode(tovar.properties));
+                td.appendChild(document.createTextNode(this.properties));
                td.style.textAlign='center';
             }
             else if(i==0&&j==2){
-                td.appendChild(document.createTextNode(tovar.description));
+                td.appendChild(document.createTextNode(this.description));
                td.style.textAlign='center';
             }
             else if(i==0&&j==3){
-                td.appendChild(document.createTextNode(tovar.articul));
+                td.appendChild(document.createTextNode(this.articul));
                td.style.textAlign='center';
             }
             else{
-                 ph(td);
+                 this.photo(td);
+                
                 td.style.textAlign='center';
             }
          td.style.border = '1px solid black';
@@ -109,18 +75,11 @@ table: function addTable(myTableDiv) {
     }
     
     myTableDiv.appendChild(table);
-}
-
-   
-  }
-})();
-
+           
+}//end table method
+         };
+//
 var v = document.getElementById('tovar');
 v.style.margin="auto";
-//v.style.background="green";
 v.style.width="600px";
-//tovar.photo(v);
-Libtovar.table(v);
-
-//var v = document.getElementById('cellid');
-//tovar.photo(v);
+tovar.table(v);
