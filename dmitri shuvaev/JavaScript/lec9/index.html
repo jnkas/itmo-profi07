@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+.row {
+	width: 100%;
+	clear: both; /* Clear creates new styles for the next row */
+	padding: 0px;
+	margin: 0px;
+}
+.d1 {
+    width: 48px;
+    height: 48px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    border: 1px solid black;
+}
+#white 
+{
+    background-color:white;
+}
+#green
+{
+    background-color:green; 
+}
+        #btn1{
+            width: 50px;height: auto;margin-top:10px;
+        }
+</style>
+</head>
+
+<body>
+
+<div class="row">
+    <div class="d1" id="green" onclick="myFunction(this)"></div>
+    <div class="d1" id="green" onclick="myFunction(this)"></div>
+    <div class="d1" id="green" onclick="myFunction(this)"></div>
+</div>
+    <script>
+        /*
+        1. Даны несколько div элементов на html.
+По первому нажатию на каждый div 
+он перекрашивается зеленым цветом, 
+при повторном нажатии перекрашивается 
+обратно и так далее каждый клик 
+происходит чередование цвета. 
+*/
+  function myFunction(o) {
+
+  if(o.id==="green")
+  {
+
+     o.setAttribute("id", "white");
+      
+  }else if(o.id==="white")
+  {
+
+      o.setAttribute("id", "green");
+  }
+
+    return false;
+}
+</script>
+    <div class="row">
+     <input type="button" id="btn1" onclick="return count(this)" value="0"/>
+       <input type="button" id="btn2" onclick="return reset(this)" value="reset"/>  
+    </div>
+    <script>
+/*
+2. Реализовать счётчик нажатий на 
+кнопку: Дана кнопка внутри неё 
+записана цифра. При клике на 
+кнопку – её значение должно 
+увеличиваться на единицу.
+*/
+        var counter=0;
+     function count(o){
+         
+         o.value=++counter;
+     }
+     function reset(){
+         counter=0;  
+         document.getElementById("btn1").value=counter;  
+     }
+       //======================
+    </script>
+ 
+      <div class="row">
+    <div id="container">
+    <textarea id="write" ></textarea>
+    <ul id="keyboard">
+        <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
+        <li class="symbol"><span class="off">1</span><span class="on">!</span></li>
+        <li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+        <li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+        <li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+        <li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+        <li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+        <li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+        <li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+        <li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+        <li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+        <li class="symbol"><span class="off">-</span><span class="on">_</span></li>
+        <li class="symbol"><span class="off">=</span><span class="on">+</span></li>
+        <li class="delete lastitem">delete</li>
+        <li class="tab">tab</li>
+        <li class="letter">q</li>
+        <li class="letter">w</li>
+        <li class="letter">e</li>
+        <li class="letter">r</li>
+        <li class="letter">t</li>
+        <li class="letter">y</li>
+        <li class="letter">u</li>
+        <li class="letter">i</li>
+        <li class="letter">o</li>
+        <li class="letter">p</li>
+        <li class="symbol"><span class="off">[</span><span class="on">{</span></li>
+        <li class="symbol"><span class="off">]</span><span class="on">}</span></li>
+        <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+        <li class="capslock">caps lock</li>
+        <li class="letter">a</li>
+        <li class="letter">s</li>
+        <li class="letter">d</li>
+        <li class="letter">f</li>
+        <li class="letter">g</li>
+        <li class="letter">h</li>
+        <li class="letter">j</li>
+        <li class="letter">k</li>
+        <li class="letter">l</li>
+        <li class="symbol"><span class="off">;</span><span class="on">:</span></li>
+        <li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+        <li class="return lastitem">return</li>
+        <li class="left-shift">shift</li>
+        <li class="letter">z</li>
+        <li class="letter">x</li>
+        <li class="letter">c</li>
+        <li class="letter">v</li>
+        <li class="letter">b</li>
+        <li class="letter">n</li>
+        <li class="letter">m</li>
+        <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+        <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+        <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+        <li class="right-shift lastitem">shift</li>
+        <li class="space lastitem">&nbsp;</li>
+    </ul>
+</div>
+    </div> 
+    <div class="row">
+        <h2 id="h2b"></h2>
+        <h2 id="h2oct"></h2>
+        <h2 id="h2hex"></h2>
+        <h2 id="h2bdec"></h2>
+        <h2 id="h2octdec"></h2>
+        <h2 id="h2hexdec"></h2>
+    </div>
+    <script src="keyboard.js">
+     /*========================================== 
+    3*. Изобразить клавиатуру и расположенные 
+на ней клавиши в виде html документа. 
+При нажатии клавиши пользователем 
+на клавиатуре, подсвечивать нажатую 
+клавишу на клавиатуре изображенной 
+в html и выводить нажатое значение.
+================================================*/
+
+
+    </script>
+      <script src="binocthex.js">
+     /*========================================== 
+4***. Реализуйте модуль number_system для 
+перевода числа из одной системы счисления в другую.
+Модуль должен содержать 6 функций для перевода 
+из десятичной системы счисления в двоичную, 
+восьмеричную, шестнадцатиричную и наоборот:
+dec2bin(number) # возвращает string
+dec2oct(number) # возвращает string
+dec2hex(number) # возвращает string
+bin2dec(number) # возвращает number
+oct2dec(number) # возвращает number
+hex2dec(number) # возвращает number
+(!) Запрещено использовать встроенные 
+функции/методы, решающие эту задачу.
+Подсказка. Не спешите писать 6 разных 
+реализаций, подумайте, можно ли 
+написать универсальный алгоритм перевода.
+Ситуации, когда в исходном числе есть 
+не допустимые цифры (буквы), игнорируются.
+Материал по переводу из одной СС в другую: 
+http://inf.e-alekseev.ru/text/Schisl_perevod.html
+Тестовые наборы данных:
+1) Входные данные: 250
+Выходные данные для функций dec*:
+"11111010"
+"372"
+"fa"
+2) Входные данные: "1010011010"
+Выходные данные: 666
+3) Входные данные: "755"
+Выходные данные: 493
+4) Входные данные: "abcdef"
+Выходные данные: 11259375
+================================================*/
+
+
+    </script>
+
+    
+</body>
+</html>
