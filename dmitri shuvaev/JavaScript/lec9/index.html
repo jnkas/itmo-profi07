@@ -21,26 +21,27 @@
     float: left;
     border: 1px solid black;
 }
-#white 
+.white 
 {
     background-color:white;
 }
-#green
+.green
 {
     background-color:green; 
 }
-        #btn1{
-            width: 50px;height: auto;margin-top:10px;
-        }
+#btn1
+{
+    width: 50px;height: auto;margin-top:10px;
+}
 </style>
 </head>
 
 <body>
 
 <div class="row">
-    <div class="d1" id="green" onclick="myFunction(this)"></div>
-    <div class="d1" id="green" onclick="myFunction(this)"></div>
-    <div class="d1" id="green" onclick="myFunction(this)"></div>
+    <div class="d1 green" onclick="myFunction(this)"></div>
+    <div class="d1 green" onclick="myFunction(this)"></div>
+    <div class="d1 green" onclick="myFunction(this)"></div>
 </div>
     <script>
         /*
@@ -52,19 +53,39 @@
 происходит чередование цвета. 
 */
   function myFunction(o) {
+toggleClass(o,"green","white");
+}
+function hasClass(o, cls) {
+    return o.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+}
 
-  if(o.id==="green")
-  {
+function addClass(o, cls) {
+    if (!this.hasClass(o, cls)) o.className += " " + cls;
+}
 
-     o.setAttribute("id", "white");
-      
-  }else if(o.id==="white")
-  {
+function removeClass(o, cls) {
+    if (hasClass(o, cls)) {
+        var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+        o.className = o.className.replace(reg, '');
+    }
+}
 
-      o.setAttribute("id", "green");
-  }
+function replaceClass(o, oldClass, newClass){
+    if(hasClass(o, oldClass)){
+        removeClass(o, oldClass);
+        addClass(o, newClass);
+    }
+    return;
+}
 
-    return false;
+function toggleClass(o, cls1, cls2){
+    if(hasClass(o, cls1)){
+        replaceClass(o, cls1, cls2);
+    }else if(hasClass(o, cls2)){
+        replaceClass(o, cls2, cls1);
+    }else{
+        addClass(o, cls1);
+    }
 }
 </script>
     <div class="row">
