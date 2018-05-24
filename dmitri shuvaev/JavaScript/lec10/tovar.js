@@ -10,14 +10,21 @@ function Korsina_tovarov(){
     this._kolichestvo=0;
     this._summ=0;
     this.add=function(n,p){
-        
+        if(typeof n === 'string'&& typeof p === 'number'){
         this.store.push(new Tovar(n,p));
         this._kolichestvo++;
-        this._summ+=p;
+        this._summ+=p;    
+        }
+
     };//====================
-    this.addTovar=function(name,price)
+    this.addTovar=function(o)
     {
-     
+     if(o instanceof Tovar){
+           this.store.push(o);
+           this._kolichestvo++;
+           this._summ+=o.getPrice();   
+     }else alert('not Tovar object');
+   
     };//====================
     this.getSumm=function(){
 
@@ -32,9 +39,12 @@ function Korsina_tovarov(){
      document.write(this.store[i].info()+"<br/>");   
     };
 }
+var tovar1=new Tovar("TV",100);
+var tovar2=new Tovar("book",50.50);
 var st1=new Korsina_tovarov();
-st1.add("tvset",10);
-st1.add("firdge",20);
+st1.addTovar(tovar1);
+st1.addTovar(tovar2);
+st1.addTovar("tovar1");
 st1.printStore();
 document.write(st1.getSumm()+"<br/>"+st1.getKolichestvo());
     //===================
