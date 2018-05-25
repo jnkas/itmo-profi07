@@ -5,6 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title> Title </title>
+    <style>
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+
+}
+
+
+
+table {
+   border-collapse: collapse;
+    width: 100%;
+ 
+}
+td{
+   }
+th, td {
+    text-align: left;
+    padding: 16px;
+     border: 1px solid black;
+}
+
+th {
+    background-color: #f2f2f2
+}
+th:hover{
+    background-color: magenta;
+             cursor: pointer;
+
+}
+    </style>
 </head>
 
 <body>
@@ -40,6 +109,86 @@ Cвойства объекта:
 «Студент: Иван. Возраст: 25 лет. Пол: м. Интересы: 
 музыка, программирование. Обучается в ИТМО.»
       */
+    </script>
+<table id="myTable">
+  <tr>
+    <th   onclick="tbl.sort(0)" onmouseover="myFunction()" onmouseout="myFunction()" style="text-align: center"> 
+<div class="popup" >№
+  <span class="popuptext" id="myPopup">Сортировать по №</span>
+</div>
+      </th>
+    <th onclick="tbl.sort(1)" onmouseover="myFunction1()" onmouseout="myFunction1()" style="text-align: center">
+      <div class="popup" >ФИО
+  <span class="popuptext" id="myPopup1">Сортировать по ФИО</span>
+</div>
+      </th>
+    <th onclick="tbl.sort(2)" onmouseover="myFunction2()" onmouseout="myFunction2()" style="text-align: center">
+    <div class="popup" >возраст
+  <span class="popuptext" id="myPopup2">Сортировать по возраст</span>
+</div>
+    </th>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Berglunds snabbkop</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Alfreds Futterkiste</td>
+     <td>18</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Koniglich Essen</td>
+     <td>37</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Paris specialites</td>
+    <td>31</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Island Trading</td>
+    <td>41</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Dog dog</td>
+    <td>23</td>
+  </tr>
+</table>
+
+        <script src="sortTable.js">
+      /*
+3*. Дана таблица. Несколько столбцов и строк. У каждого 
+столбца есть заголовок (например, №, ФИО, возраст). 
+По нажатию на заголовок столбца осуществлять сортировку 
+строк таблицы по значениям этого столбца. По возможности 
+использовать объектно-ориентированное программирование.
+      */
+    </script>
+    <script>
+      /*
+      4**. Задание действительно до начала занятия 26.05.15. 
+Придумать название игры и указать жанр игры. Можно свой 
+вариант разместить в комментарии в ячейке.
+*/
+        /*
+        Hunt the Wumpus («Охота на Вампуса») — классическая текстовая компьютерная игра, написанная Грегори Йобом (англ. Gregory Yob) в 1972 году. Цель этой игры заключалась в том, чтобы, путешествуя по лабиринту, найти Вампуса и застрелить его. Часто саму игру называют просто «Вампусом».«Охота на Вампуса» — первая в истории текстовая, а также первая приключенческая игра
+        
+        */
     </script>
 </body>
 </html>

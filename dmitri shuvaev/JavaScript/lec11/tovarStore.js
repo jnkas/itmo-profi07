@@ -4,13 +4,7 @@ var Tovar=function(name,price){
 }
    Tovar.prototype.getPrice=function(){return this._price;}
    Tovar.prototype.info=function(){return "Имя товара "+this._name+"<br/> Цена "+this._price;}
-   
-function Korsina_tovarov(){
-    this.store=[];
-    this._kolichestvo=0;
-    this._summ=0;
-//====================
-    this.addTovar=function(o)
+   Korsina_tovarov.prototype.addTovar=function(o)
     {
      if(o instanceof Tovar){
            this.store.push(o);
@@ -18,19 +12,25 @@ function Korsina_tovarov(){
            this._summ+=o.getPrice();   
      }else alert('not Tovar object');
    
-    };//====================
-    this.getSumm=function(){
+    };
+    Korsina_tovarov.prototype.getSumm=function(){
 
         return "Сумма "+this._summ;
     };
-        this.getKolichestvo=function(){
+    Korsina_tovarov.prototype.getKolichestvo=function(){
 
         return "Количество "+this._kolichestvo;
     };
-    this.printStore=function(){
+    Korsina_tovarov.prototype.printStore=function(){
      for(var i=0;i<this._kolichestvo;i++)
      document.write(this.store[i].info()+"<br/>");   
     };
+//====================  
+function Korsina_tovarov(){
+    this.store=[];
+    this._kolichestvo=0;
+    this._summ=0;
+//====================
 }
 var tovar1=new Tovar("TV",100);
 var tovar2=new Tovar("book",50.50);
