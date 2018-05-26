@@ -294,7 +294,7 @@ if (soapleft > 0) {
 		alert ('Все тарелки вымыты. Осталось ' + soapleft + ' ед. моющего средства')
 	}
 
-*/
+
 //__________________________________________________________________
 //Блок 3
 //Задание 1
@@ -304,17 +304,98 @@ if (soapleft > 0) {
 //Блок 4
 //Задание 1
 
-var	
+var A = [12, 4, 3, 10, 1, 20];
+var B = [-3, -7, -100, -33];
+
+var C = A.concat(B);
+
+alert(C);
 
 
+//Задание 2
+
+var area = [ null, null, null, null, null, null, null, null, null ];
+
+for (var i = 0; i <= area.length - 1; i++) {
+	if (area[i] === null) {
+		var cage = document.getElementById('' + i);
+		cage.innerHTML = '';
+	}
+	if (area[i] === 0) {
+		var cage = document.getElementById('' + i);
+		cage.innerHTML = 'O';
+	}
+	if (area[i] === 1) {
+		var cage = document.getElementById('' + i);
+		cage.innerHTML = 'X';
+	}
+}
 
 
+//Задание 3
+
+var A = [12, 4, 3, 10, 1, 20];
+var min = A[0];
+var max = A[0];
+
+for (var i = 0; i <= A.length - 1; i++) {
+	if (A[i] < min) {
+		min = A[i];
+	}
+	if (A[i] > max) {
+		max = A[i];
+	}
+}
+
+alert('min = ' + min + ', ' + 'max = ' + max);
 
 
+//Задание 4
+
+//Сортировка вставкой - находим минимальный элемент в массиве, добавляем его в новый на первое место,
+//а в изначальном массиве - удаляем элемент (для запуска поиска нового минимального), добавляем 
+//минимальный на второе, и т.д.
+
+var A = [12, 4, 3, 10, 1, 20];
+var B = [];
+
+//Блок ниже для поиска максимального элемента нужен для начала сравнения, чтобы сравнивать с ним все 
+//остальные элементы, т.к. любой из них будет меньше.
+
+max = A[0];
+for (var i = 0; i <= A.length - 1; i++) {
+		if (A[i] > max) {
+			max = A[i];
+		}
+	}
+
+for (var j = 0; j <= A.length - 1; j++) {
+
+	var min = max;
+	var minI;
+	for (var i = 0; i <= A.length - 1; i++) {
+		if (A[i] < min) {
+			min = A[i];
+			minI = i;
+		}
+	}
+
+	B[j] = min;
+	delete A[minI];
+}
+
+alert(B);
+
+*/
+//__________________________________________________________________
+//Блок 5
+//Задание 1
+
+var
 
 
 /*
-все, что ниже - мусор
+все, что ниж++- мусор
 
 
 var ab = Math.pow(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2) + Math.pow(z2 - z1, 2),1/2);
