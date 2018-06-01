@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+     <link rel="stylesheet" href="modalStyle.css">
+    <style>
+.row {
+	width: 100%;
+	clear: both; /* Clear creates new styles for the next row */
+	padding: 0px;
+	margin: 0px;
+}
+.container{
+        float: left;
+      
+   border: 1px solid black;
+    padding: 15px;
+        }
+        .pic1{
+            position: relative;
+           
+        }
+        .sarow{ position: absolute;           
+    top: 80px;
+    left: 600px;}    
+        .r{ 
+    position: absolute;
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+            border-radius: 50%;}
+.sYellow{background-color:yellow;
+        color: black;}
+
+            .sBlue{
+          background-color: blue; 
+          color: white;
+        }
+            .sGreen{
+          background-color: #4CAF50; 
+          color: white;
+        }
+        #r15{
+         
+    top: -10px;
+    left: 430px;
+
+        }
+         #r4{
+           
+    top: 90px;
+    left: 430px;
+
+        }
+      #r2{
+          
+    top: 170px;
+    left: 355px;
+
+        }
+     #r6{
+    top: 170px;
+    left: 515px;
+        }
+    #r17{
+    top: 225px;
+    left: 380px;
+        }
+    #r13{
+    top: 225px;
+    left: 480px;
+        }
+    #r9{
+    top: 325px;
+    left: 510px;
+        }
+     #r1{
+    top: 325px;
+    left: 350px;
+        }
+    #r5{
+    top: 380px;
+    left: 430px;
+        }
+    #r8{
+    top: 230px;
+    left: 630px;
+        }
+    #r11{
+    top: 210px;
+    left: 720px;
+        }
+    #r10{
+    top: 340px;
+    left: 570px;
+        }
+    #r12{
+    top: 460px;
+    left: 550px;
+        }
+    #r14{
+    top: 440px;
+    left: 430px;
+        }
+    #r16{
+    top: 460px;
+    left: 300px;
+        }
+    #r18{
+    top: 340px;
+    left: 290px;
+        }
+    #r3{
+    top: 540px;
+    left: 250px;
+        }
+    #r7{
+    top: 540px;
+    left: 610px;
+        }
+    #r0{
+    top: 230px;
+    left: 235px;
+        }
+    #r19{
+    top: 210px;
+    left: 140px;
+        }
+    #message{
+    position: absolute;
+    top: 10px;
+    left: 550px;
+    width: 300px;
+        }
+        #label{
+            position: absolute;
+                top: 10px;
+    left: 100px;
+        }
+#tabId{ position: absolute;
+        top: 80px;
+    left:680px;
+    box-sizing: border-box;
+}
+    </style>
+</head>
+
+<body>
+    <div class="row">
+    
+<div class="container">
+      <div class="pic1">
+  <img src="67RBl.png" alt="Mountain View">
+          <div id="r15" class="r"></div>
+          <div id="r4" class="r"></div>
+          <div id="r2" class="r"></div>
+         <div id="r6" class="r"></div>
+         <div id="r17" class="r"></div>
+         <div id="r13" class="r"></div>
+         <div id="r9" class="r"></div>
+         <div id="r1" class="r"></div>
+         <div id="r5" class="r"></div>
+         <div id="r8" class="r"></div>
+         <div id="r11" class="r"></div>
+         <div id="r10" class="r"></div>
+         <div id="r12" class="r"></div>
+         <div id="r14" class="r"></div>
+         <div id="r16" class="r"></div>
+         <div id="r18" class="r"></div>
+         <div id="r0" class="r"></div>
+         <div id="r3" class="r"></div>
+         <div id="r7" class="r"></div>
+         <div id="r19" class="r"></div>
+    <textarea id="message" rows="4" cols="50">
+     xxx.
+</textarea>
+          <div id="label"><h3 >Arrows remaining: <span id="narowlabel"></span></h3></div>
+    <button id="myBtn" class="sarow">new game</button>
+<div  id="tabId">
+<table>
+    <tbody><tr>
+      <td rowspan="3"><input type="image" src="aleft.png" width="44" height="44" title="left" value="<-" onclick="shoot('left')"></td>
+      <td><input type="image" src="aup.png" width="44" height="44" title="up" value="^" onclick="shoot('front')"></td>
+      <td rowspan="3"><input type="image" src="aright.png" width="44" height="44" title="right" value="->" onclick="shoot('right')"></td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+     <canvas id="canvas" width="500" height="200"></canvas>
+  </div>
+
+</div>
+<div id="myModal2" class="modal2">
+
+  <!-- Modal content -->
+  <div class="modal-content2">
+    <canvas id="canvas2" width="600" height="330"></canvas>
+   
+  </div>
+
+</div>
+<div id="myModal3" class="modal3">
+
+  <!-- Modal content -->
+  <div class="modal-content3">
+    <canvas id="canvas3" width="600" height="348"></canvas>
+   
+  </div>
+
+</div>
+<div id="myModal4" class="modal4">
+
+  <!-- Modal content -->
+  <div class="modal-content4">
+    <canvas id="canvas4" width="600" height="349"></canvas>
+   
+  </div>
+
+</div>
+          </div>  
+    </div>
+<div class="row">
+    <h3>Rules (for this version)</h3>
+<ol>
+  <li>There are 3 hazards:
+    <ol>
+      <li>A bottomless pit (you will feel a breeze nearby).</li>
+      <li>A colony of bats that will pick you up and drop you in a random space--including potentially deadly spaces (you will hear flapping nearby).</li>
+      <li>A fearsome, hungry, and unbathed wumpus (you will smell it nearby).</li>
+    </ol>
+  </li>
+  <li>The wumpus is heavy; bats cannot lift him.</li>
+  <li>The wumpus is covered in suckers; he won't fall down the bottomless pit.</li>
+  <li>Firing an arrow that misses the wumpus may cause it to move.</li>
+  <li>You have 5 wumpus-piercing arrows.</li>
+  <li>You may find an arrow dropped by a previous hunter.</li>
+</ol>
+</div>
+  </div>
+    
+    <script src="Wumpus.js">
+    
+    </script>
+  
+    <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+  
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+init();
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+       <script src="shootArow.js"></script>
+      <script src="wumpimg.js"></script>
+       <script src="fallinPit.js"></script>
+     <script src="win.js"></script>
+</body>
+</html>

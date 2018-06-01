@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="background">
+      <div id="hero"></div>
+      <!---<div class="enemy"></div> --->
+      <div id="missiles"></div>
+          <div id="enmissiles"></div> 
+        <div id="enemies"></div>
+    </div>
+   <div id="myModal4" class="modal4">
+
+  <!-- Modal content -->
+  <div class="modal-content4">
+    <canvas id="canvas4" width="600" height="512"></canvas>
+   
+  </div>
+
+</div>
+    <script>
+    var hero={
+        top:700,
+        left:550
+    };
+     var missiles=[] ; 
+    var enemMissiles=[];
+     var enemies=[
+      { left:200,top:100 },
+      { left:300,top:100 },
+      { left:400,top:100 },
+      { left:500,top:100 },
+      { left:600,top:100 }
+        ];
+    var counter=0;
+        var num=200;
+    var lefthelper=false;
+        document.onkeydown=function(e){
+            //console.log(e);
+            console.log(e.keyCode);
+            if(e.keyCode===37){
+                console.log("LEFT");
+                if(hero.left>=15)
+                hero.left=hero.left-10;
+                moveHero();
+            }
+           else if(e.keyCode===39){
+                console.log("RIGHT");
+                if(hero.left<1150)
+                hero.left=hero.left+10;
+                moveHero();
+            }
+           else if(e.keyCode===32){
+               console.log("FIRE");
+               missiles.push({
+                   left: hero.left+15,
+                   top:hero.top
+               })
+               console.log(missiles);
+               drawMissiles();
+           } 
+        }
+        function moveEnemiesleft(){          
+         if(num>300){           
+             lefthelper=true;
+         }
+            else if(num<200){            
+                lefthelper=false;
+            }
+            if(lefthelper){ 
+                if(num<210||(num>290)){
+                    counter=-1;
+                    num-=1;      
+                }else{
+                    counter=-5;
+                    num-=5;    
+                }
+                          }
+            else{
+                if(num>290||num<210){
+                  counter=1;
+                  num+=1; }
+                else{
+                  counter=5;
+                  num+=5;   
+                }
+           
+            }
+          for(var k=0;k<enemies.length;k++){   
+          enemies[k].left=enemies[k].left+counter;    
+          }
+          
+        }
+        var numMis=0;
+        function enemisShoot(){
+        
+        for(var k=0;k<enemies.length;k++){   
+          if( hero.left>=enemies[k].left && hero.left<=enemies[k].left+50){
+                  if(numMis>15){
+               enemMissiles.push({
+              left: enemies[k].left+15,
+              top:enemies[k].top+50}); 
+                    console.log("shoot");
+                             numMis=0;
+              break;
+          }
+                   numMis++;
+           }
+  
+            }
+         
+            drawEnemiesMissiles();
+ 
+            moveEnemMissiles();
+                  
+        }
+        function showGameOver()
+        {
+         var modal = document.getElementById('myModal4');
+         modal.style.display = "block";
+        var  divhero=  document.getElementById('hero'); 
+         divhero.style.display = "none";
+         loop4(2);   
+        }
+        function moveHero(){
+        document.getElementById('hero').style.left=hero.left+"px";
+            
+        }
+        function drawMissiles(){
+            document.getElementById('missiles').innerHTML="";
+      for(var missile=0;missile<missiles.length;missile++){
+       document.getElementById('missiles').innerHTML+=`<div class='missile' style='left:${missiles[missile].left}px; top:${missiles[missile].top}px'></div>`;   
+      }      
+        }
+        function drawEnemiesMissiles(){
+            document.getElementById('enmissiles').innerHTML="";
+      for(var missile=0;missile<enemMissiles.length;missile++){
+       document.getElementById('enmissiles').innerHTML+=`<div class='enmissile' style='left:${enemMissiles[missile].left}px; top:${enemMissiles[missile].top}px'></div>`;   
+      }      
+        }
+        function moveMissiles(){
+       for(var missile=0;missile<missiles.length;missile++){
+         missiles[missile].top=missiles[missile].top-5;  
+       }
+        }
+        function moveEnemMissiles(){
+       for(var missile=0;missile<enemMissiles.length;missile++){
+         enemMissiles[missile].top=enemMissiles[missile].top+5;  
+       }
+        }
+     function drawEnemies(){
+      document.getElementById('enemies').innerHTML="";
+      for(var enemy=0;enemy<enemies.length;enemy++){
+       document.getElementById('enemies').innerHTML+=`<div class='enemy' style='left:${enemies[enemy].left}px; top:${enemies[enemy].top}px'></div>`;   
+      }      
+        }
+      function moveEnemies(){
+       for(var enemy=0;enemy<enemies.length;enemy++){
+         enemies[enemy].top=enemies[enemy].top+3;  
+       }
+        }
+        function collisionDetection(){
+        for(var enemy=0;enemy<enemies.length;enemy++){
+         for(var missile=0;missile<missiles.length;missile++){
+             if((missiles[missile].top<=enemies[enemy].top+50)
+               &&(missiles[missile].top>enemies[enemy].top)
+               &&(missiles[missile].left>=enemies[enemy].left)
+               &&(missiles[missile].left<=enemies[enemy].left+50)){
+                console.log("HIT");
+                 enemies.splice(enemy,1);
+                 missiles.splice(missile,1);
+                }
+         }
+        }    
+        }
+        function colEnemMissiles(){
+         for(var missile=0;missile<enemMissiles.length;missile++){
+              if((hero.top<=enemMissiles[missile].top)&& (enemMissiles[missile].top<hero.top+50)
+              &&(enemMissiles[missile].left>=hero.left-5)
+               &&(enemMissiles[missile].left<=hero.left+50)){
+                      //alert("hit"+hero.top+enemies[missile].top);
+                     showGameOver();
+                  StopGame();
+               
+                 enemMissiles.splice(missile,1);   
+              }
+          }
+        }
+        function clearMissiles(){
+         for(var missile=0;missile<missiles.length;missile++)
+             {
+                 if(missiles[missile].top<5) missiles.splice(missile,1);
+             }
+        }
+                function clearEnemMissiles(){
+         for(var missile=0;missile<enemMissiles.length;missile++)
+             {
+                 if(enemMissiles[missile].top>800) enemMissiles.splice(missile,1);
+             }
+        }
+        function clearEnemies(){
+         for(var enemy=0;enemy<enemies.length;enemy++)
+         {
+           if(enemies[enemy].top>750) enemies.splice(enemy,1);  
+         }    
+        }
+        var timing;
+        function gameLoop(){
+            timing=setTimeout(gameLoop,100)
+            moveMissiles();
+            drawMissiles();
+            moveEnemies();
+            moveEnemiesleft();
+           enemisShoot();
+            drawEnemies();
+            collisionDetection();
+            colEnemMissiles();
+            clearMissiles();
+            clearEnemMissiles();
+            clearEnemies();
+        }
+function StopGame() {
+    clearTimeout(timing);
+}
+        gameLoop();
+    </script>
+    <script src="gameover.js"></script>
+</body>
+</html>
