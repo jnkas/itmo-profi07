@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+
+  <title>Code - 404 error page</title>
+  
+  
+  
+  
+      <style>
+     
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.row {
+	width: 100%;
+	clear: both; /* Clear creates new styles for the next row */
+	padding: 0px;
+	margin: 0px;
+}
+html {
+    height: 100%;
+}
+body {
+ 
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  background-color: #342643;
+  height: 100%;
+}
+
+.text-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+ display: inline-block;
+}
+
+.subtitle {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1FA9D6;
+}
+
+.buttons {
+  margin: 30px;
+}
+.buttons a.button {
+  font-weight: 700;
+  border: 2px solid #EE4B5E;
+  text-decoration: none;
+  padding: 15px;
+  text-transform: uppercase;
+  color: #EE4B5E;
+  border-radius: 26px;
+  transition: all 0.2s ease-in-out;
+}
+.buttons a.button:hover {
+  background-color: #EE4B5E;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+ .digit {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    font-size: 120px;
+    font-weight: bold;
+    color: #EE4B5E;
+}    
+
+
+    </style>
+
+
+
+
+</head>
+
+<body >
+
+  <div class="text-wrapper">
+
+    <div class="title">
+<span class="digit thirdDigit">4</span>
+<span class="digit secondDigit">0</span>
+<span class="digit firstDigit">4</span>
+    </div>
+    <div class="subtitle">
+        Oops, the page you're looking for doesn't exist.
+    </div>
+
+    <div class="buttons">
+        <a class="button" href="http://google.com/">Go to homepage</a>
+    </div>
+</div>
+<script>
+       function randomNum()
+        {
+            "use strict";
+            return Math.floor(Math.random() * 9)+1;
+        }
+            var loop1,loop2,loop3,time=30, i=0, number, selector3 = document.querySelector('.thirdDigit'), selector2 = document.querySelector('.secondDigit'),
+                selector1 = document.querySelector('.firstDigit');
+            loop3 = setInterval(function()
+            {
+              "use strict";
+                if(i > 40)
+                {
+                    clearInterval(loop3);
+                    selector3.textContent = 4;
+                }else
+                {
+                    selector3.textContent = randomNum();
+                    i++;
+                }
+            }, time);
+            loop2 = setInterval(function()
+            {
+              "use strict";
+                if(i > 80)
+                {
+                    clearInterval(loop2);
+                    selector2.textContent = 0;
+                }else
+                {
+                    selector2.textContent = randomNum();
+                    i++;
+                }
+            }, time);
+            loop1 = setInterval(function()
+            {
+              "use strict";
+                if(i > 100)
+                {
+                    clearInterval(loop1);
+                    selector1.textContent = 4;
+                }else
+                {
+                    selector1.textContent = randomNum();
+                    i++;
+                }
+            }, time);
+      
+    </script>  
+  
+  
+  
+  
+
+
+
+
+ </body></html>
