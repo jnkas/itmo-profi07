@@ -39,6 +39,7 @@ var http = require('http');
 var fs = require('fs');
 var fileName="lect16.html";
 var fileName2="lect9.html";
+var fileName3="error404.html";
 http.createServer(function (req,res){
     fs.readFile(fileName, 'utf8', function(err,data){
         if(err){
@@ -52,9 +53,19 @@ http.createServer(function (req,res){
                     console.log('Could not find or open file for reading\n');
                 }
                 else{
+                    res.write(data);
+					fs.readFile(fileName3, 'utf8', function(err,data){
+                if(err){
+                    console.log('Could not find or open file for reading\n');
+                }
+                else{
                     res.end(data);
                 }
+				 
             })
+                }
+				})
+	
         }
     })
 }).listen(8010);
