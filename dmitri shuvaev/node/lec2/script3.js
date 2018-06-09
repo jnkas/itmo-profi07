@@ -31,16 +31,16 @@ function conTwo(){
         if(temp==0){
             re+=res[i]; 
              re+=" ";
-        }
-         
-    }
-    return re;
+        }       
+    } 
+    return re.replace(/(^[\s]+|[\s]+$)/g, '');
 }
 function conPow(){
     var re="";
     for(var i=0;i<res.length;i++){
         var temp=Math.pow(res[i], 3);     
             re+=temp; 
+        if(i<res.length-1)
              re+=" ";        
     }
     return re;

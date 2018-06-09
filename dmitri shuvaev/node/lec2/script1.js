@@ -1,5 +1,5 @@
 function get_quadrant_number(X,Y){
-    try{
+  
     if(X>0&&Y>0){
    return 1;     
         }
@@ -14,14 +14,20 @@ function get_quadrant_number(X,Y){
     }else{
         throw "error";
     }    
-    }catch(err){
-       return err;
+}
+  try{
+ console.log(get_quadrant_number(0,0));
+     }catch(err){
+      console.log(err) ;
+    }
+try{
+   console.log(get_quadrant_number(1,0));   
+   }catch(err){
+      console.log(err) ;
     }
 
-}
- console.log(get_quadrant_number(0,0));
- console.log(get_quadrant_number(1,0));
  console.log(get_quadrant_number(1,1));
  console.log(get_quadrant_number(1,-1));
  console.log(get_quadrant_number(-1,-1));
- console.log(get_quadrant_number(-1,1));
+ console.log(get_quadrant_number(-1,1)); 
+
