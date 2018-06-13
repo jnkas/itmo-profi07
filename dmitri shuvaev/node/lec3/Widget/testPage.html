@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test Widget Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css
+</head>
+<body>
+<div class="row">
+<div class="centert" ><br /><font style="color:#435d82;" size="6">Weather widget</font></div><br /><br />
+</div>
+<div class="row">  
+    <div id="container" class="clearfix Main">
+    <div class="location Main" >
+        <p class="Main" id="rf">RealFeel</p>  
+         <p class="Main" id="city">Komsomolsk-on-amure</p>  
+    </div>
+ 
+    <p class="temperature Main" id="temp">23°</p>
+    <div class="climate_bg Main" id="cl"><img src="WeatherIcons/1.png"></div>
+    <div class="info_bg">
+
+
+     
+      <div class="windspeed" id="wind">Wind 5 km/h</div>
+    </div>
+  </div>
+</div>
+<!--Widget Code Starts-->
+<script type='text/javascript'>
+    wWidth = "260px"; 
+    wHeight = "195px";
+    wFColor = "#627ea6";
+    wTitle = "Hello";
+ 
+    document.write('<div id="myFirstWidget"></div>');
+	
+    document.write('<scr'+'ipt type="text/JavaScript" src="bootstrap.js"></scr'+'ipt>');
+</script>
+<!--Widget Code Ends-->
+
+</body>
+</html>
