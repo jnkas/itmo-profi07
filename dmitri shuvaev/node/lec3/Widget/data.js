@@ -1,4 +1,5 @@
-﻿
+﻿ var uri= 'http://localhost:1111/';
+
 var request=new XMLHttpRequest();
 
 request.onreadystatechange=function(){
@@ -18,7 +19,7 @@ request.onreadystatechange=function(){
 
 
 function fu(){
- request.open('GET','/jsondata.json');
+ request.open('GET',uri,true);
  request.send();   
 }
 
@@ -33,3 +34,4 @@ WidgetCallback(b,r);
 function getRandomArbitrary(min, max) {
    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
