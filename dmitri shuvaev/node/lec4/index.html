@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+	<body>
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <span class="glyphicon glyphicon-cloud-upload"></span>
+            <h2>File Uploader</h2>
+            <h4>start server on port 3000</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar"></div>
+            </div>
+            <button class="btn btn-lg upload-btn" type="button">Upload File</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <input id="upload-input" type="file" name="uploads[]" multiple="multiple"></br>
+     <script src="jquery-3.3.1.js"></script>
+     <script src="bootstrap.min.js"></script>
+      <script src="upload.js"></script>
+</body>
+</html>
