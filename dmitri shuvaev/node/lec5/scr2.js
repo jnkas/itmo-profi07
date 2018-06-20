@@ -25,31 +25,43 @@ function Calc() {
                 infixAsToken.push(inputStr.charAt(i));
                 continue;
             }
-          
+         
             if(inputStr.charAt(i) == "."){
                 temp = temp + ".";
                 continue;
             }
-           
+        
             if(!isNaN(inputStr.charAt(i))){
                 temp = temp + inputStr.charAt(i);
                 continue;
             }
         }//loop ends
         
-        
+      
         if(temp.length !== 0){
             infixAsToken.push(temp);
             temp = "";
         }
        return infixAsToken;     
     };
-    
+ this.removeElementsFromArray=function (someArray, filter) {
+    var newArray = [];
+    for(var index = 0; index < someArray.length; index++) {
+        if(filter(someArray[index]) == false) {
+            newArray.push(someArray[index]);
+        }
+    }
+    return newArray;
+}
+
+
+this.isNullOrUndefined=function (item) {
+    return (item == null || typeof(item) == "undefined"|| item==' ');
+}   
 
  this.convert=function( str){
   var stack = [];
-  //var st=   str.split(' ').join('');
-   //st = st.split("");
+
  var st = this.convert2Tokens(str);
     var result=[];
     for(var i=0;i<st.length;i++){
@@ -94,8 +106,10 @@ function Calc() {
                
       
     }
-     console.log(result);
-        return result;
+     var results = this.removeElementsFromArray(result, this.isNullOrUndefined);
+     console.log(results);
+     
+        return results;
 }
 
 this.operator=function( s) {
@@ -147,7 +161,7 @@ this.operator=function( s) {
         var no = 0;
         var tempAns = 0;
         
-        //num oper
+      
         for(var i = 0; i<output.length; i++){
             if(this.isAnOperator(output[i])){
                 ++no;
@@ -156,7 +170,7 @@ this.operator=function( s) {
         
         //
         for(i = 0; i<no; i++){
-            //
+        
             for(var j = 0; j<output.length; j++){
                 if(this.isAnOperator(output[j])){
                     tempAns = this.calculate(output[j - 2], output[j - 1], output[j]);
@@ -170,7 +184,7 @@ this.operator=function( s) {
         return output[0];
     };
         /**
-     calculation
+  calculation
     **/
     this.calculate = function(a, b, op){
         a = parseFloat(a);

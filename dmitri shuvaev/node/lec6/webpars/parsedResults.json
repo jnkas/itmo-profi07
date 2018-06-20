@@ -1,0 +1,226 @@
+[
+    {
+        "rank": 1,
+        "title": "Keybase Exploding Messages",
+        "url": "https://keybase.io/blog/keybase-exploding-messages",
+        "points": 148,
+        "username": "aston",
+        "comments": 2
+    },
+    {
+        "rank": 2,
+        "title": "YAML: probably not so great after all (2017)",
+        "url": "https://arp242.net/weblog/yaml_probably_not_so_great_after_all.html",
+        "points": 115,
+        "username": "tlb",
+        "comments": 1
+    },
+    {
+        "rank": 3,
+        "title": "Certificates for localhost",
+        "url": "https://letsencrypt.org/docs/certificates-for-localhost/",
+        "points": 70,
+        "username": "colinprince",
+        "comments": 1
+    },
+    {
+        "rank": 4,
+        "title": "Big fish are found deep not because of age, climate, or prey, but because of us",
+        "url": "https://arstechnica.com/science/2018/06/ecological-law-turns-out-to-just-be-the-result-of-us-fishing/",
+        "points": 63,
+        "username": "curtis",
+        "comments": 2
+    },
+    {
+        "rank": 5,
+        "title": "A Life-Saving Checklist (2007)",
+        "url": "https://www.newyorker.com/magazine/2007/12/10/the-checklist",
+        "points": 53,
+        "username": "deegles",
+        "comments": 1
+    },
+    {
+        "rank": 6,
+        "title": "Theory Suggests That All Genes Affect Every Complex Trait",
+        "url": "https://www.quantamagazine.org/omnigenic-model-suggests-that-all-genes-affect-every-complex-trait-20180620/",
+        "points": 18,
+        "username": "digital55",
+        "comments": 55
+    },
+    {
+        "rank": 7,
+        "title": "Japanese Writing After Murakami",
+        "url": "https://www.the-tls.co.uk/articles/public/japan-cultural-life-kelts/",
+        "points": 19,
+        "username": "whatami",
+        "comments": 1
+    },
+    {
+        "rank": 8,
+        "title": "Synergy-core: Open source core of Synergy, the keyboard and mouse sharing tool",
+        "url": "https://github.com/symless/synergy-core",
+        "points": 69,
+        "username": "ingve",
+        "comments": 3
+    },
+    {
+        "rank": 11,
+        "title": "MySQL High Availability at GitHub",
+        "url": "https://githubengineering.com/mysql-high-availability-at-github/",
+        "points": 31,
+        "username": "samlambert",
+        "comments": 3
+    },
+    {
+        "rank": 12,
+        "title": "How Blinkist Drives 50,000 App Downloads per Month with Content Marketing",
+        "url": "https://trifinlabs.com/content-marketing-app-downloads/",
+        "points": 14,
+        "username": "Shanerostad",
+        "comments": 1
+    },
+    {
+        "rank": 13,
+        "title": "Exercise vs. Standing? You Probably Need to Do Both",
+        "url": "https://www.nytimes.com/2018/06/13/well/exercise-vs-standing-you-probably-need-to-do-both.html",
+        "points": 8,
+        "username": "ALee",
+        "comments": 46
+    },
+    {
+        "rank": 14,
+        "title": "Erlang OTP 21.0 is Released",
+        "url": "http://www.erlang.org/news/123",
+        "points": 89,
+        "username": "out_of_protocol",
+        "comments": 3
+    },
+    {
+        "rank": 15,
+        "title": "Surgeon Atul Gawande selected as CEO of new health care company from Amazon",
+        "url": "https://www.statnews.com/2018/06/20/surgeon-atul-gawande-selected-ceo-amazon-partners/",
+        "points": 223,
+        "username": "uptown",
+        "comments": 6
+    },
+    {
+        "rank": 16,
+        "title": "Tesla sues ex-employee for hacking, theft, and leaking to the press",
+        "url": "https://www.theverge.com/2018/6/20/17484030/tesla-sues-employee-hacking-theft-leaking",
+        "points": 139,
+        "username": "salmonellaeater",
+        "comments": 3
+    },
+    {
+        "rank": 17,
+        "title": "Attacks against GPG signed APT repositories",
+        "url": "https://blog.packagecloud.io/eng/2018/02/21/attacks-against-secure-apt-repositories/",
+        "points": 37,
+        "username": "xenophonf",
+        "comments": 4
+    },
+    {
+        "rank": 18,
+        "title": "Oxford English Dictionary extends hunt for regional words around the world",
+        "url": "https://www.theguardian.com/books/2018/jun/19/oxford-english-dictionary-extends-hunt-for-regional-words-around-the-world",
+        "points": 10,
+        "username": "gruseom",
+        "comments": 1
+    },
+    {
+        "rank": 19,
+        "title": "Sketchpad: A man-machine graphical communication system (1963) [pdf]",
+        "url": "https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-574.pdf",
+        "points": 81,
+        "username": "eternalban",
+        "comments": 7
+    },
+    {
+        "rank": 20,
+        "title": "How an Engineering Company Chose to Migrate to D",
+        "url": "https://dlang.org/blog/2018/06/20/how-an-engineering-company-chose-to-migrate-to-d/",
+        "points": 163,
+        "username": "pjmlp",
+        "comments": 6
+    },
+    {
+        "rank": 21,
+        "title": "SEC issues warning against John McAfee’s crypto shilling",
+        "url": "https://itsblockchain.com/john-mcafee-crypto-shilling/",
+        "points": 33,
+        "username": "BadamiVasu",
+        "comments": 2
+    },
+    {
+        "rank": 22,
+        "title": "Is Serverless Just a New Word for Cloud Based?",
+        "url": "https://www.percona.com/blog/2018/06/20/is-serverless-just-a-new-word-for-cloud-based/",
+        "points": 28,
+        "username": "bratao",
+        "comments": 5
+    },
+    {
+        "rank": 23,
+        "title": "Show HN: MRuby-Zest – A Scriptable Audio GUI Framework",
+        "url": "http://log.fundamental-code.com/2018/06/16/mruby-zest.html",
+        "points": 57,
+        "username": "fundamental",
+        "comments": 6
+    },
+    {
+        "rank": 24,
+        "title": "It took a long time for de Gaulle to become ‘de Gaulle’",
+        "url": "https://www.spectator.co.uk/2018/06/it-took-a-long-time-for-de-gaulle-to-become-de-gaulle/",
+        "points": 3,
+        "username": "allthebest",
+        "comments": 1
+    },
+    {
+        "rank": 25,
+        "title": "Transfer.sh – File sharing from the command line",
+        "url": "https://transfer.sh/",
+        "points": 204,
+        "username": "nilsocket",
+        "comments": 14
+    },
+    {
+        "rank": 26,
+        "title": "PostgreSQL Features You May Not Have Tried but Should",
+        "url": "https://pgdash.io/blog/postgres-features.html?h=",
+        "points": 145,
+        "username": "_1",
+        "comments": 3
+    },
+    {
+        "rank": 27,
+        "title": "Announcing Flutter Release Preview 1",
+        "url": "https://medium.com/flutter-io/flutter-release-preview-1-943a9b6ee65a",
+        "points": 118,
+        "username": "mattsolle",
+        "comments": 4
+    },
+    {
+        "rank": 28,
+        "title": "Report: World trending to hit 50% renewables, 11% coal by 2050",
+        "url": "https://arstechnica.com/science/2018/06/report-world-trending-to-hit-50-renewables-11-coal-by-2050/",
+        "points": 24,
+        "username": "okket",
+        "comments": 1
+    },
+    {
+        "rank": 29,
+        "title": "State of the Site: Metafilter financial update and future directions",
+        "url": "https://metatalk.metafilter.com/24814/State-of-the-Site-Metafilter-financial-update-and-future-directions",
+        "points": 14,
+        "username": "colinprince",
+        "comments": 1
+    },
+    {
+        "rank": 30,
+        "title": "AMC unveils answer to MoviePass",
+        "url": "https://variety.com/2018/film/news/amc-moviepass-2-1202851877/",
+        "points": 54,
+        "username": "gandutraveler",
+        "comments": 3
+    }
+]
