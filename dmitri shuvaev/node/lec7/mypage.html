@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Basic Mustache & NodeJS Demo</title>
+</head>
+
+<body>
+
+<ul>
+{{#records}}
+	<li>Name: {{Name}}</li>
+    <li>Password: {{Password}}</li>
+
+{{/records}}
+    <form action="/user/reset" method="POST">
+     	 <label for="name">back:</label>
+        <input type="submit"/>
+    
+    </form>
+</ul>
+</body>
+</html>
