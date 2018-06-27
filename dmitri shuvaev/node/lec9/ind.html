@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+        .board{
+            margin: auto;
+            width: 350px;
+        }
+        .board button{
+            height: 100px;
+            width: 100px;
+            margin: 0;
+            padding: 0;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            font-size: 3em;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="board">
+     <button id="a0"></button>
+     <button id="a1"></button>
+     <button id="a2"></button>
+     <button id="b0"></button>
+     <button id="b1"></button>
+     <button id="b2"></button>
+     <button id="c0"></button>
+     <button id="c1"></button>
+     <button id="c2"></button>
+        <div id="messages">В ожидание соперника...</div>
+    </div>
+        <script src="/socket.io/socket.io.js"></script>
+    <script src="/jquery-3.3.1.js"></script>
+    <script>
+    var socket=io('http://localhost:5000'),
+        myTurn=true,symbol;
+        function getBoardState(){
+            var obj={};
+            $('.board button').each(function(){
+                obj[$(this).attr('id')]=$(this).text()||'';
+            });
+            return obj;
+        }
+        function isGameOver(){
+            var state=getBoardState(),
+                matches=['XXX','000'],
+                rows=[
+                    state.a0+state.a1+state.a2,
+                    state.b0+state.b1+state.b2,
+                    state.c0+state.c1+state.c2,
+                    state.a0+state.b1+state.c2,
+                    state.a2+state.b1+state.c0,
+                    state.a0+state.b0+state.c0,
+                    state.a1+state.b1+state.c1,
+                    state.a2+state.b2+state.c2
+                ];
+            for(var i=0;i<rows.length;i++){
+                if(rows[i]===matches[0]||rows[i]===matches[1]){
+                    return true;
+                }
+            }
+        }
+        function renderTurnMessage(){
+            if(!myTurn){
+                $('#messages').text('Очередь вашего соперника.');
+                $('.board button').attr('disabled',true);
+            }else{
+                $('#messages').text('Ваша очередь.');
+                $('.board button').removeAttr('disabled');
+            }
+        }
+        function makeMove(e){
+            e.preventDefault();
+            if(!myTurn){
+                return;
+            }
+            if($(this).text().length){
+                return;
+            }
+            socket.emit('make.move',{
+                symbol:symbol,
+                position:$(this).attr('id')
+            });
+        }
+        socket.on('move.made',function(data){
+            $('#'+data.position).text(data.symbol);
+            myTurn=(data.symbol!==symbol);
+            if(!isGameOver()){
+                renderTurnMessage();
+            }else{
+                $('#messages').text('Игра окончена!');
+                $('.board button').attr('disabled',true);
+            }
+        });
+        socket.on('game.begin',function(data){
+            symbol=data.symbol;
+            myTurn=(data.symbol==='X');
+            renderTurnMessage();
+        });
+        socket.on('opponent.left',function(){
+            $('#messages').text('Ваш саперник вышел из игры.');
+            $('.board button').attr('disabled',true);
+        });
+        $(function(){
+            $('.board button').attr('disabled',true);
+            $('.board > button').on('click',makeMove);
+        });
+  
+    </script>
+</body>
+</html>
