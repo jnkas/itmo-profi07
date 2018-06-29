@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Todos </title>
+</head>
+
+<body>
+
+<h1>To do list</h1>
+<form action="/todos" method="post">
+<input type="text" name="description">
+<button type="submit">Add</button>
+</form>
+<ul>
+{{#todos}}
+ <li>
+ <form action="/todos/{{_id}}/completed" method="post">
+   {{description}}-{{done}}<button type="submit">Done</button>
+ </form>
+ </li>
+
+ {{/todos}}
+</body>
+</html>
