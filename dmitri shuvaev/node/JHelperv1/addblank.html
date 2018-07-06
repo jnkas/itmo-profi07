@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+      <link rel="stylesheet" href="/style.css">
+
+        <style>
+           
+
+        </style>
+</head>
+
+<body>
+
+      {{#records}}    
+<div id="id01" class="modal">
+
+ <form class="modal-content" action="/add" method = "POST">
+    <div class="container1">
+
+      <hr>
+      <label for="term"><b>Term</b></label>
+      <input class="i1" type="text" placeholder="Enter Term" name="term" required value={{term}}>
+
+      <label for="Definitions"><b>Definitions</b></label>
+      <input class="i1" type="text" placeholder="Enter Definitions" name="definition" required>
+
+      <div class="clearfix">
+             
+        <button type="submit" formaction="/"  class="cancelbtn button" formnovalidate>Cancel</button>
+        <button type="submit" class="signupbtn button">Add</button>
+      </div>
+    </div>
+
+  </form>
+</div>
+        {{/records}}
+</body>
+</html>

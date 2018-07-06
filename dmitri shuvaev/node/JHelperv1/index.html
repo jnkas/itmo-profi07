@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Title </title>
+      <link rel="stylesheet" href="/style.css">
+     <link rel="stylesheet" href="/12-column-grid.css">
+</head>
+
+<body>
+    {{#records}}
+<div class="form">
+      <form action = "/find" method = "POST">  
+  <div class="row">
+      <div class="left1">
+   
+          <button type="button" id="myBtn">About</button>
+      </div>
+  </div>
+  <div class="row">
+      <div class="left1">
+      Term:
+      </div>
+         
+  <input class="leftCenter v" type="text"   name="term" value={{term}}>
+   
+     <div class="left1">
+         
+                <input type="submit" value="Find" class="buttn"/>
+           </div>
+         
+    
+  </div>
+  <div class="row">
+     <div class="left1Center">
+      <p>Definitions:</p>
+      </div>
+    <div class="textAreastyle">
+<textarea class=" v" wrap="off" name="textArea">
+{{Definitions}}
+</textarea>
+
+     </div>
+      
+         <div class="left2">
+          <input type="submit" formaction="/showAddForm" value="Add" class="buttn"/>
+         </div>
+         <div class="left3">
+        <input type="submit" formaction="/delete" value="Delete" class="buttn"/>
+         </div>
+         <div class="left3">
+        <input type="submit" formaction="/deleteTerm" value="DeleteTerm" class="buttn"/>
+         </div>
+         <div class="left3">
+        <input type="submit" formaction="/edit" value="Edit" class="buttn"/>
+         </div>
+         <div class="left3">
+        <input type="submit" formaction="/next" value="next" class="buttn"/>
+         </div>
+         <div class="left3">
+        <input type="submit" formaction="/prev" value="previous" class="buttn"/>
+         </div>
+         <div class="left3">
+        <input type="submit" formaction="/first" value="first definition" class="buttn"/>
+         </div>
+         <div class="left3">
+        <input type="submit" formaction="/last" value="last definition" class="buttn"/>
+         </div>
+    </div>
+   </form>
+  </div>
+<!-- The Modal -->
+<div id="myModal" class="modalAbout">
+
+  <!-- Modal content -->
+  <div class="modal-contentAbout">
+    <div class="modal-headerAbout">
+      <span class="close">&times;</span>
+      <h2>Node jsHelper</h2>
+    </div>
+    <div class="modal-bodyAbout">
+      <p>Версия 1.0</p>
+      <p>Информационо-справочная система</p>
+    </div>
+    <div class="modal-footerAbout">
+      <h3>&copy; 2018 Dmitry Shuvaev</h3>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+    {{/records}}
+    <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
